@@ -8,7 +8,7 @@ Um **portal público principal**, navegável, legível, responsivo, indexável e
 
 **Astro + TypeScript + Markdown/JSON versionados + CSS com mínimo de JavaScript + hospedagem estática via GitHub Pages.** Detalhes e alternativas em [ADR-0001](adr/0001-portal-estatico.md).
 
-Astro é uma preferência arquitetural para a primeira implementação, não um sistema já instalado. Caso uma limitação concreta apareça, abrir outra ADR antes de migrar.
+Astro e TypeScript são a base implementada inicialmente em P0.1. Sem validação do build em execução real, não declarar implantação concluída. Caso uma limitação concreta apareça, abrir outra ADR antes de migrar.
 
 ## Componentes futuros
 
@@ -41,7 +41,11 @@ Planejar GitHub Pages em caminho de projeto: /universidade-social/. Ajustar base
 
 Cada recurso contém metadados de origem, data, tema, perspectiva e licença. Cursos, aulas e avaliações terão identificadores estáveis e relações por ID. Validar metadados no build, títulos, links internos e integridade referencial.
 
-## Organização futura proposta
+## Organização atual e futura
+
+A implementação inicial inclui layout, estilos, páginas institucionais e contrato vazio de catálogo. Aulas e coleções versionadas continuam planejadas para a issue #4 (P0.3).
+
+### Estrutura futura proposta
 
 ~~~text
 src/
@@ -61,7 +65,7 @@ docs/
 .github/
 ~~~
 
-A árvore acima é **proposta**, não implementação existente.
+A árvore acima representa o **alvo futuro** e não a árvore atual completa. A estrutura inicial está em src/layouts, src/lib, src/pages e src/styles.
 
 ## Riscos e mitigação
 

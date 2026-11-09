@@ -12,7 +12,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 
 ## Estado do projeto
 
-**Fase 0 — Arquitetura e planejamento.** Ainda não existe portal publicado, curso concluído nem certificação institucional. O primeiro produto planejado é o **portal público principal (P0)**.
+**Fase P0 — Primeira implementação do portal.** O código da homepage e das páginas institucionais foi iniciado em Astro. Publicação pública depende de build/CI e configuração do GitHub Pages. Ainda não há curso concluído nem certificação institucional.
 
 - [Brief do primeiro portal](docs/portal-publico.md)
 - [Roadmap e critérios de entrega](docs/roadmap.md)
@@ -30,7 +30,46 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 - **.github/skills/**: procedimentos acionáveis, incluindo a metodologia anticolonial materialista.
 - **docs/**: arquitetura, protocolos e roadmap; mudanças relevantes devem passar por revisão e registro de decisão.
 - **GitHub Issues**: demandas executáveis, com critérios de aceite e dependências.
-- **Futuro src/**: portal e componentes; ainda não implementados.
+- **src/**: portal Astro (layout, estilos, páginas e um catálogo ainda vazio).
+- **scripts/**: verificações de estrutura e links internos compilados.
+- **.github/workflows/site.yml**: build e publicação contínua pelo GitHub Actions.
+
+## Desenvolver o portal
+
+Requisitos: Node.js 22.12+ e npm. Na raiz do repositório:
+
+~~~bash
+npm install
+npm run check:source
+npm run dev
+~~~
+
+Para compilar e verificar os artefatos estáticos:
+
+~~~bash
+npm run build
+npm run check:dist
+npm run preview
+~~~
+
+A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre. Trilhas e biblioteca não têm conteúdo publicado; só itens com estado **publicado** poderão aparecer. A implementação do schema completo de conteúdo é a [issue #4](https://github.com/pedromaintenance/universidade-social/issues/4).
+
+**Dependências:** as versões diretas estão fixadas no package.json. O lockfile precisa ser gerado e versionado quando houver instalação npm disponível para garantir um build integralmente reprodutível. O workflow usa npm install até então.
+
+## Publicar com GitHub Pages
+
+1. Acesse **Settings → Pages** no repositório.
+2. Em **Build and deployment → Source**, selecione **GitHub Actions**.
+3. Em cada push na branch main, o workflow site.yml instala dependências, testa, compila e tenta publicar.
+4. Confira a aba **Actions** e o endereço publicado informado na execução antes de divulgar o portal.
+
+O site usa site = https://pedromaintenance.github.io e base = /universidade-social. **Não considere a URL pública ativa antes de conferir o deploy.** Se o Pages ainda não estiver habilitado, somente o mantenedor com acesso às configurações poderá ativá-lo.
+
+Documentação: [Deploy Astro no GitHub Pages](https://docs.astro.build/en/guides/deploy/github/) e [Fonte de publicação do GitHub Pages](https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+## Limites do ciclo P0.1
+
+Não existem backend, login, analytics, envio de respostas, simulado interativo ou certificado. Testes em dispositivo real, auditoria de acessibilidade e conteúdo publicado serão etapas posteriores do roadmap.
 
 ## Princípios
 
