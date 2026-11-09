@@ -82,5 +82,6 @@ Issues são a fonte de execução; este roadmap é a fonte de sequenciamento e v
 | P1.3 — Simulados formativos | [#9](https://github.com/pedromaintenance/universidade-social/issues/9) |
 | P1.4 — Projetos de pesquisa | [#10](https://github.com/pedromaintenance/universidade-social/issues/10) |
 | Governança de licenças e revisão | [#11](https://github.com/pedromaintenance/universidade-social/issues/11) |
+| P1.6 — Agitação, educação e propaganda | [#13](https://github.com/pedromaintenance/universidade-social/issues/13) |
 
 As issues são abertas como backlog; nenhum item de execução é considerado concluído só por estar documentado.
