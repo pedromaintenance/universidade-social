@@ -4,6 +4,8 @@
 
 A Universidade Social é uma instituição popular de **agitação, educação e propaganda** ancorada em amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e busca pelo conhecimento. É pública para acessar, mas não neutra quanto ao projeto político que afirma. Destina-se a quem deseje aprender e participar de sua proposta, sem exigência de escolaridade formal; deve funcionar em celular e com internet limitada.
 
+**Finalidade emancipatória:** questionar categorias que fazem a exploração parecer natural, inevitável ou tecnicamente neutra, sem substituir investigação por palavras de ordem.
+
 **Formação pretendida:** ler criticamente um problema; identificar atores e interesses materiais; contextualizar no tempo; localizar documentos e dados; comparar interpretações; reconhecer incertezas; produzir síntese própria e possíveis ações coletivas ou individuais fundamentadas.
 
 ## Três funções articuladas
@@ -18,9 +20,15 @@ São funções declaradas, com formatos e autoria identificados. Não se confund
 
 - A perspectiva materialista histórica, dialética e anticolonial é **assumida e explicada**, não disfarçada de neutralidade.
 - O ponto de partida é perguntar como trabalho, propriedade, classe, raça, Estado, colonialismo, tecnologia e território estruturam a vida social.
+- **Conhecimento situado:** investigar a posição social de autores e instituições, inclusive os que se declaram neutros, sem dispensar teste factual e análise metodológica.
+- **Assimetria pedagógica intencional:** a Universidade não concede igual centralidade à defesa de extermínio, cerceamento de direitos, colonialismo ou exploração, sem deixar de investigar esses fenômenos.
 - Explicar uma estrutura não é negar agência dos sujeitos, nem relativizar violações de direitos.
 - Teorias e teses devem ser examinadas com rigor, incluindo fatos inconvenientes e objeções relevantes quando necessários; isso **não** obriga o projeto a promover correntes rivais com o mesmo espaço editorial.
 - A Universidade cultiva valores definidos e pode produzir reflexão política orientada. Em exercícios de investigação, a correção de afirmações verificáveis deve depender de método e evidência, não de obediência a gabaritos de opinião.
+
+## Resultado educacional esperado
+
+O estudante deverá ser capaz de explicar como determinada ideia dominante se reproduz materialmente, quem a produz e difunde, com quais interesses e instituições ela se relaciona, quais evidências a sustentam ou contradizem e quais possibilidades de transformação podem ser analisadas. A avaliação mede a **capacidade de investigar e argumentar com autonomia**, não a obediência a um discurso.
 
 ## Modelo de aprendizagem
 

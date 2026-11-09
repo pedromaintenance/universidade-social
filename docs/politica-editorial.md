@@ -6,6 +6,16 @@ A Universidade Social tem **linha política e ética própria**: amor, empatia, 
 
 A instituição **não deve palco equivalente a teorias e discursos contrários aos seus princípios**. Ideias externas podem ser analisadas como documento, crítica ou objeto de estudo, sem endosso e sem dever de publicação em paridade. Porém nenhum enquadramento político autoriza falsificar documento, omitir deliberadamente evidência relevante, inventar fonte ou disfarçar interpretação como fato.
 
+## Assimetria editorial e crítica da falsa neutralidade
+
+- **Seleção editorial:** centralizar pesquisas e experiências comprometidas com os valores institucionais. Não conceder promoção equivalente à defesa de políticas genocidas, cerceamento de direitos de minorias, dominação colonial ou exploração.
+- **Análise material da posição:** examinar quem fala, de qual instituição, em quais condições históricas, com que fontes, recursos e efeitos demonstráveis. Não imputar intenção oculta sem documentação.
+- **Contraditório metodológico:** estudar documentos e objeções relevantes para testar alegações, sem convertê-los em tribuna editorial.
+- **Critérios para alegações graves:** termos como «genocídio», «extermínio», «perseguição» e «violação de direitos» exigem definições, recortes e prova adequados. Não são sinônimos de divergência política.
+- **Avaliação de fontes:** não presumir verdade ou falsidade apenas pelo prestígio, financiamento ou origem social de quem fala. Verificar método, evidência e explicação.
+
+**Assimetria de tribuna é escolha de missão; assimetria probatória depende de evidência.**
+
 ## Classificação obrigatória de afirmações
 
 - **Documentado:** sustentado diretamente por documentos, dados ou fontes primárias verificáveis.
@@ -57,7 +67,7 @@ A acusação de corrupção, fraqueza institucional ou atraso cultural não é e
 
 Publicar é uma decisão substantiva. A Universidade pode **recusar textos que promovam valores contrários à Carta de princípios**, inclusive individualismo que legitime exploração e dominação, sem obrigação de conceder espaço simétrico. Isso não significa proibir estudantes de discordar, questionar as fontes ou estudar teorias rivais. Discussão respeitosa e verificação continuam possíveis nos ambientes de aprendizagem previstos.
 
-A discordância será tratada por seus argumentos e efeitos, não por hostilidade à identidade pessoal de quem discorda.
+A discordância será tratada por seus argumentos e efeitos, não por hostilidade à identidade pessoal de quem discorda. A curadoria pode rejeitar a promoção de projetos incompatíveis com a Carta, mas permanece aberta a perguntas sinceras e contestação factual documentada.
 
 ## Critério de reprovação editorial
 
