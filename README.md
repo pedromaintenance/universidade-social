@@ -12,7 +12,9 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 
 ## Estado do projeto
 
-**Fase P0 — Primeira implementação do portal.** O código da homepage e das páginas institucionais foi iniciado em Astro. Publicação pública depende de build/CI e configuração do GitHub Pages. Ainda não há curso concluído nem certificação institucional.
+**Fase P0 — Primeiro portal publicado.** A versão institucional inicial foi compilada e publicada com sucesso pelo GitHub Actions em 09/11/2026. Aulas completas, biblioteca curada, avaliações e certificação ainda não estão disponíveis.
+
+**[Abrir o portal público](https://pedromaintenance.github.io/universidade-social/)** · [Acompanhar a publicação no Actions](https://github.com/pedromaintenance/universidade-social/actions/runs/42722594417)
 
 - [Brief do primeiro portal](docs/portal-publico.md)
 - [Roadmap e critérios de entrega](docs/roadmap.md)
@@ -63,7 +65,7 @@ A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são
 3. Em cada push na branch main, o workflow site.yml instala dependências, testa, compila e tenta publicar.
 4. Confira a aba **Actions** e o endereço publicado informado na execução antes de divulgar o portal.
 
-O site usa site = https://pedromaintenance.github.io e base = /universidade-social. **Não considere a URL pública ativa antes de conferir o deploy.** Se o Pages ainda não estiver habilitado, somente o mantenedor com acesso às configurações poderá ativá-lo.
+O site usa site = https://pedromaintenance.github.io e base = /universidade-social. A primeira publicação foi confirmada como **bem-sucedida** no GitHub Actions em 09/11/2026, com endereço de ambiente informado como `https://pedromaintenance.github.io/universidade-social/`. Testes visuais em dispositivos reais e auditoria de acessibilidade seguem pendentes para P0.5.
 
 Documentação: [Deploy Astro no GitHub Pages](https://docs.astro.build/en/guides/deploy/github/) e [Fonte de publicação do GitHub Pages](https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 

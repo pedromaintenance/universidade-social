@@ -1,6 +1,6 @@
 # Primeiro artefato — P0: Portal público principal
 
-**Status:** primeira versão de interface em código na fase P0; a publicação pública e a validação de acessibilidade ainda dependem de verificações. Este documento continua como brief de produto.
+**Status:** primeira versão pública publicada em 09/11/2026 por GitHub Actions (PR #16). O portal já tem homepage e páginas institucionais; ainda não existem cursos ou acervo publicado. Auditoria de acessibilidade/performance e expansão do catálogo continuam pendentes. Este documento continua como brief de produto.
 
 ## Problema
 
