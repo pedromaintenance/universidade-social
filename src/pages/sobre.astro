@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sitePath } from '../lib/site';
+---
+
+<BaseLayout title="Sobre o projeto" description="A Universidade Social é um projeto público e gratuito de educação popular, ainda em desenvolvimento.">
+  <header class="page-hero">
+    <div class="shell">
+      <span class="eyebrow">Transparência e participação</span>
+      <h1>Uma universidade popular, em construção coletiva.</h1>
+      <p class="lead">Um projeto independente para estudar a sociedade com perspectiva materialista histórica e anticolonial, assumindo seus valores em público.</p>
+    </div>
+  </header>
+  <div class="shell page-content">
+    <article class="prose">
+      <h2>O que é a Universidade Social?</h2>
+      <p>Uma iniciativa de agitação, educação e propaganda para oferecer gratuitamente instrumentos de investigação da realidade e contribuir para a emancipação intelectual do povo trabalhador.</p>
+      <h2>Qual é o estágio atual?</h2>
+      <p>Estamos construindo o portal inicial. As trilhas, avaliações, projetos de pesquisa e ferramentas são etapas planejadas; não há cursos completos, inscrições, notas ou certificados disponíveis neste momento.</p>
+      <h2>É uma universidade credenciada?</h2>
+      <p><strong>Não.</strong> O nome Universidade Social expressa a ambição político-pedagógica do projeto e não representa credenciamento pelo MEC, diploma universitário ou parceria acadêmica formal.</p>
+      <h2>Como participar?</h2>
+      <p>O repositório no GitHub concentra decisões, documentos, roadmap e issues. Contribuições são examinadas conforme a Carta de Princípios e a política editorial. Acesso ao conhecimento não depende de criar conta.</p>
+      <p><a href="https://github.com/pedromaintenance/universidade-social" target="_blank" rel="noopener noreferrer">Abrir repositório do projeto (site externo) ↗</a></p>
+      <h2>Licenças e privacidade</h2>
+      <p>O código-fonte está disponível sob licença MIT. Textos didáticos e obras de terceiros têm condições próprias de uso; um link público não equivale à permissão de copiar o material. O portal inicial não requer cadastro, não recebe respostas e não utiliza rastreamento comercial.</p>
+      <p><a class="return-link" href={sitePath('principios')}>Leia a Carta de Princípios →</a></p>
+    </article>
+  </div>
+</BaseLayout>
