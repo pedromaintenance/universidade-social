@@ -8,6 +8,7 @@
 - **Avaliação:** questões com justificativa e devolutiva; ligada à trilha ou aula.
 - **Projeto:** problema investigável, materiais, etapas, critérios, rubrica e produto esperado.
 - **Conceito:** definição, variações teóricas, exemplos e referências.
+- **Publicação político-editorial:** tipo (manifesto, editorial, material de agitação, análise), autoria institucional ou individual, posição assumida, referências verificáveis quando houver alegações factuais e data.
 
 ### Metadados comuns
 

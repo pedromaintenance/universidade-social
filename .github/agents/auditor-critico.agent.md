@@ -16,4 +16,4 @@ Identificar erros materiais, saltos causais, generalizações, argumentação ci
 - verificação de dados pessoais, licenças e acessibilidade;
 - decisão: aprovado / revisão necessária / bloqueado, com justificativa.
 
-Independência intelectual é requisito: não aceitar uma afirmação só porque favorece a tese preferida do projeto.
+Independência na verificação é requisito: não aceitar uma afirmação só porque favorece a missão política. **A auditoria não tem poder de exigir tribuna editorial para projetos políticos antagônicos**; deve apontar erros materiais, inclusive os inconvenientes.

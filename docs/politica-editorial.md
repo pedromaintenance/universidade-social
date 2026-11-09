@@ -1,8 +1,10 @@
-# Política editorial, evidências e direitos (v0.1)
+# Política editorial, evidências e direitos (v0.2)
 
 ## Princípio
 
-Uma universidade crítica deve tornar suas premissas auditáveis. O projeto tem orientação materialista e anticolonial, mas não pode apresentar interpretação como fato confirmado.
+A Universidade Social tem **linha política e ética própria**: amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e busca pelo conhecimento. Sua atuação abrange **agitação, educação e propaganda**; a seleção editorial não será neutra nem buscará equilíbrio aritmético entre perspectivas antagônicas.
+
+A instituição **não deve palco equivalente a teorias e discursos contrários aos seus princípios**. Ideias externas podem ser analisadas como documento, crítica ou objeto de estudo, sem endosso e sem dever de publicação em paridade. Porém nenhum enquadramento político autoriza falsificar documento, omitir deliberadamente evidência relevante, inventar fonte ou disfarçar interpretação como fato.
 
 ## Classificação obrigatória de afirmações
 
@@ -18,7 +20,7 @@ Distinguir ainda **fato**, **inferência causal**, **posição teórica** e **ju
 
 Todo recurso deve ter: título, autor/instituição, URL, tipo, idioma, data de publicação (quando conhecida), data de acesso/checagem, natureza (primária/secundária), perspectiva e potenciais interesses, resumo próprio, formato, licença/condições de uso e status de acesso.
 
-Links externos não significam endosso integral. Material de perspectiva liberal/conservadora pode integrar a bibliografia como objeto de análise e contraditório consistente, identificado como tal.
+Links externos não significam endosso integral. Material de perspectivas liberais, conservadoras ou outras, quando necessário, pode ser citado **como objeto de análise ou fonte primária sobre essas próprias posições**, sem promoção equiparada no catálogo, e sempre contextualizado.
 
 ## Roteiro anticolonial
 
@@ -39,7 +41,7 @@ A acusação de corrupção, fraqueza institucional ou atraso cultural não é e
 - Toda aula tem responsável editorial, versão, data de revisão e histórico de correções.
 - Conflitos de interesse e financiamento devem ser declarados.
 - Preferir documentos públicos, periódicos científicos e produção de especialistas; contrastar interpretações.
-- Revisão exige pelo menos uma hipótese alternativa tratada com seriedade.
+- Revisão exige testar contraevidências e objeções substantivas **quando relevantes à afirmação**. Isso é controle de qualidade interno, não obrigação de oferecer tribuna ou espelho institucional a posições adversárias.
 - Erros materiais devem ser corrigidos de modo rastreável, não apagados silenciosamente.
 
 ## Direitos e segurança
@@ -48,8 +50,15 @@ A acusação de corrupção, fraqueza institucional ou atraso cultural não é e
 - Usar links e metadados para obras de terceiros; não espelhar PDFs, vídeos, imagens ou livros sem autorização compatível.
 - Citações curtas com atribuição; não reproduzir passagens extensas de obras protegidas.
 - Não divulgar dados pessoais de estudantes ou terceiros sem necessidade e base legal.
-- Não prometer neutralidade absoluta nem doutrinação: expor perspectiva e ensinar verificação.
+- Não alegar neutralidade política; informar claramente se o conteúdo é aula, pesquisa, análise, manifesto, editorial ou convocatória.
+- Agitação e propaganda institucionais devem respeitar a dignidade humana, evitar manipulação encoberta e identificar autoria e fontes de alegações verificáveis.
+
+## Curadoria e direito editorial
+
+Publicar é uma decisão substantiva. A Universidade pode **recusar textos que promovam valores contrários à Carta de princípios**, inclusive individualismo que legitime exploração e dominação, sem obrigação de conceder espaço simétrico. Isso não significa proibir estudantes de discordar, questionar as fontes ou estudar teorias rivais. Discussão respeitosa e verificação continuam possíveis nos ambientes de aprendizagem previstos.
+
+A discordância será tratada por seus argumentos e efeitos, não por hostilidade à identidade pessoal de quem discorda.
 
 ## Critério de reprovação editorial
 
-Rejeitar conteúdo que inventa fonte, esconde incerteza, faz alegação extraordinária sem base, atribui culpa moral a povos, apaga contraevidência, plagia ou transforma questionário em teste de fidelidade ideológica.
+Rejeitar conteúdo que inventa fonte, esconde incerteza, faz alegação extraordinária sem base, atribui culpa moral a povos, apaga contraevidência, plagia ou transforma questionário em teste de fidelidade ideológica. Rejeitar também materiais que pretendam falar **em nome da Universidade** enquanto contradizem sua Carta de princípios.

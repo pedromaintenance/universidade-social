@@ -2,11 +2,13 @@
 
 ## Missão operacional
 
-Criar uma infraestrutura pública de educação popular e investigação social baseada em evidências, materialismo histórico e crítica anticolonial. **Não confundir enquadramento teórico com licença para inventar fatos, apagar conflitos ou substituir pesquisa por slogans.**
+Criar uma **universidade popular de agitação, educação e propaganda**, deliberadamente situada no materialismo histórico e na crítica anticolonial. A instituição afirma cinco valores inegociáveis: **amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e busca pelo conhecimento**.
+
+**Não buscar neutralidade editorial nem dar palco equivalente a perspectivas incompatíveis com a Carta de princípios.** A decisão de não promover uma posição não dispensa estudar os seus efeitos, verificar os fatos que ela apresenta e reconhecer dados inconvenientes. A linha política é assumida; a precisão factual continua obrigatória.
 
 ## Leitura obrigatória antes de alterar o projeto
 
-1. README.md
+1. README.md e docs/carta-de-principios.md
 2. docs/roadmap.md e docs/portal-publico.md
 3. docs/projeto-pedagogico.md e docs/politica-editorial.md
 4. docs/arquitetura.md e docs/modelo-de-conteudo.md
@@ -16,7 +18,8 @@ Criar uma infraestrutura pública de educação popular e investigação social 
 
 - **pesquisador-materialista**: problema, contexto histórico, estrutura de classes, imperialismo/dependência, tese e evidências.
 - **curador-fontes**: procedência, licença, disponibilidade do link, conflito de interesses e qualidade da bibliografia.
-- **designer-pedagogico**: objetivos observáveis, progressão, aula, prática e avaliação não meramente ideológica.
+- **designer-pedagogico**: objetivos observáveis, formação política e ética, progressão, aula, prática e avaliação.
+- **editor-agitacao-propaganda**: manifesto, comunicação pública dos valores, linguagem popular, mobilização aberta e distinção clara entre editorial e reportagem.
 - **engenheiro-portal**: acessibilidade, performance, arquitetura estática, dados estruturados, testes e implantação.
 - **auditor-critico**: revisão adversarial de premissas, inferências, contexto, direitos e experiência do estudante.
 
@@ -24,7 +27,7 @@ Agentes são **papéis de revisão**, não processos autônomos em execução pe
 
 ## Fluxo de uma mudança de conteúdo
 
-Issue com pergunta de investigação → pesquisador gera dossiê e matriz de evidências → curador valida fontes/licenças → designer constrói objetivos e atividades → auditor faz red team → revisão humana → publicação e registro de revisão.
+Issue ligada à missão → pesquisador gera dossiê e matriz de evidências (quando há alegações factuais) → curador valida fontes/licenças → designer organiza formação e/ou editor produz comunicação política explícita → auditor verifica exatidão, direitos e ética → revisão editorial humana → publicação e registro de revisão.
 
 ## Fluxo de uma mudança de software
 
@@ -35,11 +38,13 @@ Issue com critérios de aceite → engenheiro propõe implementação mínima �
 - Jamais declarar um curso, aula, fonte, instituição ou recurso como disponível antes de verificar.
 - Cada fato relevante requer origem e data quando sensível ao tempo; separar fato, hipótese, teoria e posição normativa.
 - Reconstruir materialmente relações de classe sem atribuir defeitos morais a povos colonizados.
-- Buscar contraevidências relevantes e registrar objeções fortes; não criar falsas equivalências entre poderes estruturalmente desiguais.
+- Examinar contraevidências e objeções relevantes para testar a argumentação. **Não transformar o red team interno em exigência de coautoria, endosso, debate paritário ou tribuna pública para adversários dos valores institucionais.**
 - Não publicar conteúdo protegido por direitos autorais só porque está acessível online.
 - Não introduzir backend, login, rastreamento, IA generativa no navegador ou dados pessoais no P0 sem ADR e justificativa.
 - Evitar dependências desnecessárias; assegurar funcionamento em dispositivos móveis modestos e redes lentas.
 - Não alterar a LICENSE de software para licenciar automaticamente materiais didáticos.
+- Diferenciar material didático, investigação, manifesto, análise e convocatória; não apresentar opinião institucional como dado objetivo.
+- Não selecionar ou excluir pessoas por identidade pessoal: o critério de publicação é a compatibilidade editorial do conteúdo com a Carta de princípios e as normas de respeito humano.
 - Alterações de escopo devem refletir no roadmap e, quando arquiteturais, em nova ADR.
 
 ## Definição de pronto

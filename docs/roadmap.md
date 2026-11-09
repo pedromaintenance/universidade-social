@@ -1,18 +1,18 @@
 # Roadmap de desenvolvimento — Universidade Social
 
-**Versão:** 0.1 | **Atualização:** 2026-11-08 | **Estado geral:** planejamento. Sem prazos artificiais: avanço por critério de pronto.
+**Versão:** 0.2 | **Atualização:** 2026-11-09 | **Estado geral:** planejamento. Sem prazos artificiais: avanço por critério de pronto.
 
 ## P0 — PRIMEIRO ARTEFATO: portal público principal
 
-**Resultado:** homepage real e publicada, navegação, páginas institucionais e infraestrutura de conteúdo estático. Ver [brief do P0](portal-publico.md).
+**Resultado:** portal público que apresenta sem ambiguidade a Universidade Social como projeto de **agitação, educação e propaganda**, com Carta de princípios, navegação, páginas institucionais e infraestrutura estática. Ver [brief do P0](portal-publico.md).
 
 | ID | Pacote | Dependências | Aceite resumido |
 | --- | --- | --- | --- |
 | P0.0 | Fundar agentes, skills, método, arquitetura e issues | nenhuma | arquivos versionados e revisáveis |
 | P0.1 | Configurar Astro, TS, build e Pages | P0.0 | build reproduzível e URL de teste |
-| P0.2 | Identidade visual e homepage mobile-first | P0.1 | propósito e CTAs claros; acessibilidade |
+| P0.2 | Identidade visual e homepage mobile-first | P0.1 | três funções e cinco valores explícitos; acessibilidade |
 | P0.3 | Modelo de conteúdo, catálogo e rotas | P0.1 | apenas material publicado aparece |
-| P0.4 | Páginas Método, Sobre e Biblioteca inicial | P0.2, P0.3 | transparência de fontes e status |
+| P0.4 | Páginas Princípios, Método, Sobre e Biblioteca inicial | P0.2, P0.3 | linha editorial e fontes transparentes |
 | P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | checklist de P0 concluído |
 
 **Marco de lançamento:** portal público utilizável **mesmo antes** de existir acervo amplo. Não exibir conteúdo demonstrativo como se fosse aula disponível.
@@ -24,6 +24,7 @@
 - **P1.3** Simulados formativos locais: feedback justificado por fonte, sem captura de dados.
 - **P1.4** Projetos de pesquisa orientados: problema, método, fontes, rubrica e resultados esperados.
 - **P1.5** Revisão pedagógica com participantes: observar dificuldades reais e corrigir.
+- **P1.6** Núcleo de comunicação pública: editoriais, manifestos e materiais populares com autoria e caráter institucional explícitos; conteúdos factuais passam por curadoria de fontes.
 
 **Portão P1:** estudante completa uma trilha com começo, meio, fim e evidências de aprendizagem crítica; não depende de aprovação ideológica.
 
@@ -31,7 +32,7 @@
 
 - Catálogo pesquisável e filtros por tema, formato, nível e perspectiva.
 - Trilhas: trabalho/classes; Estado/Direito; colonialismo/dependência; economia; Brasil/Amazônia.
-- Glossário de conceitos disputados e páginas comparativas de escolas teóricas.
+- Glossário de conceitos disputados e crítica documentada de ideologias e explicações relevantes, **sem atribuir igual representação editorial** a todas as correntes.
 - Política de revisão periódica de links e correção editorial.
 
 ## P3 — Laboratório de investigação
@@ -56,7 +57,8 @@
 
 ## Riscos transversais
 
-- **Doutrinação e captura de narrativa:** transparência de enquadramento, fontes, contraevidência, red team.
+- **Diluição da missão em falsa neutralidade:** explicitar Carta de princípios e garantir curadoria coerente, sem falsa equivalência.
+- **Imprecisão sob motivação política:** alegações verificáveis exigem fontes, revisão e correções; agitação e propaganda não dispensam verdade factual.
 - **Sobrecarga de manutenção:** arquivo estático, componentes reutilizáveis e foco em trilha piloto.
 - **Direitos autorais:** links, licença específica e textos autorais.
 - **Desigualdade digital:** mobile-first, conteúdos textuais, peso reduzido e acesso sem conta.
@@ -80,5 +82,6 @@ Issues são a fonte de execução; este roadmap é a fonte de sequenciamento e v
 | P1.3 — Simulados formativos | [#9](https://github.com/pedromaintenance/universidade-social/issues/9) |
 | P1.4 — Projetos de pesquisa | [#10](https://github.com/pedromaintenance/universidade-social/issues/10) |
 | Governança de licenças e revisão | [#11](https://github.com/pedromaintenance/universidade-social/issues/11) |
+| P1.6 — Agitação, educação e propaganda | [#13](https://github.com/pedromaintenance/universidade-social/issues/13) |
 
 As issues são abertas como backlog; nenhum item de execução é considerado concluído só por estar documentado.
