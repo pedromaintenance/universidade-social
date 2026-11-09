@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+import { assetPath, mainNavigation, siteName, sitePath } from '../lib/site';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Agitação, educação e propaganda. Uma universidade popular dedicada ao conhecimento e à emancipação intelectual do povo trabalhador.'
+} = Astro.props;
+const pageTitle = title === siteName ? siteName : title + ' | ' + siteName;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#262821" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={assetPath('mark.svg')} />
+    <link rel="canonical" href={Astro.url} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href={sitePath()} aria-label="Universidade Social — página inicial">
+          <span class="brand-symbol" aria-hidden="true">✳</span>
+          <span class="brand-wordmark">
+            <strong>UNIVERSIDADE</strong>
+            <small>SOCIAL</small>
+          </span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Navegação principal">
+          {mainNavigation.map((item) => (
+            <a href={sitePath(item.path)} aria-current={currentPath === sitePath(item.path) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-identity">
+          <div class="footer-brand"><span aria-hidden="true">✳</span> UNIVERSIDADE SOCIAL</div>
+          <p>Conhecimento, solidariedade e emancipação. Um projeto aberto de agitação, educação e propaganda.</p>
+          <span class="footer-note">Em construção · Não é instituição credenciada pelo MEC.</span>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href={sitePath('principios')}>Carta de princípios</a></li>
+            <li><a href={sitePath('metodo')}>Nosso método</a></li>
+            <li><a href={sitePath('trilhas')}>Trilhas de estudo</a></li>
+            <li><a href={sitePath('biblioteca')}>Biblioteca crítica</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Projeto aberto</h2>
+          <ul>
+            <li><a href="https://github.com/pedromaintenance/universidade-social" target="_blank" rel="noopener noreferrer">Repositório no GitHub <span class="external-mark" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/pedromaintenance/universidade-social/issues" target="_blank" rel="noopener noreferrer">Acompanhar desenvolvimento <span class="external-mark" aria-hidden="true">↗</span></a></li>
+            <li><a href={sitePath('sobre')}>Sobre e transparência</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© 2026 Universidade Social · Software MIT · Materiais didáticos com licenças próprias</span>
+        <span>Feito para ser lido, inclusive com internet lenta.</span>
+      </div>
+    </footer>
+  </body>
+</html>
