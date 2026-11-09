@@ -2,13 +2,13 @@
 
 **Agitação, educação e propaganda por uma sociedade fundada no amor, na empatia, na autodeterminação dos povos, na soberania do povo trabalhador e na busca pelo conhecimento.**
 
-Projeto político-pedagógico público, gratuito e assumidamente comprometido com a emancipação do povo trabalhador. Articula história, economia política, sociologia, antropologia, direito, dados e experiências concretas da vida social.
+Projeto político-pedagógico público, gratuito e assumidamente comprometido com seu **objetivo máximo: emancipar intelectualmente o trabalhador das estruturas do pensamento hegemônico que servem à reprodução do capital**. Articula história, economia política, sociologia, antropologia, direito, dados e experiências concretas da vida social.
 
 A Universidade Social parte de um **enfoque materialista histórico e anticolonial**, sem tomar categorias liberais como explicações neutras ou suficientes. Isso não dispensa rigor: uma posição teórica explícita exige mais transparência sobre fontes, controvérsias, incertezas e métodos — não menos.
 
 > A Universidade Social não reivindica neutralidade entre emancipação e exploração. Quer formar, comunicar e mobilizar, com uma linha editorial própria. Pesquisa rigorosa é ferramenta dessa missão, não condição de equivalência entre projetos políticos.
 
-Nossa missão, valores e limites editoriais estão na **[Carta de princípios](docs/carta-de-principios.md)**. A plataforma não oferece tribuna equivalente a perspectivas incompatíveis com esses valores; quando necessário, elas serão estudadas criticamente como objeto de análise, não promovidas como orientação institucional.
+Nossa missão, valores e limites editoriais estão na **[Carta de princípios](docs/carta-de-principios.md)**. Todo discurso é produzido em condições históricas e sociais: a alegação de neutralidade é algo a investigar, não garantia automática de imparcialidade. A plataforma não oferece tribuna equivalente a perspectivas incompatíveis com esses valores; quando necessário, elas serão estudadas criticamente como objeto de análise, não promovidas como orientação institucional.
 
 ## Estado do projeto
 

@@ -2,7 +2,7 @@
 
 ## Missão operacional
 
-Criar uma **universidade popular de agitação, educação e propaganda**, deliberadamente situada no materialismo histórico e na crítica anticolonial. A instituição afirma cinco valores inegociáveis: **amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e busca pelo conhecimento**.
+Criar uma **universidade popular de agitação, educação e propaganda**, cujo **objetivo máximo é a emancipação intelectual do povo trabalhador diante da hegemonia do capital**, deliberadamente situada no materialismo histórico e na crítica anticolonial. A instituição afirma cinco valores inegociáveis: **amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e busca pelo conhecimento**.
 
 **Não buscar neutralidade editorial nem dar palco equivalente a perspectivas incompatíveis com a Carta de princípios.** A decisão de não promover uma posição não dispensa estudar os seus efeitos, verificar os fatos que ela apresenta e reconhecer dados inconvenientes. A linha política é assumida; a precisão factual continua obrigatória.
 
@@ -38,6 +38,8 @@ Issue com critérios de aceite → engenheiro propõe implementação mínima �
 - Jamais declarar um curso, aula, fonte, instituição ou recurso como disponível antes de verificar.
 - Cada fato relevante requer origem e data quando sensível ao tempo; separar fato, hipótese, teoria e posição normativa.
 - Reconstruir materialmente relações de classe sem atribuir defeitos morais a povos colonizados.
+- Investigar posição histórica e interesses de quem produz conhecimento, inclusive quando afirma neutralidade. Não inferir falsidade somente pela origem do emissor: verificar fatos, método e causalidade.
+- Não impor paridade editorial à defesa de extermínio, restrição de direitos de minorias ou exploração. Empregar designações jurídicas e históricas graves apenas com critérios e provas.
 - Examinar contraevidências e objeções relevantes para testar a argumentação. **Não transformar o red team interno em exigência de coautoria, endosso, debate paritário ou tribuna pública para adversários dos valores institucionais.**
 - Não publicar conteúdo protegido por direitos autorais só porque está acessível online.
 - Não introduzir backend, login, rastreamento, IA generativa no navegador ou dados pessoais no P0 sem ADR e justificativa.

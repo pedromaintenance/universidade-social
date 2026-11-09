@@ -26,6 +26,14 @@ Colonialismo e neocolonialismo; dependência; sistema-mundo; imperialismo; capit
 6. **Não confundir legalidade com inocência material:** comparar extração legal e ilegal, beneficiários e danos.
 7. **Preservar agência e responsabilidade** dos sujeitos em condições estruturais desiguais.
 
+## Objetivo institucional e cautela epistemológica
+
+Esta skill serve à **emancipação intelectual do povo trabalhador**, investigando a reprodução material do pensamento hegemônico. Nenhuma fonte se torna automaticamente neutra ao falar em nome da técnica, ciência, mercado ou governança. Examinar financiamento, propriedade, instituições, origem histórica e circulação de discursos quando relevantes, sem transformar suspeita em prova.
+
+A Universidade não é obrigada a promover como interlocutores editoriais equivalentes defensores de extermínio, restrição de direitos de minorias ou exploração. Entretanto, deve estudar documentos e argumentos adversários quando necessário para explicar a realidade. **Reconhecer uma fonte como objeto empírico não equivale a legitimar seu programa político.**
+
+Atribuições de crimes ou genocídio exigem critérios e evidência específica. Distinguir análise de estruturas de classe de imputações individuais.
+
 ## Procedimento obrigatório (nove movimentos)
 
 1. **Alegação superficial:** escrever o enunciado original em sua melhor versão.

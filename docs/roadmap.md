@@ -10,7 +10,7 @@
 | --- | --- | --- | --- |
 | P0.0 | Fundar agentes, skills, método, arquitetura e issues | nenhuma | arquivos versionados e revisáveis |
 | P0.1 | Configurar Astro, TS, build e Pages | P0.0 | build reproduzível e URL de teste |
-| P0.2 | Identidade visual e homepage mobile-first | P0.1 | três funções e cinco valores explícitos; acessibilidade |
+| P0.2 | Identidade visual e homepage mobile-first | P0.1 | emancipação intelectual, três funções e cinco valores explícitos; acessibilidade |
 | P0.3 | Modelo de conteúdo, catálogo e rotas | P0.1 | apenas material publicado aparece |
 | P0.4 | Páginas Princípios, Método, Sobre e Biblioteca inicial | P0.2, P0.3 | linha editorial e fontes transparentes |
 | P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | checklist de P0 concluído |
@@ -19,7 +19,7 @@
 
 ## P1 — Primeira trilha pedagógica real
 
-- **P1.1** «Como investigar a realidade social»: objetivos, 3–5 aulas piloto, fontes e exercícios guiados.
+- **P1.1** «Como investigar a realidade social»: objetivos, 3–5 aulas piloto, fontes, posição social do conhecimento, crítica da falsa neutralidade e exercícios guiados.
 - **P1.2** Curadoria inicial de recursos: leitura online, canais e vídeos (metadados, URL, licença, data, perspectiva e alternativas textuais).
 - **P1.3** Simulados formativos locais: feedback justificado por fonte, sem captura de dados.
 - **P1.4** Projetos de pesquisa orientados: problema, método, fontes, rubrica e resultados esperados.

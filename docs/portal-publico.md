@@ -4,7 +4,7 @@
 
 ## Problema
 
-A Universidade Social precisa tornar **visível e acessível seu projeto de agitação, educação e propaganda**. Uma homepage meramente acadêmica ou supostamente neutra apagaria seu sentido de formação e mobilização popular.
+A Universidade Social precisa tornar **visível e acessível seu projeto de agitação, educação e propaganda**, com o objetivo máximo de **emancipação intelectual do trabalhador diante da hegemonia do capital**. Uma homepage meramente acadêmica ou supostamente neutra apagaria seu sentido de formação e mobilização popular.
 
 ## Proposta de valor
 
@@ -14,12 +14,12 @@ Apresentar com clareza **por que existimos, quais valores defendemos, como estud
 
 1. **Cabeçalho:** Universidade Social, Trilhas, Biblioteca, Método, Sobre.
 2. **Hero:** declarar agitação, educação e propaganda; nomear amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e conhecimento. CTAs possíveis: «Conheça nossos princípios» e «Começar a estudar».
-3. **Nossa razão de existir:** agitar questões concretas, estudar as estruturas sociais e divulgar abertamente o projeto de emancipação.
+3. **Nossa razão de existir:** afirmar a emancipação intelectual do trabalhador, investigar os fundamentos materiais da hegemonia, estudar as estruturas sociais e divulgar um projeto de vida coletiva.
 4. **Como funciona:** problema real → conceitos → fontes → análise → exercício/projeto → práxis.
 5. **Explorar áreas:** trabalho e classes; Estado e Direito; colonialismo e dependência; economia política; história; Brasil e Amazônia.
 6. **Estudo inicial:** única trilha piloto quando estiver realmente publicada; antes disso, etiqueta «Em preparação».
 7. **Biblioteca e ferramentas:** módulos previstos com status visível, sem cards de conteúdo falso.
-8. **Método e transparência:** orientação teórica explícita, critérios de evidência, correções.
+8. **Método e transparência:** materialismo histórico, exame da posição social de quem produz conhecimento, critérios de evidência e correções; crítica de ideologias não exige paridade de tribuna.
 9. **Contribuir:** links para repositório, issues e regras editoriais.
 10. **Rodapé:** licenças, privacidade, acessibilidade, status do projeto.
 
