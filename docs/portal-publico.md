@@ -1,6 +1,6 @@
 # Primeiro artefato — P0: Portal público principal
 
-**Status:** PLANEJADO. Este documento é um brief de produto, não uma página já publicada.
+**Status:** primeira versão de interface em código na fase P0; a publicação pública e a validação de acessibilidade ainda dependem de verificações. Este documento continua como brief de produto.
 
 ## Problema
 

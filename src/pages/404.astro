@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sitePath } from '../lib/site';
+---
+
+<BaseLayout title="Página não encontrada">
+  <div class="shell page-content">
+    <div class="empty-state">
+      <span class="eyebrow">Erro 404</span>
+      <h1>Esta página não existe.</h1>
+      <p>O endereço pode ter mudado ou o conteúdo ainda não foi publicado.</p>
+      <a class="button primary" href={sitePath()}>Voltar ao início →</a>
+    </div>
+  </div>
+</BaseLayout>

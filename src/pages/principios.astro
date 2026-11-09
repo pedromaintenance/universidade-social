@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sitePath } from '../lib/site';
+const valores = [
+  { title: 'Amor', text: 'Cuidado com a vida e responsabilidade com o outro, sem desumanização.' },
+  { title: 'Empatia', text: 'Atenção concreta às experiências e necessidades das pessoas submetidas a exploração e opressão.' },
+  { title: 'Autodeterminação dos povos', text: 'Direito de decidir o próprio caminho sem tutela colonial ou imposição externa.' },
+  { title: 'Soberania do povo trabalhador', text: 'Participação de quem trabalha nas decisões sobre o próprio destino, território e produção.' },
+  { title: 'Busca pelo conhecimento', text: 'Estudar, investigar fontes, confrontar hipóteses, corrigir erros e seguir aprendendo.' }
+];
+---
+
+<BaseLayout title="Carta de Princípios" description="Conheça os valores fundadores da Universidade Social e a missão de emancipação intelectual do povo trabalhador.">
+  <header class="page-hero">
+    <div class="shell">
+      <span class="eyebrow">Manifesto fundador</span>
+      <h1>Não somos neutros sobre a dignidade humana.</h1>
+      <p class="lead">A Universidade Social é um projeto público de agitação, educação e propaganda. Nosso objetivo máximo é contribuir para a emancipação intelectual do povo trabalhador.</p>
+    </div>
+  </header>
+  <div class="shell page-content">
+    <article class="prose">
+      <h2>Cinco valores fundadores</h2>
+      <ol>
+        {valores.map((v) => <li><strong>{v.title}.</strong> {v.text}</li>)}
+      </ol>
+
+      <h2>Uma posição assumida</h2>
+      <p>Não reivindicamos neutralidade entre projetos históricos antagônicos. Investigamos as relações materiais que estruturam a vida social e defendemos a autodeterminação dos povos, a soberania do povo trabalhador e uma sociedade comprometida com o cuidado coletivo.</p>
+      <blockquote>Estudar uma visão adversária não significa promovê-la, legitimá-la ou conceder-lhe paridade institucional.</blockquote>
+      <p>A Universidade não reserva tribuna equivalente à defesa da exploração, da dominação colonial, de políticas de extermínio ou da supressão dos direitos de minorias. Isso não dispensa a investigação documentada dessas posições quando necessária para compreender a realidade.</p>
+
+      <h2>O conhecimento como prática</h2>
+      <p>Toda voz fala de condições históricas e sociais. Examinamos as instituições, os interesses e as fontes por trás das afirmações, inclusive quando se dizem técnicas ou neutras. A posição de quem fala não determina automaticamente se a alegação é verdadeira: é preciso verificar documentos, métodos e resultados.</p>
+      <p>Agitação, educação e propaganda têm papéis distintos e explícitos. Nenhum deles autoriza falsificar fatos, apagar evidências inconvenientes ou desumanizar pessoas.</p>
+
+      <h2>Leia a versão integral</h2>
+      <p>Este é um resumo público. O texto completo, o histórico de revisão e as decisões editoriais estão documentados no repositório.</p>
+      <p><a href="https://github.com/pedromaintenance/universidade-social/blob/main/docs/carta-de-principios.md" target="_blank" rel="noopener noreferrer">Abrir a Carta de Princípios no GitHub (site externo) ↗</a></p>
+      <p><a class="return-link" href={sitePath('metodo')}>Veja como investigamos →</a></p>
+    </article>
+  </div>
+</BaseLayout>

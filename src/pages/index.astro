@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sitePath } from '../lib/site';
+
+const areas = [
+  { title: 'Trabalho e classes', detail: 'Produção, propriedade, exploração e organização de quem trabalha.' },
+  { title: 'Estado e Direito', detail: 'Instituições, disputas de poder, legislação e soberania popular.' },
+  { title: 'Colonialismo e dependência', detail: 'História da dominação, imperialismo e autodeterminação dos povos.' },
+  { title: 'Economia política', detail: 'Mercadorias, valor, crédito, orçamento e distribuição da riqueza.' },
+  { title: 'História e movimentos sociais', detail: 'Processos de transformação, conflitos e experiências coletivas.' },
+  { title: 'Brasil e Amazônia', detail: 'Terra, trabalho, território, extrativismo e direitos dos povos.' }
+];
+const valores = [
+  'Amor', 'Empatia', 'Autodeterminação dos povos',
+  'Soberania do povo trabalhador', 'Busca pelo conhecimento'
+];
+---
+
+<BaseLayout title="Universidade Social" description="Uma universidade popular de agitação, educação e propaganda dedicada à emancipação intelectual do povo trabalhador.">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="shell hero-grid">
+      <div>
+        <span class="eyebrow">Educação popular · Projeto público e gratuito</span>
+        <h1 id="hero-title">Conhecer a realidade. <em>Transformar o possível.</em></h1>
+        <p class="lead">
+          A Universidade Social nasce para investigar o mundo a partir de quem o vive
+          e trabalha. Nosso objetivo máximo é a emancipação intelectual do povo trabalhador
+          diante do pensamento hegemônico que naturaliza a dominação do capital.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href={sitePath('principios')}>Conheça nossos princípios <span aria-hidden="true">↗</span></a>
+          <a class="button" href={sitePath('trilhas')}>Explorar estudos <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <aside class="hero-side" aria-label="Mensagem de fundação">
+        <span class="serial">Manifesto de fundação / 2026</span>
+        <span class="deco" aria-hidden="true">✳</span>
+        <p>O conhecimento é uma prática coletiva. O futuro também.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="missoes-title">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Nossa prática</span>
+          <h2 id="missoes-title">Três caminhos. Um compromisso social.</h2>
+        </div>
+        <p class="lead">Assumimos nossos valores e nossa posição. A investigação material, o estudo rigoroso e a comunicação pública fazem parte de um mesmo projeto.</p>
+      </div>
+      <div class="pillar-grid">
+        <article class="pillar">
+          <div class="number" aria-hidden="true">01</div>
+          <h3>Agitação</h3>
+          <p>Dar visibilidade às questões coletivas, às contradições da realidade e à experiência concreta de quem trabalha.</p>
+        </article>
+        <article class="pillar">
+          <div class="number" aria-hidden="true">02</div>
+          <h3>Educação</h3>
+          <p>Compartilhar ferramentas de estudo, pesquisa, leitura crítica e produção de conhecimento acessível.</p>
+        </article>
+        <article class="pillar">
+          <div class="number" aria-hidden="true">03</div>
+          <h3>Propaganda</h3>
+          <p>Apresentar abertamente o projeto político, os valores e o horizonte de sociedade defendidos pela Universidade.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" aria-labelledby="valores-title">
+    <div class="shell">
+      <span class="eyebrow">O que nos orienta</span>
+      <div class="section-heading" style="margin-top: .75rem">
+        <h2 id="valores-title">Valores que não escondemos atrás da palavra neutralidade.</h2>
+        <p class="lead">Toda produção de conhecimento parte de uma história e de condições materiais. Nossa linha editorial é explícita; nossas afirmações factuais permanecem abertas à verificação.</p>
+      </div>
+      <div class="value-list">
+        {valores.map((valor, index) => <div><span>0{index + 1}</span>{valor}</div>)}
+      </div>
+      <div class="button-row">
+        <a class="button light" href={sitePath('principios')}>Ler nossa Carta de Princípios <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="areas-title">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Percursos em preparação</span>
+          <h2 id="areas-title">O que vamos estudar?</h2>
+        </div>
+        <p class="lead">Os eixos abaixo são planos de formação, não cursos já lançados. Cada trilha será construída com aulas, leituras, fontes e atividades verificáveis.</p>
+      </div>
+      <div class="topic-grid">
+        {areas.map((area, index) => (
+          <article class="topic-card">
+            <span class="tag">Eixo 0{index + 1} · Planejado</span>
+            <div>
+              <h3>{area.title}</h3>
+              <p>{area.detail}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+      <div class="button-row">
+        <a href={sitePath('trilhas')} class="button">Acompanhar as trilhas <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-forest" aria-labelledby="metodo-title">
+    <div class="shell split-feature">
+      <div>
+        <span class="eyebrow">Método de investigação</span>
+        <h2 id="metodo-title" class="feature-quote">Nossas convicções têm <em>lado.</em> Nossas afirmações têm de ter <em>fundamento.</em></h2>
+        <div class="button-row">
+          <a class="button light" href={sitePath('metodo')}>Conhecer o método <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <ol class="step-list">
+        <li><div><strong>Partir da experiência</strong><span>Que problema material está sendo vivido, por quem e onde?</span></div></li>
+        <li><div><strong>Reconstruir a história</strong><span>Quais relações de trabalho, propriedade, Estado e território o produziram?</span></div></li>
+        <li><div><strong>Investigar as fontes</strong><span>Quem afirma, quais dados apresenta e o que pode ser comprovado?</span></div></li>
+        <li><div><strong>Formar a própria análise</strong><span>Como confrontar explicações, reconhecer incertezas e produzir conhecimento?</span></div></li>
+        <li><div><strong>Conectar estudo e prática</strong><span>Que novas perguntas e formas voluntárias de ação coletiva surgem desse processo?</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-paper-deep" aria-labelledby="inicio-title">
+    <div class="shell">
+      <span class="eyebrow">Primeiro ciclo de desenvolvimento</span>
+      <h2 id="inicio-title">Uma universidade que está começando.</h2>
+      <div class="notice">
+        <strong>Trilhas, provas, biblioteca e ferramentas ainda estão em preparação.</strong>
+        <p>Este é o portal inicial do projeto. Ainda não há cursos completos publicados, inscrições ou certificados. O desenvolvimento é aberto e pode ser acompanhado no GitHub.</p>
+      </div>
+      <div class="button-row">
+        <a class="button primary" href="https://github.com/pedromaintenance/universidade-social/issues" target="_blank" rel="noopener noreferrer">Ver o roadmap no GitHub <span aria-hidden="true">↗</span></a>
+        <a class="button" href={sitePath('sobre')}>Entenda o projeto <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="callout-band" aria-labelledby="convite-title">
+    <div class="shell">
+      <h2 id="convite-title">O saber cresce quando circula.</h2>
+      <a class="button light" href={sitePath('biblioteca')}>Conheça nossa biblioteca <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>

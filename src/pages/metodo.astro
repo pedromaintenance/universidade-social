@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sitePath } from '../lib/site';
+---
+
+<BaseLayout title="Nosso método" description="Materialismo histórico, pesquisa anticolonial e verificação de evidências na Universidade Social.">
+  <header class="page-hero">
+    <div class="shell">
+      <span class="eyebrow">Pesquisa e educação</span>
+      <h1>Conhecimento exige método, não uma máscara de neutralidade.</h1>
+      <p class="lead">Partimos do materialismo histórico e da crítica anticolonial para investigar como a sociedade se organiza e como suas ideias se reproduzem.</p>
+    </div>
+  </header>
+  <div class="shell page-content">
+    <article class="prose">
+      <h2>Começamos pela vida material</h2>
+      <p>Perguntamos quem trabalha, quem controla os meios de produção, quem decide, quem recebe os benefícios e quem suporta os custos. Investigamos propriedade, Estado, classes, território, colonialismo e processos históricos.</p>
+      <h2>Investigamos também quem produz os discursos</h2>
+      <p>Instituições e autores possuem histórias, vínculos e posições sociais. Isso inclui quem se apresenta como puramente técnico ou neutro. Examinar tais condições não substitui verificar se uma afirmação corresponde às evidências.</p>
+      <h2>Como uma pesquisa avança</h2>
+      <ol>
+        <li><strong>Formular a pergunta.</strong> Delimitar lugar, período, sujeitos e o problema concreto.</li>
+        <li><strong>Localizar evidências.</strong> Procurar documentos, dados, estudos e testemunhos pertinentes.</li>
+        <li><strong>Reconstruir mecanismos.</strong> Relacionar estruturas de classe, instituições e processos históricos.</li>
+        <li><strong>Separar os níveis de afirmação.</strong> Diferenciar o que está documentado, o que é interpretação, hipótese ou juízo político.</li>
+        <li><strong>Testar a explicação.</strong> Examinar objeções e evidências que poderiam alterar a conclusão.</li>
+        <li><strong>Produzir síntese e práxis.</strong> Comunicar o que foi aprendido e identificar novas questões e possibilidades de participação voluntária.</li>
+      </ol>
+      <h2>Rigor não é simetria editorial</h2>
+      <p>A Universidade assume uma linha de emancipação e não concede espaço equivalente a projetos contrários a seus princípios. Contudo, fatos verificáveis não se tornam verdadeiros apenas porque confirmam nossa posição, e hipóteses devem permanecer abertas à revisão.</p>
+      <p>Termos graves, dados numéricos e imputações históricas exigem critérios, documentação e contexto.</p>
+      <p><a href="https://github.com/pedromaintenance/universidade-social/blob/main/docs/politica-editorial.md" target="_blank" rel="noopener noreferrer">Consultar a política editorial integral (site externo) ↗</a></p>
+      <p><a class="return-link" href={sitePath('principios')}>Voltar aos princípios →</a></p>
+    </article>
+  </div>
+</BaseLayout>

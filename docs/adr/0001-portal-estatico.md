@@ -1,10 +1,10 @@
 # ADR-0001 — Começar por portal estático versionado
 
-- **Status:** proposto, a validar na primeira issue técnica.
+- **Status:** aceito para o início da implementação P0.1; sujeito a reavaliação após testes.
 - **Data:** 2026-11-08.
 - **Contexto:** projeto novo, sem código prévio, público amplo e necessidade de custo baixo, manutenção comunitária, conteúdo auditável, inclusão digital e preservação de privacidade.
 
-## Decisão proposta
+## Decisão adotada inicialmente
 
 Usar Astro com TypeScript para compilar um portal estático; manter aulas em Markdown e dados de catálogo/provas em arquivos estruturados; hospedar inicialmente em GitHub Pages.
 

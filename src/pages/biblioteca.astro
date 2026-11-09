@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publishedResources } from '../lib/catalog';
+import { sitePath } from '../lib/site';
+---
+
+<BaseLayout title="Biblioteca crítica" description="Biblioteca crítica da Universidade Social: materiais em curadoria, com referência e contexto.">
+  <header class="page-hero">
+    <div class="shell">
+      <span class="eyebrow">Fontes e referências</span>
+      <h1>Uma biblioteca para ler com os próprios olhos.</h1>
+      <p class="lead">Textos, documentos, vídeos, canais e dados serão incorporados com autoria, contexto, licença e situação de revisão identificados.</p>
+    </div>
+  </header>
+  <div class="shell page-content">
+    {publishedResources.length > 0 ? (
+      <div class="topic-grid">
+        {publishedResources.map((resource) => <article class="topic-card"><span class="tag">{resource.type}</span><div><h2>{resource.title}</h2><p><a href={resource.url} target="_blank" rel="noopener noreferrer">Abrir fonte externa ↗</a></p></div></article>)}
+      </div>
+    ) : (
+      <div class="empty-state">
+        <span class="status-chip">Curadoria em andamento</span>
+        <h2>O acervo público ainda não foi inaugurado.</h2>
+        <p>Não listamos obras ou canais sem checar procedência e disponibilidade. A curadoria inicial será formada por leituras disponíveis online, materiais audiovisuais e fontes primárias contextualizadas.</p>
+        <div class="button-row">
+          <a class="button primary" href="https://github.com/pedromaintenance/universidade-social/issues/8" target="_blank" rel="noopener noreferrer">Acompanhar a curadoria ↗</a>
+          <a class="button" href={sitePath('metodo')}>Como avaliamos fontes →</a>
+        </div>
+      </div>
+    )}
+  </div>
+</BaseLayout>

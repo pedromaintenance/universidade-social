@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publishedTracks } from '../lib/catalog';
+import { sitePath } from '../lib/site';
+---
+
+<BaseLayout title="Trilhas de estudo" description="Trilhas de estudo da Universidade Social, com publicação gradual e curadoria de fontes.">
+  <header class="page-hero">
+    <div class="shell">
+      <span class="eyebrow">Estudo progressivo</span>
+      <h1>Trilhas para investigar a realidade.</h1>
+      <p class="lead">Cada trilha reunirá aulas, conceitos, fontes e atividades. Não publicamos títulos vazios como se fossem cursos já disponíveis.</p>
+    </div>
+  </header>
+  <div class="shell page-content">
+    {publishedTracks.length > 0 ? (
+      <div class="topic-grid">
+        {publishedTracks.map((track) => <article class="topic-card"><span class="tag">Trilha publicada</span><div><h2>{track.title}</h2><p>{track.description}</p></div></article>)}
+      </div>
+    ) : (
+      <div class="empty-state">
+        <span class="status-chip">Em preparação</span>
+        <h2>A primeira trilha está em desenvolvimento.</h2>
+        <p>O percurso inicial planejado é <strong>Como investigar a realidade social</strong>: fontes, fatos, hipóteses, ideologia, relações materiais e produção de argumentos. Nenhuma aula completa foi publicada ainda.</p>
+        <p>O trabalho pode ser acompanhado publicamente no GitHub.</p>
+        <div class="button-row">
+          <a class="button primary" href="https://github.com/pedromaintenance/universidade-social/issues/7" target="_blank" rel="noopener noreferrer">Acompanhar a trilha piloto ↗</a>
+          <a class="button" href={sitePath('metodo')}>Conhecer o método →</a>
+        </div>
+      </div>
+    )}
+  </div>
+</BaseLayout>
