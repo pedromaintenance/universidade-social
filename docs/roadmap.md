@@ -63,3 +63,22 @@
 - **Fragilidade de referência externa:** revisão de URLs e alternativas.
 
 Issues são a fonte de execução; este roadmap é a fonte de sequenciamento e visão de produto.
+
+
+## Execução rastreável no GitHub
+
+| Frente | Issue |
+| --- | --- |
+| Épico do primeiro portal (P0) | [#1](https://github.com/pedromaintenance/universidade-social/issues/1) |
+| P0.1 — Infraestrutura e publicação | [#2](https://github.com/pedromaintenance/universidade-social/issues/2) |
+| P0.2 — Interface pública | [#3](https://github.com/pedromaintenance/universidade-social/issues/3) |
+| P0.3 — Catálogo e contratos de conteúdo | [#4](https://github.com/pedromaintenance/universidade-social/issues/4) |
+| P0.4 — Método, Sobre e Biblioteca | [#5](https://github.com/pedromaintenance/universidade-social/issues/5) |
+| P0.5 — Auditoria e go-live | [#6](https://github.com/pedromaintenance/universidade-social/issues/6) |
+| P1.1 — Primeira trilha didática | [#7](https://github.com/pedromaintenance/universidade-social/issues/7) |
+| P1.2 — Acervo de fontes, leituras e canais | [#8](https://github.com/pedromaintenance/universidade-social/issues/8) |
+| P1.3 — Simulados formativos | [#9](https://github.com/pedromaintenance/universidade-social/issues/9) |
+| P1.4 — Projetos de pesquisa | [#10](https://github.com/pedromaintenance/universidade-social/issues/10) |
+| Governança de licenças e revisão | [#11](https://github.com/pedromaintenance/universidade-social/issues/11) |
+
+As issues são abertas como backlog; nenhum item de execução é considerado concluído só por estar documentado.
