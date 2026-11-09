@@ -1,12 +1,14 @@
 # Universidade Social
 
-**Educação popular, investigação crítica e acesso livre ao conhecimento social.**
+**Agitação, educação e propaganda por uma sociedade fundada no amor, na empatia, na autodeterminação dos povos, na soberania do povo trabalhador e na busca pelo conhecimento.**
 
-Projeto aberto para estudar a realidade social com base em história, economia política, sociologia, antropologia, direito, dados e experiências concretas de quem trabalha e vive as contradições sociais.
+Projeto político-pedagógico público, gratuito e assumidamente comprometido com a emancipação do povo trabalhador. Articula história, economia política, sociologia, antropologia, direito, dados e experiências concretas da vida social.
 
 A Universidade Social parte de um **enfoque materialista histórico e anticolonial**, sem tomar categorias liberais como explicações neutras ou suficientes. Isso não dispensa rigor: uma posição teórica explícita exige mais transparência sobre fontes, controvérsias, incertezas e métodos — não menos.
 
-> A proposta não é trocar uma propaganda por outra, mas formar pessoas capazes de identificar estruturas de poder, verificar afirmações, construir suas próprias análises e agir sobre a realidade.
+> A Universidade Social não reivindica neutralidade entre emancipação e exploração. Quer formar, comunicar e mobilizar, com uma linha editorial própria. Pesquisa rigorosa é ferramenta dessa missão, não condição de equivalência entre projetos políticos.
+
+Nossa missão, valores e limites editoriais estão na **[Carta de princípios](docs/carta-de-principios.md)**. A plataforma não oferece tribuna equivalente a perspectivas incompatíveis com esses valores; quando necessário, elas serão estudadas criticamente como objeto de análise, não promovidas como orientação institucional.
 
 ## Estado do projeto
 
@@ -16,6 +18,7 @@ A Universidade Social parte de um **enfoque materialista histórico e anticoloni
 - [Roadmap e critérios de entrega](docs/roadmap.md)
 - [Arquitetura técnica](docs/arquitetura.md)
 - [Modelo de conteúdo](docs/modelo-de-conteudo.md)
+- [Carta de princípios e missão](docs/carta-de-principios.md)
 - [Projeto político-pedagógico](docs/projeto-pedagogico.md)
 - [Política editorial e de evidências](docs/politica-editorial.md)
 - [Decisão técnica inicial (ADR-0001)](docs/adr/0001-portal-estatico.md)
@@ -31,15 +34,16 @@ A Universidade Social parte de um **enfoque materialista histórico e anticoloni
 
 ## Princípios
 
-1. Gratuito, público, mobile-first, baixo consumo de dados e acessível.
-2. Estudo crítico em vez de simples memorização de posições.
-3. Fontes rastreáveis, direitos autorais respeitados e incerteza explicitada.
-4. Materiais de acesso livre quando a licença permitir, links quando não permitir.
-5. Nada de cadastro obrigatório, paywall, rastreamento comercial ou promessa de diploma reconhecido.
-6. Conteúdo construído em português brasileiro, com perspectiva do Sul Global e da Amazônia sem reduzir o conhecimento a uma única região.
+1. **Amor e empatia:** reconhecer a dignidade das pessoas e cultivar solidariedade sem desumanizar divergentes.
+2. **Autodeterminação dos povos:** opor-se à dominação colonial e defender a capacidade dos povos de decidir seus caminhos.
+3. **Soberania do povo trabalhador:** colocar trabalho, direitos, organização e poder popular no centro do projeto político-pedagógico.
+4. **Busca pelo conhecimento:** estudar, verificar evidências, admitir erros e aprofundar a compreensão da realidade.
+5. **Agitação, educação e propaganda:** atuar publicamente com ideias assumidas, articulando experiência vivida, estudo e horizonte de transformação.
+6. **Acesso popular:** gratuito, mobile-first, com baixo consumo de dados, sem cadastro obrigatório ou paywall.
+7. **Responsabilidade editorial:** fontes rastreáveis, correções públicas e respeito aos direitos autorais; a Universidade decide o que publica conforme sua missão, sem dever de simetria entre posições antagônicas.
 
 ## Contribuição
 
-Abra uma issue descrevendo o problema, a hipótese, o público-alvo e as fontes disponíveis. Para conteúdo: siga a [política editorial](docs/politica-editorial.md). Para tecnologia: siga [arquitetura](docs/arquitetura.md) e [ADR-0001](docs/adr/0001-portal-estatico.md).
+Abra uma issue descrevendo o problema, a proposta, o vínculo com a missão e as fontes disponíveis. Colaborar não assegura publicação: a curadoria é orientada pela Carta de princípios, com critérios editoriais públicos. Para conteúdo: siga a [política editorial](docs/politica-editorial.md). Para tecnologia: siga [arquitetura](docs/arquitetura.md) e [ADR-0001](docs/adr/0001-portal-estatico.md).
 
 **Licença de software**: MIT (arquivo LICENSE). Licenças de textos autorais, imagens, vídeos e materiais de terceiros deverão ser tratadas separadamente; não presumir que MIT autoriza republicar obras alheias.

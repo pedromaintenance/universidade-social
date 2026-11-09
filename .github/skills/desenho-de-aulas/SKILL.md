@@ -16,13 +16,17 @@ Uma pergunta concreta, dossiê revisado, público e pré-requisitos. Não escrev
 4. **Conceitos em linguagem clara:** definição, exemplo, limites e termos controvertidos.
 5. **Evidências:** documento ou dado que pode ser examinado, explicado e reproduzido.
 6. **Interpretações:** tese central e objeção forte tratada sem caricatura.
-7. **Atividade:** aplicar conceito, testar hipótese, comparar fontes ou desenhar pesquisa.
+7. **Atividade:** aplicar conceito, testar hipótese, comparar fontes, produzir reflexão solidária ou desenhar pesquisa.
 8. **Devolutiva:** critérios explícitos e fontes de aprofundamento.
-9. **Práxis:** pergunta de continuidade ou tarefa concreta, voluntária e lícita.
+9. **Práxis:** pergunta de continuidade, comunicação pública responsável ou tarefa concreta, voluntária e lícita, coerente com a Carta de princípios.
 
 ## Forma
 
 Português brasileiro claro; blocos curtos, glossário, texto utilizável sem áudio ou vídeo, sem tabelas largas no celular. Estimar tempo realista; citar material e autoria. Toda aula deve sinalizar seu estado de revisão.
+
+## Posicionamento
+
+A aula pode afirmar os compromissos políticos da Universidade; não é obrigada a atribuir igual legitimidade editorial a valores antagônicos. Distinguir claramente fatos, interpretação materialista e posição político-ética, mantendo correção empírica e atividade intelectual real.
 
 ## Antipadrões
 

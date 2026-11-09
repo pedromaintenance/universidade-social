@@ -4,23 +4,24 @@
 
 ## Problema
 
-Quem deseja estudar criticamente a realidade social encontra fontes dispersas, jargão, materiais sem progressão didática e recomendações baseadas em visibilidade algorítmica. É preciso oferecer um **ponto de entrada público e confiável**.
+A Universidade Social precisa tornar **visível e acessível seu projeto de agitação, educação e propaganda**. Uma homepage meramente acadêmica ou supostamente neutra apagaria seu sentido de formação e mobilização popular.
 
 ## Proposta de valor
 
-Acessar um caminho de estudo sem conta, identificar temas, conhecer o método de pesquisa, encontrar futuras aulas e recursos curados e entender como participar. Não prometer cursos inexistentes.
+Apresentar com clareza **por que existimos, quais valores defendemos, como estudar e como participar**. Dar acesso a trilhas e recursos com a orientação editorial explícita; não prometer cursos inexistentes.
 
 ## Hierarquia da página inicial
 
 1. **Cabeçalho:** Universidade Social, Trilhas, Biblioteca, Método, Sobre.
-2. **Hero:** proposta, para quem se destina e dois CTAs: «Começar a estudar» e «Explorar temas».
-3. **Como funciona:** problema real → conceitos → fontes → análise → exercício/projeto → práxis.
-4. **Explorar áreas:** trabalho e classes; Estado e Direito; colonialismo e dependência; economia política; história; Brasil e Amazônia.
-5. **Estudo inicial:** única trilha piloto quando estiver realmente publicada; antes disso, etiqueta «Em preparação».
-6. **Biblioteca e ferramentas:** módulos previstos com status visível, sem cards de conteúdo falso.
-7. **Método e transparência:** orientação teórica explícita, critérios de evidência, correções.
-8. **Contribuir:** links para repositório, issues e regras editoriais.
-9. **Rodapé:** licenças, privacidade, acessibilidade, status do projeto.
+2. **Hero:** declarar agitação, educação e propaganda; nomear amor, empatia, autodeterminação dos povos, soberania do povo trabalhador e conhecimento. CTAs possíveis: «Conheça nossos princípios» e «Começar a estudar».
+3. **Nossa razão de existir:** agitar questões concretas, estudar as estruturas sociais e divulgar abertamente o projeto de emancipação.
+4. **Como funciona:** problema real → conceitos → fontes → análise → exercício/projeto → práxis.
+5. **Explorar áreas:** trabalho e classes; Estado e Direito; colonialismo e dependência; economia política; história; Brasil e Amazônia.
+6. **Estudo inicial:** única trilha piloto quando estiver realmente publicada; antes disso, etiqueta «Em preparação».
+7. **Biblioteca e ferramentas:** módulos previstos com status visível, sem cards de conteúdo falso.
+8. **Método e transparência:** orientação teórica explícita, critérios de evidência, correções.
+9. **Contribuir:** links para repositório, issues e regras editoriais.
+10. **Rodapé:** licenças, privacidade, acessibilidade, status do projeto.
 
 ## Rotas propostas
 
@@ -29,7 +30,8 @@ Acessar um caminho de estudo sem conta, identificar temas, conhecer o método de
 - /trilhas/[slug]/ — detalhe e progressão de estudo.
 - /aulas/[slug]/ — leitura com fontes e exercícios.
 - /biblioteca/ — catálogo curado de materiais externos.
-- /metodo/ — princípios e protocolo editorial.
+- /principios/ — Carta de princípios, missão e compromisso político.
+- /metodo/ — método de estudo e protocolo de evidências.
 - /sobre/ — proposta, licenças e estado do projeto.
 - /avaliacoes/ e /laboratorio/ — **etapas posteriores**, não navegação vazia em P0.
 
@@ -45,14 +47,15 @@ Acessar um caminho de estudo sem conta, identificar temas, conhecer o método de
 ## História do estudante
 
 1. Abro a página num celular.
-2. Em menos de um minuto entendo o propósito, o enfoque e onde começar.
+2. Em menos de um minuto sei que esta é uma universidade de agitação, educação e propaganda, conheço seus valores e descubro onde começar.
 3. Localizo a trilha piloto ou um recurso publicado sem criar conta.
 4. Identifico a origem dos textos, sua situação de revisão e sua disponibilidade.
 5. Consigo voltar, continuar por navegação simples e acessar as fontes originais.
 
 ## Critérios de aceite P0
 
-- [ ] Homepage com conteúdo verdadeiro, propósito e CTAs funcionais.
+- [ ] Homepage nomeia explicitamente as três funções e os cinco valores; propósito e CTAs funcionais.
+- [ ] Carta de princípios acessível no menu e no rodapé; não apresentar o projeto como fórum politicamente neutro.
 - [ ] Navegação, rotas e páginas institucionais responsivas.
 - [ ] Base pronta para catálogo com validação de status publicado.
 - [ ] Boa experiência a 360 px, teclado, leitor de tela, internet lenta.
