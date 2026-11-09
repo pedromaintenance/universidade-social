@@ -1,6 +1,6 @@
 # Roadmap de desenvolvimento — Universidade Social
 
-**Versão:** 0.3 | **Atualização:** 2026-11-09 | **Estado geral:** implementação de P0 iniciada. Sem prazos artificiais: avanço por critério de pronto.
+**Versão:** 0.4 | **Atualização:** 2026-11-09 | **Estado geral:** primeira versão do portal publicada; P0 ainda não encerrado. Sem prazos artificiais: avanço por critério de pronto.
 
 ## P0 — PRIMEIRO ARTEFATO: portal público principal
 
@@ -9,11 +9,11 @@
 | ID | Pacote | Dependências | Aceite resumido |
 | --- | --- | --- | --- |
 | P0.0 | Fundar agentes, skills, método, arquitetura e issues | nenhuma | arquivos versionados e revisáveis |
-| P0.1 | Configurar Astro, TS, build e Pages | P0.0 | código inicial e workflow; build, lockfile e publicação requerem verificação |
-| P0.2 | Identidade visual e homepage mobile-first | P0.1 | primeira versão implementada; auditada em dispositivo real no P0.5 |
+| P0.1 | Configurar Astro, TS, build e Pages | P0.0 | build e deploy concluídos; lockfile estrito pendente na issue #17 |
+| P0.2 | Identidade visual e homepage mobile-first | P0.1 | versão pública inicial pronta; auditoria mobile/teclado/leitor de tela pendente |
 | P0.3 | Modelo de conteúdo, catálogo e rotas | P0.1 | apenas material publicado aparece |
 | P0.4 | Páginas Princípios, Método, Sobre e Biblioteca inicial | P0.2, P0.3 | linha editorial e fontes transparentes |
-| P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | checklist de P0 concluído |
+| P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | site inicial no ar; avaliação final de acessibilidade, desempenho e links pendente |
 
 **Marco de lançamento:** portal público utilizável **mesmo antes** de existir acervo amplo. Não exibir conteúdo demonstrativo como se fosse aula disponível.
 
@@ -82,6 +82,11 @@ Issues são a fonte de execução; este roadmap é a fonte de sequenciamento e v
 | P1.3 — Simulados formativos | [#9](https://github.com/pedromaintenance/universidade-social/issues/9) |
 | P1.4 — Projetos de pesquisa | [#10](https://github.com/pedromaintenance/universidade-social/issues/10) |
 | Governança de licenças e revisão | [#11](https://github.com/pedromaintenance/universidade-social/issues/11) |
+| P0.1b — Lockfile e CI determinístico | [#17](https://github.com/pedromaintenance/universidade-social/issues/17) |
 | P1.6 — Agitação, educação e propaganda | [#13](https://github.com/pedromaintenance/universidade-social/issues/13) |
 
 As issues são abertas como backlog; nenhum item de execução é considerado concluído só por estar documentado.
+
+## Marco técnico P0 (09/11/2026)
+
+O GitHub Actions validou build e rotas da PR #16, assim como build e implantação na main. Endereço informado pelo ambiente de implantação: [Universidade Social](https://pedromaintenance.github.io/universidade-social/). Ainda não há conteúdos didáticos publicados. A auditoria de acessibilidade, o catálogo validado por schema e o lockfile de dependências continuam em aberto nas issues #6, #4 e #17, respectivamente.

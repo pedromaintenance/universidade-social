@@ -8,7 +8,7 @@ Um **portal público principal**, navegável, legível, responsivo, indexável e
 
 **Astro + TypeScript + Markdown/JSON versionados + CSS com mínimo de JavaScript + hospedagem estática via GitHub Pages.** Detalhes e alternativas em [ADR-0001](adr/0001-portal-estatico.md).
 
-Astro e TypeScript são a base implementada inicialmente em P0.1. Sem validação do build em execução real, não declarar implantação concluída. Caso uma limitação concreta apareça, abrir outra ADR antes de migrar.
+Astro e TypeScript são a base implementada. O build e os testes de geração das rotas passaram no GitHub Actions da PR #16 e após o merge na main; o job de publicação do Pages foi concluído com sucesso em 09/11/2026. Acessibilidade em equipamento real, conteúdo completo e lockfile estrito ainda exigem trabalho. Caso uma limitação concreta apareça, abrir outra ADR antes de migrar.
 
 ## Componentes futuros
 
