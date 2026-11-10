@@ -81,3 +81,53 @@ test('valida avaliações publicadas e seus vínculos', () => {
   data.avaliacoes[0].data.referenceIds = ['inexistente'];
   assert.match(validateContentCollections(data).join(' '), /referência ausente/);
 });
+
+
+test('rejeita questão de múltipla escolha sem gabarito único', () => {
+  const data = fixture();
+  data.avaliacoes.push(entry('avaliacao-metodo', {
+    status: 'rascunho',
+    type: 'multipla-escolha',
+    lessonId: 'comecar-pelas-fontes',
+    referenceIds: ['fonte-documentada'],
+    options: [
+      { id: 'a', correct: false, feedback: 'errado' },
+      { id: 'b', correct: false, feedback: 'errado' },
+      { id: 'c', correct: false, feedback: 'errado' }
+    ]
+  }));
+  data.aulas[0].data.assessmentIds = ['avaliacao-metodo'];
+  assert.match(validateContentCollections(data).join(' '), /alternativa correta/);
+});
+
+test('rejeita avaliação que não consta na lista da aula de origem', () => {
+  const data = fixture();
+  data.avaliacoes.push(entry('questao-invisivel', {
+    status: 'rascunho', lessonId: 'comecar-pelas-fontes', referenceIds: []
+  }));
+  assert.match(validateContentCollections(data).join(' '), /precisa constar em assessmentIds/);
+});
+
+test('rejeita ligação entre avaliação e aula diferente da declarada', () => {
+  const data = fixture();
+  data.aulas.push(entry('outra-aula', {
+    status: 'rascunho', trackId: 'investigar-realidade', order: 2,
+    resourceIds: [], assessmentIds: []
+  }));
+  data.avaliacoes.push(entry('teste-cruzado', {
+    status: 'rascunho', lessonId: 'outra-aula', referenceIds: []
+  }));
+  data.aulas[0].data.assessmentIds = ['teste-cruzado'];
+  assert.match(validateContentCollections(data).join(' '), /pertence à aula outra-aula/);
+});
+
+test('rejeita opções duplicadas e gabarito para resposta aberta', () => {
+  const data = fixture();
+  data.avaliacoes.push(entry('aberta-com-gabarito', {
+    status: 'rascunho', type: 'resposta-aberta',
+    lessonId: 'comecar-pelas-fontes', referenceIds: [],
+    options: [{ id: 'a', correct: true, feedback: 'não cabe aqui' }]
+  }));
+  data.aulas[0].data.assessmentIds = ['aberta-com-gabarito'];
+  assert.match(validateContentCollections(data).join(' '), /não admite gabarito automático/);
+});

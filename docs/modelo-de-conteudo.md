@@ -1,6 +1,6 @@
 # Modelo de conteúdo — v0.2 (P0.3)
 
-**Estado:** schema técnico implementado, validação pendente de build da PR. Não há trilhas, aulas, fontes nem avaliações publicadas no acervo. Os exemplos deste documento **não são conteúdo didático** e não entram no site.
+**Estado:** schemas e testes técnicos implementados; uma trilha com cinco aulas, fontes e dez avaliações está em `revisao`. Nenhuma aula ou avaliação está publicada. Os exemplos do documento são ilustrativos.
 
 ## Arquitetura em quatro coleções Astro
 
@@ -11,7 +11,7 @@ Arquivos versionados em `src/content/`, carregados por `src/content.config.ts` u
 | `trilhas` | Markdown | `/trilhas/{id}/` | pré-requisitos, aulas |
 | `aulas` | Markdown | `/aulas/{id}/` | trilha, fontes, avaliações |
 | `recursos` | JSON individual | `/biblioteca/` | referenciado por aulas/avaliações |
-| `avaliacoes` | JSON individual | rota futura | aula e fontes |
+| `avaliacoes` | JSON individual | incorporada à página de aula publicada | aula, referências e devolutiva |
 
 O site é hospedado sob `/universidade-social/` no GitHub Pages. Todas as rotas são compiladas estaticamente.
 
@@ -22,7 +22,7 @@ Todas as trilhas/aulas: `title`, `description`, `status`, `author`, `updatedAt`,
 - **Trilha:** `level`, `objectives`, `prerequisiteTrackIds` (opcional).
 - **Aula:** `trackId`, `order`, `durationMinutes`, `level`, `learningGoals`, `resourceIds`, `assessmentIds`.
 - **Recurso:** `title`, `description`, `status`, `url` (HTTPS), `kind`, `authors`, `publisher`, `language`, `sourceClass`, `perspective`, `relevance`, `rights`, `updatedAt`, `topics`. Para publicar exige `checkedAt`.
-- **Avaliação:** `title`, `description`, `status`, `lessonId`, `type`, `prompt`, `author`, `updatedAt`, `rubric`, `feedback`, `referenceIds`. Para publicar exige `reviewedAt`.
+- **Avaliação:** `title`, `description`, `status`, `lessonId`, `type`, `prompt`, `author`, `updatedAt`, `rubric`, `feedback`, `referenceIds`. Para publicar exige `reviewedAt`. Questões do tipo `multipla-escolha` exigem `options` com 3–5 itens (`id`, `text`, `correct`, `feedback`), exatamente uma opção marcada `correct`; `resposta-aberta` e `projeto` não recebem gabarito automático.
 
 Estados aceitos: `rascunho`, `revisao`, `publicado`, `arquivado`.
 
@@ -70,6 +70,10 @@ Esse frontmatter precisaria estar num arquivo `src/content/trilhas/como-investig
 
 O endereço acima é demonstrativo e **não pode ser publicado**. A publicação exige substituir todos os placeholders, confirmar autoria e URL, indicar `checkedAt` e passar pela revisão humana.
 
+## Motor formativo e rubricas
+
+O componente `FormativeAssessment.astro` renderiza questões de múltipla escolha com justificativa por opção e botão para refazer; respostas abertas oferecem campo temporário e critérios de autoavaliação. Não armazena nem envia respostas. Confira [o projeto da oficina formativa](atividades-formativas.md).
+
 ## Regras de publicação
 
 1. O schema Astro rejeita tipos incorretos, valores obrigatórios ausentes, URLs não HTTPS, metadados e datas fora do formato.
@@ -86,6 +90,6 @@ O endereço acima é demonstrativo e **não pode ser publicado**. A publicação
 
 ## Limites atuais e próximos incrementos
 
-Não existem dados de cursos publicados, mecanismo de provas interativas, submissões, emissão de certificado nem sistema de cadastro. A rota de avaliações é planejada para P1.3. Submissões de projetos e progresso local, se aprovados, exigirão novos contratos e testes.
+O motor de **exercícios formativos locais está implementado**, mas os exercícios ainda estão em revisão e não são acessíveis publicamente. Não há avaliações oficiais, provas remotas, submissões, emissão de certificado nem sistema de cadastro. Submissões de projetos e progresso local, se aprovados, exigirão novos contratos e testes.
 
 **Referências editoriais:** [Carta de Princípios](carta-de-principios.md), [Política Editorial](politica-editorial.md) e [Manual de Publicação](publicacao-conteudo.md).

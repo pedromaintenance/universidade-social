@@ -22,6 +22,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 - [Modelo de conteúdo](docs/modelo-de-conteudo.md)
 - [Manual de publicação de conteúdo](docs/publicacao-conteudo.md)
 - [Dossiê de revisão da primeira trilha](docs/revisao-trilha-piloto.md)
+- [Oficina e avaliações formativas](docs/atividades-formativas.md)
 - [Carta de princípios e missão](docs/carta-de-principios.md)
 - [Projeto político-pedagógico](docs/projeto-pedagogico.md)
 - [Política editorial e de evidências](docs/politica-editorial.md)
@@ -58,7 +59,7 @@ npm run preview
 
 A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre, além das rotas dinâmicas para aulas e trilhas aprovadas. O catálogo usa **coleções com schemas e validação cruzada**; a trilha piloto está redigida, porém nenhum material didático foi liberado como publicado.
 
-Para validar referências, IDs, ordem das aulas e regras de publicação, execute `npm run test:content`. Para adicionar materiais sem expor rascunhos, consulte o [Manual de publicação de conteúdo](docs/publicacao-conteudo.md).
+Para validar referências, IDs, ordem das aulas, avaliações e regras de publicação, execute `npm run test:content`. Para adicionar materiais sem expor rascunhos, consulte o [Manual de publicação de conteúdo](docs/publicacao-conteudo.md).
 
 **Dependências:** as versões diretas estão fixadas no package.json. O lockfile precisa ser gerado e versionado quando houver instalação npm disponível para garantir um build integralmente reprodutível. O workflow usa npm install até então.
 
@@ -75,7 +76,7 @@ Documentação: [Deploy Astro no GitHub Pages](https://docs.astro.build/en/guide
 
 ## Limites do ciclo P0.1 e motor de conteúdo
 
-Não existem backend, login, analytics, envio de respostas, simulado interativo ou certificado. Testes em dispositivo real, auditoria de acessibilidade e conteúdo publicado serão etapas posteriores do roadmap.
+Não existem backend, login, analytics, envio de respostas, prova oficial ou certificado. Há um componente de **exercícios formativos locais**, ainda em revisão editorial e não disponível como curso público. Testes em dispositivo real, auditoria de acessibilidade e conteúdo publicado serão etapas posteriores do roadmap.
 
 ## Princípios
 

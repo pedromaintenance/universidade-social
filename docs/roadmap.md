@@ -1,6 +1,6 @@
 # Roadmap de desenvolvimento — Universidade Social
 
-**Versão:** 0.6 | **Atualização:** 2026-11-10 | **Estado geral:** portal publicado, motor P0.3 validado e primeira trilha P1.1 em revisão editorial; P0/P1 ainda não concluídos. Sem prazos artificiais: avanço por critério de pronto.
+**Versão:** 0.7 | **Atualização:** 2026-11-10 | **Estado geral:** portal publicado, conteúdo piloto P1.1 e exercícios P1.3 em revisão editorial; P0/P1 ainda não concluídos. Sem prazos artificiais: avanço por critério de pronto.
 
 ## P0 — PRIMEIRO ARTEFATO: portal público principal
 
@@ -21,7 +21,7 @@
 
 - **P1.1** «Como investigar a realidade social»: cinco aulas originais e projeto final redigidos com status `revisao`; publicação depende de aprovação editorial humana, checagem de fontes e testes da PR.
 - **P1.2** Curadoria inicial de recursos: oito links selecionados e descritos com proveniência e finalidade, em `revisao`; canais/vídeos e avaliação final de licenças/acesso seguem pendentes.
-- **P1.3** Simulados formativos locais: feedback justificado por fonte, sem captura de dados.
+- **P1.3** Exercícios formativos locais: cinco questões fechadas e cinco abertas/projeto ligados à trilha, com justificativa por alternativa, rubricas e sem coleta de respostas; implementação técnica sujeita a CI e revisão editorial.
 - **P1.4** Projetos de pesquisa orientados: problema, método, fontes, rubrica e resultados esperados.
 - **P1.5** Revisão pedagógica com participantes: observar dificuldades reais e corrigir.
 - **P1.6** Núcleo de comunicação pública: editoriais, manifestos e materiais populares com autoria e caráter institucional explícitos; conteúdos factuais passam por curadoria de fontes.
