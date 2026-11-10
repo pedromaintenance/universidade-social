@@ -16,7 +16,7 @@ learningGoals:
   - "Construir pergunta com território, período, população e fenômeno observável"
   - "Reconhecer quais fontes podem informar e quais não podem responder à pergunta"
 resourceIds: [dieese-cesta-basica, ibge-pnad-continua, ipeadata, durkheim-regras-observacao, marx-capital-iii-aparencia]
-assessmentIds: []
+assessmentIds: [a1-familiaridade, a1-duas-ferramentas]
 ---
 
 ## 1. O ponto de partida não é uma teoria abstrata

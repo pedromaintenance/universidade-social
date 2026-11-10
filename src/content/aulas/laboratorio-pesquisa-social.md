@@ -17,7 +17,7 @@ learningGoals:
   - "Construir uma interpretação material com hipóteses alternativas e limites declarados"
   - "Propor uma continuidade voluntária de pesquisa ou produção coletiva de conhecimento"
 resourceIds: [ibge-sidra, ibge-pnad-continua, dieese-cesta-basica, ipeadata, ipea-retrato-desigualdades]
-assessmentIds: []
+assessmentIds: [a5-dossie-rigor, a5-projeto-final]
 ---
 
 ## Seu projeto começa por uma pergunta

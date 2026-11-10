@@ -1,0 +1,116 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  assessment: CollectionEntry<'avaliacoes'>;
+}
+
+const { assessment } = Astro.props;
+const item = assessment.data;
+const multi = item.type === 'multipla-escolha';
+---
+
+<section class="formative-assessment" aria-labelledby={'avaliacao-' + assessment.id}>
+  <div class="assessment-kicker">Atividade formativa · {multi ? 'Escolha fundamentada' : item.type === 'projeto' ? 'Projeto orientado' : 'Resposta aberta'}</div>
+  <h3 id={'avaliacao-' + assessment.id}>{item.title}</h3>
+  <p>{item.description}</p>
+  <p class="assessment-prompt">{item.prompt}</p>
+
+  {multi ? (
+    <div data-formative-form>
+      <fieldset class="assessment-options">
+        <legend>Escolha a alternativa que melhor responde à pergunta</legend>
+        {item.options?.map((option) => (
+          <label class="assessment-option">
+            <input
+              type="radio"
+              name={'resposta-' + assessment.id}
+              value={option.id}
+              data-correct={option.correct ? 'true' : 'false'}
+              required
+            />
+            <span>{option.text}</span>
+          </label>
+        ))}
+      </fieldset>
+      <div class="button-row">
+        <button type="button" data-formative-check class="button primary">Conferir escolha</button>
+        <button type="button" data-formative-retry class="button">Refazer</button>
+      </div>
+      <div data-formative-result hidden role="status" aria-live="polite" class="assessment-result">
+        <strong data-formative-verdict></strong>
+        {item.options?.map((option) => (
+          <p data-explanation={option.id} hidden>{option.feedback}</p>
+        ))}
+      </div>
+      <details class="assessment-details">
+        <summary>Consultar a devolutiva completa de todas as alternativas</summary>
+        <ul>
+          {item.options?.map((option) => (
+            <li><strong>{option.text}</strong> — {option.feedback}</li>
+          ))}
+        </ul>
+        <p>{item.feedback}</p>
+      </details>
+    </div>
+  ) : (
+    <div class="assessment-written">
+      <label for={'resposta-aberta-' + assessment.id}>Escreva sua análise (não será salva nem enviada)</label>
+      <textarea
+        id={'resposta-aberta-' + assessment.id}
+        rows="6"
+        placeholder="Anote aqui seu argumento, suas fontes e o que ainda precisa investigar..."
+      ></textarea>
+      <p class="source-meta">Esta área é temporária: copie sua resposta antes de sair da página.</p>
+    </div>
+  )}
+
+  <details class="assessment-details">
+    <summary>Roteiro de autoavaliação e critérios</summary>
+    <ul>{item.rubric.map((criterion) => <li>{criterion}</li>)}</ul>
+    <p>{item.feedback}</p>
+  </details>
+  <p class="source-meta">Revisão editorial: {item.reviewedAt ?? 'pendente'} · Atividade sem certificação</p>
+</section>
+
+<script>
+  // Sem elemento de formulário: não há envio de respostas, mesmo sem JavaScript.
+  document.querySelectorAll<HTMLElement>('[data-formative-form]').forEach((region) => {
+    const result = region.querySelector<HTMLElement>('[data-formative-result]');
+    const verdict = region.querySelector<HTMLElement>('[data-formative-verdict]');
+    const check = region.querySelector<HTMLButtonElement>('[data-formative-check]');
+    const retry = region.querySelector<HTMLButtonElement>('[data-formative-retry]');
+    if (!result || !verdict || !check || !retry) return;
+
+    check.addEventListener('click', () => {
+      const chosen = region.querySelector<HTMLInputElement>('input[type="radio"]:checked');
+      if (!chosen) {
+        verdict.textContent = 'Escolha uma alternativa para conferir sua análise.';
+        result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
+          block.hidden = true;
+        });
+        result.hidden = false;
+        return;
+      }
+      const acceptable = chosen.dataset.correct === 'true';
+      verdict.textContent = acceptable
+        ? 'Alternativa adequada ao conceito. Leia a justificativa.'
+        : 'Esta alternativa precisa ser revista. Compare os conceitos com a explicação.';
+      result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
+        block.hidden = block.dataset.explanation !== chosen.value;
+      });
+      result.hidden = false;
+    });
+
+    retry.addEventListener('click', () => {
+      region.querySelectorAll<HTMLInputElement>('input[type="radio"]').forEach((input) => {
+        input.checked = false;
+      });
+      result.hidden = true;
+      verdict.textContent = '';
+      result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
+        block.hidden = true;
+      });
+    });
+  });
+</script>

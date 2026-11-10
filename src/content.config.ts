@@ -79,6 +79,13 @@ const recursos = defineCollection({
   })
 });
 
+const answerOption = z.object({
+  id: identifier,
+  text: z.string().min(12),
+  feedback: z.string().min(20),
+  correct: z.boolean()
+});
+
 const avaliacoes = defineCollection({
   loader: glob({ base: './src/content/avaliacoes', pattern: '**/*.json' }),
   schema: z.object({
@@ -93,10 +100,25 @@ const avaliacoes = defineCollection({
     reviewedAt: date.optional(),
     referenceIds: z.array(identifier).default([]),
     rubric: z.array(z.string().min(10)).min(1),
-    feedback: z.string().min(10)
+    feedback: z.string().min(15),
+    options: z.array(answerOption).optional()
   }).superRefine((data, ctx) => {
     if (data.status === 'publicado' && !data.reviewedAt) {
       ctx.addIssue({ code: 'custom', path: ['reviewedAt'], message: 'Avaliação publicada exige data de revisão' });
+    }
+    if (data.type === 'multipla-escolha') {
+      if (!data.options || data.options.length < 3 || data.options.length > 5) {
+        ctx.addIssue({ code: 'custom', path: ['options'], message: 'Múltipla escolha exige de 3 a 5 alternativas justificadas' });
+      } else {
+        if (new Set(data.options.map((option) => option.id)).size !== data.options.length) {
+          ctx.addIssue({ code: 'custom', path: ['options'], message: 'IDs de alternativas precisam ser únicos' });
+        }
+        if (data.options.filter((option) => option.correct).length !== 1) {
+          ctx.addIssue({ code: 'custom', path: ['options'], message: 'Uma única alternativa deve ser conceitualmente correta' });
+        }
+      }
+    } else if ((data.options ?? []).length > 0) {
+      ctx.addIssue({ code: 'custom', path: ['options'], message: 'Questões abertas e projetos usam rubrica, sem gabarito automático' });
     }
   })
 });

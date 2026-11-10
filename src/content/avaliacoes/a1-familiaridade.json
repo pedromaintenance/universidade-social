@@ -1,0 +1,45 @@
+{
+  "title": "O que significa conhecer um fato social?",
+  "description": "Distinguir uma prática cotidiana familiar de uma investigação sociológica sobre suas causas.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "da-experiencia-a-pergunta",
+  "type": "multipla-escolha",
+  "prompt": "Uma pessoa diz que conhece o funcionamento das jornadas porque trabalha há muitos anos. Qual atitude transforma essa experiência em investigação?",
+  "referenceIds": [
+    "durkheim-regras-observacao",
+    "ibge-pnad-continua"
+  ],
+  "rubric": [
+    "Reconhecer a diferença entre convivência cotidiana e conhecimento investigativo.",
+    "Explicar por que tratar fatos sociais como coisas não significa tratá-los como objetos físicos."
+  ],
+  "feedback": "A pergunta trata da atitude metodológica proposta por Durkheim: afastar pré-noções e observar o objeto social, sem desprezar a experiência.",
+  "options": [
+    {
+      "id": "a",
+      "text": "Definir o fenômeno, observar registros e comparar contextos antes de explicar suas causas.",
+      "correct": true,
+      "feedback": "Esta resposta reconhece o ponto de partida da experiência, mas exige definição, observação e comparação para sustentar explicações."
+    },
+    {
+      "id": "b",
+      "text": "Aceitar a experiência como prova suficiente de todas as causas da jornada.",
+      "correct": false,
+      "feedback": "A experiência é valiosa, porém não demonstra sozinha as instituições, trajetórias e mecanismos que produzem uma jornada."
+    },
+    {
+      "id": "c",
+      "text": "Tratar o trabalho como uma coisa material no sentido de objeto físico, sem contexto social.",
+      "correct": false,
+      "feedback": "Em Durkheim, tratar fatos sociais como coisas é uma orientação metodológica para observá-los, não reduzi-los a objetos físicos."
+    },
+    {
+      "id": "d",
+      "text": "Concluir que toda definição institucional é falsa apenas por vir de uma organização.",
+      "correct": false,
+      "feedback": "Conhecer a posição social da fonte suscita perguntas relevantes, mas a validade de suas alegações precisa ser examinada por evidências."
+    }
+  ]
+}

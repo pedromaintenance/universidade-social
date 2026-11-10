@@ -56,3 +56,10 @@ Os nomes acima são exemplos textuais e **não são materiais reais disponíveis
 ## Traduções autorais de obras em domínio público
 
 Sempre identificar obra, capítulo, idioma original, edição-base, data e eventual mediação editorial póstuma. Traduzir diretamente do original, distinguir tradução literal, opção terminológica, paráfrase e interpretação pedagógica. Não copiar tradução contemporânea sem licença. A condição de domínio público do texto original não substitui análise da licença e autoria do **novo texto traduzido**. Só registrar revisão humana concluída quando ela ocorrer efetivamente. Exemplo de procedimento: [Durkheim e Marx](traducoes-autorais/durkheim-marx-investigacao.md).
+
+
+## Exercícios formativos
+
+Para cada atividade, crie JSON em `src/content/avaliacoes/<id>.json` com `lessonId`, tipo, pergunta, referências, rubrica e devolutiva. Questões fechadas devem ter três a cinco alternativas com justificativa para **cada escolha**, exatamente uma alternativa conceitualmente correta e nenhum teste de fidelidade política. Questões abertas e projetos usam análise por rubrica, sem supor que uma interpretação social possa ser corrigida automaticamente.
+
+Adicione o ID ao `assessmentIds` da aula correspondente. O build rejeita referências inconsistentes, alternativas duplicadas e múltiplas respostas corretas. O estudante pode verificar feedback no navegador sem enviar dados; mais informações em [Atividades formativas](atividades-formativas.md).

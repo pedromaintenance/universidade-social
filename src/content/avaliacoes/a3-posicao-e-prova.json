@@ -1,0 +1,45 @@
+{
+  "title": "Qual é o uso correto da posição social da fonte?",
+  "description": "Examinar financiamento e localização histórica das ideias sem confundir procedência com demonstração de falsidade.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "ideologia-e-neutralidade",
+  "type": "multipla-escolha",
+  "prompt": "Um estudo sobre salários foi financiado por uma associação empresarial. O que é metodologicamente mais adequado fazer?",
+  "referenceIds": [
+    "marx-prefacio-1859",
+    "ipeadata"
+  ],
+  "rubric": [
+    "Localizar a produção do discurso e distinguir interesses de evidências comprovadas.",
+    "Evitar tanto a autoridade automática quanto a rejeição automática de uma fonte."
+  ],
+  "feedback": "O exame materialista de uma fonte inclui suas condições de produção, mas também a qualidade efetiva das provas e dos mecanismos que sustenta.",
+  "options": [
+    {
+      "id": "a",
+      "text": "Descartar os resultados automaticamente, porque o financiador integra uma classe social determinada.",
+      "correct": false,
+      "feedback": "O financiamento é relevante para a crítica das condições de produção, mas não decide sozinho a validade das medidas apresentadas."
+    },
+    {
+      "id": "b",
+      "text": "Aceitar integralmente o relatório, porque toda pesquisa técnica é neutra.",
+      "correct": false,
+      "feedback": "Uma autodeclaração de neutralidade não substitui análise de métodos, interesses, instituições e resultados."
+    },
+    {
+      "id": "c",
+      "text": "Examinar financiamento, questões, métodos, dados, omissões e possíveis efeitos antes de concluir.",
+      "correct": true,
+      "feedback": "A resposta investiga condições materiais e prova empírica sem impor equivalência editorial entre projetos políticos."
+    },
+    {
+      "id": "d",
+      "text": "Concluir que a origem social de um documento não importa para sua leitura.",
+      "correct": false,
+      "feedback": "A produção do conhecimento é socialmente situada; ignorar seus vínculos também pode esconder perguntas importantes."
+    }
+  ]
+}

@@ -82,8 +82,23 @@ test('Durkheim e Marx entram como textos originais e tradução autoral em revis
   assert.ok(existsSync('docs/traducoes-autorais/durkheim-marx-investigacao.md'));
 });
 
-test('aulas não anunciam avaliações interativas inexistentes', () => {
+test('cada aula tem duas atividades formativas em revisão, ligadas aos seus IDs', () => {
+  const assessmentDir = join(root, 'avaliacoes');
+  const files = readdirSync(assessmentDir).filter((file) => file.endsWith('.json'));
+  assert.equal(files.length, 10);
+  const assessments = new Map(files.map((name) =>
+    [name.replace(/\.json$/, ''), JSON.parse(readFileSync(join(assessmentDir, name), 'utf8'))]
+  ));
   for (const { filename, text } of lessonTexts) {
-    assert.deepEqual(ids(text, 'assessmentIds'), [], filename);
+    const id = filename.replace(/\.md$/, '');
+    const linked = ids(text, 'assessmentIds');
+    assert.equal(linked.length, 2, filename);
+    for (const assessmentId of linked) {
+      const assessment = assessments.get(assessmentId);
+      assert.ok(assessment, 'Atividade inexistente: ' + assessmentId);
+      assert.equal(assessment.lessonId, id);
+      assert.equal(assessment.status, 'revisao');
+      assert.ok(!assessment.reviewedAt);
+    }
   }
 });

@@ -16,7 +16,7 @@ learningGoals:
   - "Relacionar ideias, instituições e condições materiais sem reduzir tudo à intenção individual"
   - "Examinar o estatuto de textos teóricos e dados empíricos na mesma pesquisa"
 resourceIds: [marx-prefacio-1859, engels-socialismo-cientifico, ipeadata, durkheim-regras-observacao, marx-capital-iii-aparencia]
-assessmentIds: []
+assessmentIds: [a3-posicao-e-prova, a3-critica-neutralidade]
 ---
 
 ## 1. Todo discurso tem uma história

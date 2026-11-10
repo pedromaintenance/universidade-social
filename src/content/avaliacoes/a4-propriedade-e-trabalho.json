@@ -1,0 +1,45 @@
+{
+  "title": "Que relações precisamos mapear?",
+  "description": "Reconhecer a diferença entre propriedade de uso pessoal, controle produtivo e poder de decisão.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "trabalho-propriedade-poder",
+  "type": "multipla-escolha",
+  "prompt": "Para estudar quem define jornada, condições de produção e distribuição do produto, qual é a pergunta materialmente mais informativa?",
+  "referenceIds": [
+    "marx-prefacio-1859",
+    "engels-socialismo-cientifico"
+  ],
+  "rubric": [
+    "Distinguir posse de uso pessoal e controle de meios produtivos.",
+    "Identificar sujeitos, instituições e decisões capazes de ser documentadas."
+  ],
+  "feedback": "Mapear o trabalho pede relações e mecanismos: quem produz, quem decide, quem controla os meios e quem se apropria do resultado.",
+  "options": [
+    {
+      "id": "a",
+      "text": "Quais características morais individuais explicariam por completo a desigualdade?",
+      "correct": false,
+      "feedback": "A explicação moral isolada não esclarece propriedade, instituições, relações contratuais e distribuição do poder."
+    },
+    {
+      "id": "b",
+      "text": "Quem controla os meios produtivos, quais contratos organizam o trabalho e quem participa das decisões?",
+      "correct": true,
+      "feedback": "A questão permite mapear relações concretas entre trabalho, propriedade, instituições e apropriação de resultados."
+    },
+    {
+      "id": "c",
+      "text": "Quantos bens pessoais cada trabalhador possui, independentemente das relações de produção?",
+      "correct": false,
+      "feedback": "Bens de uso pessoal não representam automaticamente controle de instalações, terra, máquinas e demais meios de produção."
+    },
+    {
+      "id": "d",
+      "text": "Se existe uma empresa, todas as consequências sociais e suas causas já estão demonstradas.",
+      "correct": false,
+      "feedback": "A identificação de um agente econômico não substitui a verificação de mecanismos, políticas, responsabilidades e contexto histórico."
+    }
+  ]
+}

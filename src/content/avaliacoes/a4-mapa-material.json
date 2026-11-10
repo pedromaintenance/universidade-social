@@ -1,0 +1,21 @@
+{
+  "title": "Construa um mapa de produção e poder",
+  "description": "Exercício de investigação sobre atores, recursos, decisões e efeitos numa atividade econômica.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "trabalho-propriedade-poder",
+  "type": "resposta-aberta",
+  "prompt": "Escolha uma atividade concreta de seu território. Descreva quem trabalha, quem controla os recursos, quem decide sobre produção e remuneração, que instituições interferem e que fontes poderiam confirmar os vínculos. Indique uma explicação alternativa para o fenômeno estudado.",
+  "referenceIds": [
+    "dieese-cesta-basica",
+    "ibge-pnad-continua"
+  ],
+  "rubric": [
+    "Há atores e relações definidos, sem atribuir intenções privadas sem prova.",
+    "Propriedade, decisões e instituições são mapeadas separadamente.",
+    "As fontes propostas permitem verificar pelo menos dois elos do mecanismo.",
+    "Uma explicação alternativa e uma limitação são apresentadas com clareza."
+  ],
+  "feedback": "A análise material fica mais robusta quando cada vínculo tem uma possível fonte, e quando o estudante identifica o que ainda não conhece."
+}

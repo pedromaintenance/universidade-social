@@ -1,0 +1,21 @@
+{
+  "title": "Aplique duas ferramentas a uma situação de trabalho",
+  "description": "Responder em texto, usando a falsa familiaridade em Durkheim e a reconstrução histórica das formas sociais em Marx.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "da-experiencia-a-pergunta",
+  "type": "resposta-aberta",
+  "prompt": "Escolha uma prática cotidiana (jornada, salário, contrato ou preço). Formule uma pergunta de observação inspirada em Durkheim e outra pergunta histórico-material inspirada em Marx. Diga quais documentos ou dados poderiam ajudar a respondê-las e qual conclusão ainda seria prematura.",
+  "referenceIds": [
+    "durkheim-regras-observacao",
+    "marx-capital-iii-aparencia"
+  ],
+  "rubric": [
+    "A pergunta durkheimiana define o objeto e identifica pré-noções, sem afirmar que instituições sejam objetos físicos.",
+    "A pergunta marxiana investiga relações históricas, propriedade, trabalho ou poder por trás de uma forma de manifestação real.",
+    "Ao menos duas possíveis evidências são nomeadas e nenhuma hipótese aparece como fato já comprovado.",
+    "As teorias são aplicadas como ferramentas distintas, sem tratá-las como equivalentes ou incompatíveis em todo problema."
+  ],
+  "feedback": "Uma boa resposta tem duas perguntas realmente diferentes, não apenas dois nomes de autores. Explica o que a experiência permite saber e o que ainda exige reconstrução histórica."
+}

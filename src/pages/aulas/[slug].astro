@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { loadCatalog } from '../../lib/catalog';
 import { sitePath } from '../../lib/site';
+import FormativeAssessment from '../../components/FormativeAssessment.astro';
 
 export async function getStaticPaths() {
   const catalog = await loadCatalog();
@@ -11,12 +12,13 @@ export async function getStaticPaths() {
     props: {
       entry,
       track: catalog.trilhas.find((t) => t.id === entry.data.trackId),
-      resources: catalog.recursos.filter((r) => entry.data.resourceIds.includes(r.id))
+      resources: catalog.recursos.filter((r) => entry.data.resourceIds.includes(r.id)),
+      assessments: catalog.avaliacoes.filter((a) => entry.data.assessmentIds.includes(a.id))
     }
   }));
 }
 
-const { entry, track, resources } = Astro.props;
+const { entry, track, resources, assessments } = Astro.props;
 const { Content } = await render(entry);
 ---
 
@@ -36,6 +38,14 @@ const { Content } = await render(entry);
       <ul>{entry.data.learningGoals.map((goal: string) => <li>{goal}</li>)}</ul>
 
       <div class="lesson-body"><Content /></div>
+
+      {assessments.length > 0 && (
+        <section aria-labelledby="avaliacoes-aula">
+          <h2 id="avaliacoes-aula">Pratique o método</h2>
+          <p>Estes exercícios são formativos. Não há nota oficial, cadastro nem envio de respostas. Questões abertas são revisadas pelo próprio estudante, usando uma rubrica.</p>
+          {assessments.map((assessment) => <FormativeAssessment assessment={assessment} />)}
+        </section>
+      )}
 
       <section aria-labelledby="referencias-aula">
         <h2 id="referencias-aula">Fontes e leituras</h2>

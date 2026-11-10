@@ -49,6 +49,35 @@ jobs:
         with:
           path: dist
 
+  preview-editorial:
+    name: Simular publicação didática sem publicar
+    # Isolado: NÃO usa o artefato do job build nem faz upload ao Pages.
+    if: github.event_name == 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Obter cópia descartável
+        uses: actions/checkout@v4
+
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Dependências
+        run: npm install --no-audit --no-fund
+
+      - name: Simular aprovação APENAS no runner
+        run: node scripts/simulate-publication.mjs prepare
+
+      - name: Gerar páginas e exercícios simulados
+        run: npm run build
+
+      - name: Conferir rotas, oficina e fontes
+        run: node scripts/simulate-publication.mjs verify
+
   deploy:
     name: Publicar no GitHub Pages
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

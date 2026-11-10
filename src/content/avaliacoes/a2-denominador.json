@@ -1,0 +1,45 @@
+{
+  "title": "O que mede uma taxa de informalidade?",
+  "description": "Evitar a confusão entre informalidade, desocupação e população total numa notícia estatística.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "fonte-fato-hipotese",
+  "type": "multipla-escolha",
+  "prompt": "Ao ler uma taxa de informalidade da PNAD Contínua referente às pessoas ocupadas, qual interpretação é compatível com o indicador?",
+  "referenceIds": [
+    "ibge-pnad-continua",
+    "ibge-pnad-anual-2025"
+  ],
+  "rubric": [
+    "Identificar o denominador informado pela fonte e não trocar um indicador por outro.",
+    "Distinguir o dado descritivo de uma inferência causal ainda não investigada."
+  ],
+  "feedback": "Taxas só podem ser interpretadas após identificar conceito, período, população e método de cálculo. Um indicador não fornece automaticamente sua explicação causal.",
+  "options": [
+    {
+      "id": "a",
+      "text": "O percentual corresponde automaticamente a todas as pessoas da população do território.",
+      "correct": false,
+      "feedback": "É preciso verificar o denominador. Taxas de informalidade sobre a população ocupada não descrevem todos os habitantes."
+    },
+    {
+      "id": "b",
+      "text": "A taxa mede a parcela de pessoas ocupadas enquadradas nos critérios de informalidade da pesquisa.",
+      "correct": true,
+      "feedback": "A interpretação preserva o denominador e exige consultar os critérios metodológicos e o período de referência."
+    },
+    {
+      "id": "c",
+      "text": "O percentual é equivalente à taxa de desocupação e pode substituí-la sem ressalvas.",
+      "correct": false,
+      "feedback": "Informalidade e desocupação são indicadores diferentes, com populações e critérios específicos."
+    },
+    {
+      "id": "d",
+      "text": "Por se tratar de estatística oficial, o indicador já revela de maneira suficiente as causas da informalidade.",
+      "correct": false,
+      "feedback": "Uma estatística descreve uma medida definida; explicar causas pede hipóteses, dados complementares e reconstrução de mecanismos."
+    }
+  ]
+}
