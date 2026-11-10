@@ -74,7 +74,7 @@ const multi = item.type === 'multipla-escolha';
 </section>
 
 <script>
-  // Sem <form>: mesmo com JavaScript desativado, nunca haverá envio de respostas.
+  // Sem elemento de formulário: não há envio de respostas, mesmo sem JavaScript.
   document.querySelectorAll<HTMLElement>('[data-formative-form]').forEach((region) => {
     const result = region.querySelector<HTMLElement>('[data-formative-result]');
     const verdict = region.querySelector<HTMLElement>('[data-formative-verdict]');
