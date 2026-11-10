@@ -46,6 +46,8 @@ for (const file of pages) {
     }
   }
   const anchors = [...html.matchAll(/\b(?:href|src)="([^"]+)"/g)];
+  const relativeRoute = path.relative(root, file).replaceAll('\\', '/').replace(/index\.html$/, '');
+  const pageUrl = origin + base + relativeRoute;
   for (const match of anchors) {
     const href = match[1].replace(/&amp;/g, '&');
     if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('data:')) continue;
@@ -56,7 +58,7 @@ for (const file of pages) {
       continue;
     }
     let url;
-    try { url = new URL(href, origin + base); }
+    try { url = new URL(href, pageUrl); }
     catch { errors.push(file + ': URL malformada: ' + href); continue; }
     if (url.origin !== origin) continue;
     checkedLinks += 1;
