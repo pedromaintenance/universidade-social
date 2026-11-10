@@ -16,7 +16,7 @@ learningGoals:
   - "Distinguir propriedade pessoal, estatal, comunitária e privada de meios de produção"
   - "Investigar mecanismos de classe sem atribuir defeitos morais a grupos sociais inteiros"
 resourceIds: [engels-socialismo-cientifico, marx-prefacio-1859, dieese-cesta-basica, ibge-pnad-continua]
-assessmentIds: []
+assessmentIds: [a4-propriedade-e-trabalho, a4-mapa-material]
 ---
 
 ## 1. Quem faz o trabalho? Quem controla o resultado?

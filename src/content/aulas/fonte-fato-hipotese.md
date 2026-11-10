@@ -16,7 +16,7 @@ learningGoals:
   - "Verificar denominador, população, território e período antes de comparar estatísticas"
   - "Formular uma contraprova que possa enfraquecer uma hipótese causal"
 resourceIds: [ibge-pnad-anual-2025, ibge-pnad-continua, ibge-sidra, ipeadata]
-assessmentIds: []
+assessmentIds: [a2-denominador, a2-contraprova]
 ---
 
 ## 1. Uma estatística não explica a si mesma

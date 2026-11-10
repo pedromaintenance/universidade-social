@@ -1,0 +1,21 @@
+{
+  "title": "Formule uma contraprova para sua hipótese",
+  "description": "Atividade de verificação crítica com indicação de hipótese alternativa e fonte de dados.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "fonte-fato-hipotese",
+  "type": "resposta-aberta",
+  "prompt": "Imagine que alguém afirme: 'a informalidade mudou por causa de uma única política'. Escreva uma hipótese mais precisa, indique o período e duas informações que poderiam enfraquecê-la, incluindo uma hipótese alternativa plausível.",
+  "referenceIds": [
+    "ibge-pnad-continua",
+    "ibge-sidra"
+  ],
+  "rubric": [
+    "O período, o grupo e a definição do fenômeno são explicitados antes de argumentar.",
+    "A hipótese não é apresentada como conclusão provada pela existência de um percentual.",
+    "Duas observações capazes de enfraquecer a hipótese são identificadas de forma verificável.",
+    "Ao menos uma explicação alternativa é considerada sem criar uma falsa certeza."
+  ],
+  "feedback": "Boa análise não protege uma hipótese contra a investigação. Precisa especificar o que contaria a favor e o que seria uma contraprova."
+}

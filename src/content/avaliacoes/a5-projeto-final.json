@@ -1,0 +1,24 @@
+{
+  "title": "Esboço do seu primeiro dossiê social",
+  "description": "Roteiro de projeto para construir uma pesquisa curta, verificável e ligada à vida material.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "laboratorio-pesquisa-social",
+  "type": "projeto",
+  "prompt": "Escreva um esboço com: pergunta (território, período e população), duas fontes verificáveis, descrição do dado, relação histórico-material a investigar, hipótese alternativa, limitação e uma proposta de continuidade voluntária da pesquisa.",
+  "referenceIds": [
+    "ibge-sidra",
+    "ibge-pnad-continua",
+    "dieese-cesta-basica",
+    "ipeadata"
+  ],
+  "rubric": [
+    "A pergunta é delimitada e pode receber resposta contrariando a expectativa inicial.",
+    "As fontes são identificadas e interpretadas segundo a população e os indicadores que realmente cobrem.",
+    "A explicação diferencia fato documentado, hipótese causal e perspectiva teórica.",
+    "Uma contraprova ou limitação concreta é reconhecida, sem impor concordância política.",
+    "A proposta de continuidade respeita a privacidade de terceiros e é voluntária."
+  ],
+  "feedback": "Uma investigação inicial bem feita pode terminar com perguntas novas. A qualidade do processo importa mais que reproduzir uma conclusão pronta."
+}

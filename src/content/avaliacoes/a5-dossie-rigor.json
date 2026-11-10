@@ -1,0 +1,45 @@
+{
+  "title": "O que torna um dossiê investigativo?",
+  "description": "Escolher critérios de investigação fundamentada para o trabalho final da trilha.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "laboratorio-pesquisa-social",
+  "type": "multipla-escolha",
+  "prompt": "Qual característica indica que um pequeno dossiê social permite examinar criticamente suas conclusões?",
+  "referenceIds": [
+    "ibge-sidra",
+    "ipeadata"
+  ],
+  "rubric": [
+    "Explicitar território, período, população e objeto do dossiê.",
+    "Indicar fontes, mecanismos, contraprovas e limitações com clareza."
+  ],
+  "feedback": "O dossiê é avaliado pela capacidade de documentar, explicar e revisar argumentos, não pelo alinhamento obrigatório a uma conclusão ideológica.",
+  "options": [
+    {
+      "id": "a",
+      "text": "Conclui de antemão que a hipótese inicial está certa e seleciona somente os números favoráveis.",
+      "correct": false,
+      "feedback": "Uma conclusão imune a contraprovas impede a investigação e fragiliza o próprio compromisso com a verdade material."
+    },
+    {
+      "id": "b",
+      "text": "Apresenta uma linguagem sofisticada, mesmo sem especificar fontes ou conceitos.",
+      "correct": false,
+      "feedback": "Jargão não substitui rastreabilidade nem definição dos indicadores."
+    },
+    {
+      "id": "c",
+      "text": "Apresenta pergunta delimitada, fontes identificadas, relações propostas e limites de inferência.",
+      "correct": true,
+      "feedback": "O leitor pode conferir evidências, entender os passos do argumento e identificar onde ainda existem dúvidas."
+    },
+    {
+      "id": "d",
+      "text": "Evita reconhecer incertezas para parecer politicamente mais firme.",
+      "correct": false,
+      "feedback": "Reconhecer limites é parte da força científica de uma crítica, não sinal de neutralidade ou recuo político."
+    }
+  ]
+}

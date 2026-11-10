@@ -1,0 +1,21 @@
+{
+  "title": "Investigue uma alegação de neutralidade",
+  "description": "Exercício de análise material de um discurso que se apresenta como puramente técnico.",
+  "status": "revisao",
+  "author": "Redação da Universidade Social — rascunho assistido por IA",
+  "updatedAt": "2026-11-10",
+  "lessonId": "ideologia-e-neutralidade",
+  "type": "resposta-aberta",
+  "prompt": "Escolha uma afirmação pública sobre trabalho que se apresente como 'apenas técnica'. Reconstrua o argumento de forma justa; liste quais vínculos institucionais e interesses materiais podem ser investigados; separe fatos demonstrados, hipóteses e evidências ainda ausentes.",
+  "referenceIds": [
+    "marx-prefacio-1859",
+    "engels-socialismo-cientifico"
+  ],
+  "rubric": [
+    "O argumento examinado é apresentado com fidelidade e sem caricatura.",
+    "São sugeridos documentos concretos para investigar posição social e interesses materiais.",
+    "A origem da fonte não é usada como prova isolada de falsidade ou intenção.",
+    "A crítica diferencia a posição editorial da Universidade da verificação empírica."
+  ],
+  "feedback": "Criticar a falsa neutralidade é trabalho de investigação, não licença para presumir que toda declaração divergente é fraude."
+}
