@@ -12,7 +12,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 
 ## Estado do projeto
 
-**Fase P0 — Primeiro portal publicado.** A versão institucional inicial foi compilada e publicada com sucesso pelo GitHub Actions em 09/11/2026. Aulas completas, biblioteca curada, avaliações e certificação ainda não estão disponíveis.
+**Fase P0/P1 — Portal institucional no ar; trilha piloto em revisão.** O portal foi publicado pelo GitHub Actions. Estão redigidas cinco aulas originais e selecionados oito recursos externos para a primeira trilha, ainda com estado editorial `revisao`. **Não são cursos ou fontes apresentados como publicados** até aprovação humana; não há certificação ou provas automáticas.
 
 **[Abrir o portal público](https://pedromaintenance.github.io/universidade-social/)** · [Acompanhar a publicação no Actions](https://github.com/pedromaintenance/universidade-social/actions/runs/42722594417)
 
@@ -21,6 +21,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 - [Arquitetura técnica](docs/arquitetura.md)
 - [Modelo de conteúdo](docs/modelo-de-conteudo.md)
 - [Manual de publicação de conteúdo](docs/publicacao-conteudo.md)
+- [Dossiê de revisão da primeira trilha](docs/revisao-trilha-piloto.md)
 - [Carta de princípios e missão](docs/carta-de-principios.md)
 - [Projeto político-pedagógico](docs/projeto-pedagogico.md)
 - [Política editorial e de evidências](docs/politica-editorial.md)
@@ -33,7 +34,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 - **.github/skills/**: procedimentos acionáveis, incluindo a metodologia anticolonial materialista.
 - **docs/**: arquitetura, protocolos e roadmap; mudanças relevantes devem passar por revisão e registro de decisão.
 - **GitHub Issues**: demandas executáveis, com critérios de aceite e dependências.
-- **src/**: portal Astro (layout, estilos, páginas e um catálogo ainda vazio).
+- **src/**: portal Astro e coleções versionadas. A primeira trilha e as fontes já têm arquivos em `src/content/`, mas permanecem em revisão e invisíveis ao público.
 - **scripts/**: verificações de estrutura e links internos compilados.
 - **.github/workflows/site.yml**: build e publicação contínua pelo GitHub Actions.
 
@@ -55,7 +56,7 @@ npm run check:dist
 npm run preview
 ~~~
 
-A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre, além das rotas dinâmicas para aulas e trilhas publicadas. O catálogo agora usa **coleções com schemas e validação cruzada**; não existe material didático publicado ainda.
+A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre, além das rotas dinâmicas para aulas e trilhas aprovadas. O catálogo usa **coleções com schemas e validação cruzada**; a trilha piloto está redigida, porém nenhum material didático foi liberado como publicado.
 
 Para validar referências, IDs, ordem das aulas e regras de publicação, execute `npm run test:content`. Para adicionar materiais sem expor rascunhos, consulte o [Manual de publicação de conteúdo](docs/publicacao-conteudo.md).
 

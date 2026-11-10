@@ -1,6 +1,6 @@
 # Roadmap de desenvolvimento — Universidade Social
 
-**Versão:** 0.5 | **Atualização:** 2026-11-09 | **Estado geral:** primeira versão do portal publicada; motor de conteúdo P0.3 em validação; P0 ainda não encerrado. Sem prazos artificiais: avanço por critério de pronto.
+**Versão:** 0.6 | **Atualização:** 2026-11-10 | **Estado geral:** portal publicado, motor P0.3 validado e primeira trilha P1.1 em revisão editorial; P0/P1 ainda não concluídos. Sem prazos artificiais: avanço por critério de pronto.
 
 ## P0 — PRIMEIRO ARTEFATO: portal público principal
 
@@ -11,7 +11,7 @@
 | P0.0 | Fundar agentes, skills, método, arquitetura e issues | nenhuma | arquivos versionados e revisáveis |
 | P0.1 | Configurar Astro, TS, build e Pages | P0.0 | build e deploy concluídos; lockfile estrito pendente na issue #17 |
 | P0.2 | Identidade visual e homepage mobile-first | P0.1 | versão pública inicial pronta; auditoria mobile/teclado/leitor de tela pendente |
-| P0.3 | Modelo de conteúdo, catálogo e rotas | P0.1 | coleções e rotas dinâmicas implementadas; schema e integridade sujeitos a CI |
+| P0.3 | Modelo de conteúdo, catálogo e rotas | P0.1 | implementado e aprovado no CI; issue #4 encerrada |
 | P0.4 | Páginas Princípios, Método, Sobre e Biblioteca inicial | P0.2, P0.3 | linha editorial e fontes transparentes |
 | P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | site inicial no ar; avaliação final de acessibilidade, desempenho e links pendente |
 
@@ -19,8 +19,8 @@
 
 ## P1 — Primeira trilha pedagógica real
 
-- **P1.1** «Como investigar a realidade social»: objetivos, 3–5 aulas piloto, fontes, posição social do conhecimento, crítica da falsa neutralidade e exercícios guiados.
-- **P1.2** Curadoria inicial de recursos: leitura online, canais e vídeos (metadados, URL, licença, data, perspectiva e alternativas textuais).
+- **P1.1** «Como investigar a realidade social»: cinco aulas originais e projeto final redigidos com status `revisao`; publicação depende de aprovação editorial humana, checagem de fontes e testes da PR.
+- **P1.2** Curadoria inicial de recursos: oito links selecionados e descritos com proveniência e finalidade, em `revisao`; canais/vídeos e avaliação final de licenças/acesso seguem pendentes.
 - **P1.3** Simulados formativos locais: feedback justificado por fonte, sem captura de dados.
 - **P1.4** Projetos de pesquisa orientados: problema, método, fontes, rubrica e resultados esperados.
 - **P1.5** Revisão pedagógica com participantes: observar dificuldades reais e corrigir.
@@ -89,4 +89,4 @@ As issues são abertas como backlog; nenhum item de execução é considerado co
 
 ## Marco técnico P0 (09/11/2026)
 
-O GitHub Actions validou build e rotas da PR #16, assim como build e implantação na main. Endereço informado pelo ambiente de implantação: [Universidade Social](https://pedromaintenance.github.io/universidade-social/). Ainda não há conteúdos didáticos publicados. A auditoria de acessibilidade, o catálogo validado por schema e o lockfile de dependências continuam em aberto nas issues #6, #4 e #17, respectivamente.
+O GitHub Actions validou build e rotas da PR #16, assim como build e implantação na main. Endereço informado pelo ambiente de implantação: [Universidade Social](https://pedromaintenance.github.io/universidade-social/). Ainda não há conteúdos didáticos publicados. A auditoria de acessibilidade e o lockfile de dependências continuam em aberto nas issues #6 e #17; a validação do catálogo foi concluída na issue #4.

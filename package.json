@@ -11,7 +11,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check:source": "node scripts/check-source.mjs",
-    "test:content": "node --test tests/content-integrity.test.mjs",
+    "test:content": "node --test tests/content-integrity.test.mjs tests/pilot-content.test.mjs",
     "check:dist": "node scripts/check-dist.mjs"
   },
   "dependencies": {
