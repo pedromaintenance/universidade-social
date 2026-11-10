@@ -1,30 +1,33 @@
-/**
- * Contrato mínimo provisório para P0. O conteúdo real e sua validação
- * por schema serão implementados na issue #4 (P0.3).
- * Não cadastrar conteúdos demonstrativos como publicados.
- */
+import { getCollection } from 'astro:content';
+import { assertContentCollections } from './content-integrity.mjs';
+
 export type EditorialStatus = 'rascunho' | 'revisao' | 'publicado' | 'arquivado';
 
-export interface StudyTrack {
-  id: string;
-  slug: string;
-  title: string;
-  description: string;
-  level: 'introdutorio' | 'intermediario' | 'avancado';
-  status: EditorialStatus;
+/**
+ * Carrega as coleções e verifica relações entre arquivos antes de expor rotas.
+ * Conteúdo rascunho/revisão/arquivado nunca recebe uma rota pública.
+ */
+export async function loadCatalog() {
+  const [trilhas, aulas, recursos, avaliacoes] = await Promise.all([
+    getCollection('trilhas'),
+    getCollection('aulas'),
+    getCollection('recursos'),
+    getCollection('avaliacoes')
+  ]);
+
+  assertContentCollections({ trilhas, aulas, recursos, avaliacoes });
+
+  const onlyPublished = <T extends { data: { status: EditorialStatus } }>(entries: T[]) =>
+    entries.filter((entry) => entry.data.status === 'publicado');
+
+  return {
+    trilhas: onlyPublished(trilhas).sort((a, b) => a.data.title.localeCompare(b.data.title, 'pt-BR')),
+    aulas: onlyPublished(aulas).sort((a, b) =>
+      a.data.trackId.localeCompare(b.data.trackId) || a.data.order - b.data.order
+    ),
+    recursos: onlyPublished(recursos).sort((a, b) => a.data.title.localeCompare(b.data.title, 'pt-BR')),
+    avaliacoes: onlyPublished(avaliacoes)
+  };
 }
 
-export interface ExternalResource {
-  id: string;
-  title: string;
-  url: string;
-  type: 'livro' | 'artigo' | 'video' | 'canal' | 'documento' | 'dados';
-  status: EditorialStatus;
-  checkedAt: string;
-}
-
-export const tracks: readonly StudyTrack[] = [];
-export const resources: readonly ExternalResource[] = [];
-
-export const publishedTracks = tracks.filter((item) => item.status === 'publicado');
-export const publishedResources = resources.filter((item) => item.status === 'publicado');
+export type PublicCatalog = Awaited<ReturnType<typeof loadCatalog>>;

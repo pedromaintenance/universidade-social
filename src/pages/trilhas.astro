@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { publishedTracks } from '../lib/catalog';
+import { loadCatalog } from '../lib/catalog';
 import { sitePath } from '../lib/site';
+
+const { trilhas: publishedTracks } = await loadCatalog();
 ---
 
 <BaseLayout title="Trilhas de estudo" description="Trilhas de estudo da Universidade Social, com publicação gradual e curadoria de fontes.">
@@ -15,7 +17,16 @@ import { sitePath } from '../lib/site';
   <div class="shell page-content">
     {publishedTracks.length > 0 ? (
       <div class="topic-grid">
-        {publishedTracks.map((track) => <article class="topic-card"><span class="tag">Trilha publicada</span><div><h2>{track.title}</h2><p>{track.description}</p></div></article>)}
+        {publishedTracks.map((track) => (
+          <article class="topic-card">
+            <span class="tag">Trilha publicada · {track.data.level}</span>
+            <div>
+              <h2>{track.data.title}</h2>
+              <p>{track.data.description}</p>
+              <p><a class="return-link" href={sitePath('trilhas/' + track.id)}>Abrir trilha →</a></p>
+            </div>
+          </article>
+        ))}
       </div>
     ) : (
       <div class="empty-state">
