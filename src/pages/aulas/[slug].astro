@@ -1,0 +1,53 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadCatalog } from '../../lib/catalog';
+import { sitePath } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const catalog = await loadCatalog();
+  return catalog.aulas.map((entry) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      track: catalog.trilhas.find((t) => t.id === entry.data.trackId),
+      resources: catalog.recursos.filter((r) => entry.data.resourceIds.includes(r.id))
+    }
+  }));
+}
+
+const { entry, track, resources } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+  <header class="page-hero">
+    <div class="shell">
+      <span class="eyebrow">Aula {entry.data.order} · {entry.data.durationMinutes} minutos estimados</span>
+      <h1>{entry.data.title}</h1>
+      <p class="lead">{entry.data.description}</p>
+      {track && <a class="return-link" href={sitePath('trilhas/' + track.id)}>← Voltar à trilha: {track.data.title}</a>}
+    </div>
+  </header>
+  <div class="shell page-content">
+    <article class="prose">
+      <p class="source-meta">Responsável editorial: {entry.data.author} · Revisada em {entry.data.reviewedAt} · Licença: {entry.data.license}</p>
+      <h2>Objetivos de aprendizagem</h2>
+      <ul>{entry.data.learningGoals.map((goal: string) => <li>{goal}</li>)}</ul>
+
+      <div class="lesson-body"><Content /></div>
+
+      <section aria-labelledby="referencias-aula">
+        <h2 id="referencias-aula">Fontes e leituras</h2>
+        <ul>
+          {resources.map((resource) => (
+            <li>
+              <a href={resource.data.url} target="_blank" rel="noopener noreferrer">{resource.data.title} (site externo) ↗</a>
+              <p class="source-meta">{resource.data.authors.join(', ')} · {resource.data.sourceClass} · Conferido em {resource.data.checkedAt} · Direitos: {resource.data.rights}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </article>
+  </div>
+</BaseLayout>

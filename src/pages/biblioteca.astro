@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { publishedResources } from '../lib/catalog';
+import { loadCatalog } from '../lib/catalog';
 import { sitePath } from '../lib/site';
+
+const { recursos: publishedResources } = await loadCatalog();
 ---
 
 <BaseLayout title="Biblioteca crítica" description="Biblioteca crítica da Universidade Social: materiais em curadoria, com referência e contexto.">
@@ -15,7 +17,20 @@ import { sitePath } from '../lib/site';
   <div class="shell page-content">
     {publishedResources.length > 0 ? (
       <div class="topic-grid">
-        {publishedResources.map((resource) => <article class="topic-card"><span class="tag">{resource.type}</span><div><h2>{resource.title}</h2><p><a href={resource.url} target="_blank" rel="noopener noreferrer">Abrir fonte externa ↗</a></p></div></article>)}
+        {publishedResources.map((resource) => (
+          <article class="topic-card">
+            <span class="tag">{resource.data.kind} · {resource.data.sourceClass}</span>
+            <div>
+              <h2>{resource.data.title}</h2>
+              <p>{resource.data.description}</p>
+              <p><strong>Autoria:</strong> {resource.data.authors.join(', ')}</p>
+              <p><strong>Perspectiva:</strong> {resource.data.perspective}</p>
+              <p><strong>Por que ler:</strong> {resource.data.relevance}</p>
+              <p class="source-meta">Fonte verificada em {resource.data.checkedAt} · Direitos: {resource.data.rights}</p>
+              <p><a class="return-link" href={resource.data.url} target="_blank" rel="noopener noreferrer">Abrir fonte externa ↗</a></p>
+            </div>
+          </article>
+        ))}
       </div>
     ) : (
       <div class="empty-state">

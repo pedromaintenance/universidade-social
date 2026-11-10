@@ -177,3 +177,22 @@ img,svg { max-width: 100%; }
   .footer-identity { grid-column: auto; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+
+/* P0.3 — páginas de aula e transparência das fontes */
+.source-meta {
+  font-size: .84rem;
+  color: var(--subtle);
+  line-height: 1.55;
+}
+.lesson-list {
+  margin: 1.25rem 0 2rem;
+  padding-left: 1.5rem;
+}
+.lesson-list li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+.lesson-list li span { display: block; color: var(--subtle); font-size: .9rem; }
+.lesson-body { margin-top: 3rem; }
+.lesson-body p { line-height: 1.78; }
+.lesson-body img { height: auto; }
+.lesson-body pre { max-width: 100%; overflow-x: auto; padding: 1rem; background: var(--ink); color: var(--white); }
+.lesson-body table { display: block; overflow-x: auto; max-width: 100%; }
