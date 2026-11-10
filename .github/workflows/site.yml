@@ -34,6 +34,9 @@ jobs:
       - name: Validar arquivos do projeto
         run: npm run check:source
 
+      - name: Testar integridade editorial e referências
+        run: npm run test:content
+
       - name: Compilar site estático
         run: npm run build
 

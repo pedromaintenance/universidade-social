@@ -43,7 +43,7 @@ Cada recurso contém metadados de origem, data, tema, perspectiva e licença. Cu
 
 ## Organização atual e futura
 
-A implementação inicial inclui layout, estilos, páginas institucionais e contrato vazio de catálogo. Aulas e coleções versionadas continuam planejadas para a issue #4 (P0.3).
+A implementação inclui layout, estilos, páginas institucionais e coleções Astro de trilhas, aulas, recursos e avaliações com validação de schema. O catálogo não possui publicações reais; as rotas de aulas e trilhas são geradas apenas para conteúdo marcado como `publicado`. A issue #4 (P0.3) coordena sua auditoria.
 
 ### Estrutura futura proposta
 
@@ -65,7 +65,7 @@ docs/
 .github/
 ~~~
 
-A árvore acima representa o **alvo futuro** e não a árvore atual completa. A estrutura inicial está em src/layouts, src/lib, src/pages e src/styles.
+A árvore acima representa o **alvo futuro**. A estrutura atual inclui `src/content.config.ts`, `src/content/{trilhas,aulas,recursos,avaliacoes}`, `src/lib`, `src/pages`, `src/layouts` e `src/styles`; projetos e demais ferramentas ainda serão acrescentados.
 
 ## Riscos e mitigação
 

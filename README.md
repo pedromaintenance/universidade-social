@@ -20,6 +20,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 - [Roadmap e critérios de entrega](docs/roadmap.md)
 - [Arquitetura técnica](docs/arquitetura.md)
 - [Modelo de conteúdo](docs/modelo-de-conteudo.md)
+- [Manual de publicação de conteúdo](docs/publicacao-conteudo.md)
 - [Carta de princípios e missão](docs/carta-de-principios.md)
 - [Projeto político-pedagógico](docs/projeto-pedagogico.md)
 - [Política editorial e de evidências](docs/politica-editorial.md)
@@ -54,7 +55,9 @@ npm run check:dist
 npm run preview
 ~~~
 
-A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre. Trilhas e biblioteca não têm conteúdo publicado; só itens com estado **publicado** poderão aparecer. A implementação do schema completo de conteúdo é a [issue #4](https://github.com/pedromaintenance/universidade-social/issues/4).
+A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre, além das rotas dinâmicas para aulas e trilhas publicadas. O catálogo agora usa **coleções com schemas e validação cruzada**; não existe material didático publicado ainda.
+
+Para validar referências, IDs, ordem das aulas e regras de publicação, execute `npm run test:content`. Para adicionar materiais sem expor rascunhos, consulte o [Manual de publicação de conteúdo](docs/publicacao-conteudo.md).
 
 **Dependências:** as versões diretas estão fixadas no package.json. O lockfile precisa ser gerado e versionado quando houver instalação npm disponível para garantir um build integralmente reprodutível. O workflow usa npm install até então.
 
@@ -69,7 +72,7 @@ O site usa site = https://pedromaintenance.github.io e base = /universidade-soci
 
 Documentação: [Deploy Astro no GitHub Pages](https://docs.astro.build/en/guides/deploy/github/) e [Fonte de publicação do GitHub Pages](https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-## Limites do ciclo P0.1
+## Limites do ciclo P0.1 e motor de conteúdo
 
 Não existem backend, login, analytics, envio de respostas, simulado interativo ou certificado. Testes em dispositivo real, auditoria de acessibilidade e conteúdo publicado serão etapas posteriores do roadmap.
 

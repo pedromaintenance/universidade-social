@@ -1,78 +1,91 @@
-# Modelo de conteúdo planejado — v0.1
+# Modelo de conteúdo — v0.2 (P0.3)
 
-## Entidades e relações
+**Estado:** schema técnico implementado, validação pendente de build da PR. Não há trilhas, aulas, fontes nem avaliações publicadas no acervo. Os exemplos deste documento **não são conteúdo didático** e não entram no site.
 
-- **Trilha:** objetivo, nível, pré-requisitos e sequência de aulas (1:N).
-- **Aula:** pergunta-guia, objetivos, texto, conceitos, atividades, fontes, duração estimada.
-- **Recurso:** texto, livro, artigo, vídeo, canal, dado ou ferramenta externa; URL e contexto de curadoria.
-- **Avaliação:** questões com justificativa e devolutiva; ligada à trilha ou aula.
-- **Projeto:** problema investigável, materiais, etapas, critérios, rubrica e produto esperado.
-- **Conceito:** definição, variações teóricas, exemplos e referências.
-- **Publicação político-editorial:** tipo (manifesto, editorial, material de agitação, análise), autoria institucional ou individual, posição assumida, referências verificáveis quando houver alegações factuais e data.
+## Arquitetura em quatro coleções Astro
 
-### Metadados comuns
+Arquivos versionados em `src/content/`, carregados por `src/content.config.ts` usando `glob()` e schemas Zod. IDs de URL derivam do **nome do arquivo**, e devem usar minúsculas, números e hífens, como `como-investigar.md`. Alterar um nome de arquivo muda a URL de publicação.
 
-ID/slug estável, título, descrição, temas, idioma, nível, estado (rascunho/revisao/publicado/arquivado), autor editorial, data de atualização e licença do conteúdo próprio. Conteúdo só aparece publicamente se publicado, com fonte/versão.
+| Coleção | Tipo de arquivo | Caminho público quando publicado | Relações |
+| --- | --- | --- | --- |
+| `trilhas` | Markdown | `/trilhas/{id}/` | pré-requisitos, aulas |
+| `aulas` | Markdown | `/aulas/{id}/` | trilha, fontes, avaliações |
+| `recursos` | JSON individual | `/biblioteca/` | referenciado por aulas/avaliações |
+| `avaliacoes` | JSON individual | rota futura | aula e fontes |
 
-### Exemplo de frontmatter de aula (ilustrativo; não é aula publicada)
+O site é hospedado sob `/universidade-social/` no GitHub Pages. Todas as rotas são compiladas estaticamente.
 
-~~~yaml
-id: investigacao-001
-slug: fato-hipotese-e-explicacao
-title: Fato, hipótese e explicação
+## Metadados obrigatórios
+
+Todas as trilhas/aulas: `title`, `description`, `status`, `author`, `updatedAt`, `license`, `topics`, `modalities`. Para publicar, exigem também `reviewedAt` (AAAA-MM-DD).
+
+- **Trilha:** `level`, `objectives`, `prerequisiteTrackIds` (opcional).
+- **Aula:** `trackId`, `order`, `durationMinutes`, `level`, `learningGoals`, `resourceIds`, `assessmentIds`.
+- **Recurso:** `title`, `description`, `status`, `url` (HTTPS), `kind`, `authors`, `publisher`, `language`, `sourceClass`, `perspective`, `relevance`, `rights`, `updatedAt`, `topics`. Para publicar exige `checkedAt`.
+- **Avaliação:** `title`, `description`, `status`, `lessonId`, `type`, `prompt`, `author`, `updatedAt`, `rubric`, `feedback`, `referenceIds`. Para publicar exige `reviewedAt`.
+
+Estados aceitos: `rascunho`, `revisao`, `publicado`, `arquivado`.
+
+Modalidades admitidas: `educacao`, `agitacao`, `propaganda`, `investigacao`. A classificação é declarada pelo autor e não altera o teste factual de alegações.
+
+## Exemplo de trilha — somente documentação
+
+```yaml
+title: Como investigar a realidade social
+description: Percurso introdutório para examinar fatos, fontes e relações materiais da vida social.
 status: rascunho
-trilhaId: como-investigar
-order: 1
+author: Equipe editorial
+updatedAt: 2026-11-09
+license: Todos os direitos reservados (até decisão editorial)
+topics: [investigacao-social, metodo]
+modalities: [educacao, investigacao]
 level: introdutorio
-durationMinutes: 20
-learningGoals:
-  - Distinguir descrição factual de inferência causal
-  - Identificar evidências que poderiam contrariar uma hipótese
-resourceIds: []
-assessmentIds: []
-reviewedAt: null
-~~~
+objectives:
+  - Identificar fontes verificáveis para perguntas sociais concretas
+prerequisiteTrackIds: []
+```
 
-### Exemplo de registro de recurso (ilustrativo)
+Esse frontmatter precisaria estar num arquivo `src/content/trilhas/como-investigar.md`, acompanhado por texto Markdown próprio. **Não foi criado** no acervo atual.
 
-~~~yaml
-id: fonte-exemplo-001
-title: Título exato da obra
-url: https://exemplo.org/material
-kind: artigo
-language: pt-BR
-authors: []
-publishedAt: null
-checkedAt: null
-sourceClass: secundaria
-perspective: declarada
-rights: link-apenas
-status: rascunho
-~~~
+## Exemplo de fonte — somente documentação
 
-### Exemplo de avaliação (ilustrativo)
-
-~~~json
+```json
 {
-  "id": "avaliacao-exemplo-001",
-  "lessonId": "investigacao-001",
-  "type": "multipla-escolha",
-  "question": "Qual evidência enfraqueceria esta hipótese?",
-  "options": [
-    {"id": "a", "text": "Exemplo A"},
-    {"id": "b", "text": "Exemplo B"}
-  ],
-  "correctOptionIds": ["b"],
-  "feedbackByOption": {
-    "a": "Explicar por que não testa a hipótese",
-    "b": "Explicar qual mecanismo seria enfraquecido"
-  },
-  "sourceIds": []
+  "title": "Título real confirmado",
+  "description": "Resumo autoral preciso com finalidade de leitura e análise crítica.",
+  "status": "rascunho",
+  "url": "https://www.example.org/a-ser-substituido",
+  "kind": "artigo",
+  "authors": ["Autor a verificar"],
+  "publisher": "Instituição a verificar",
+  "language": "pt-BR",
+  "sourceClass": "secundaria",
+  "perspective": "Posição da fonte a verificar",
+  "relevance": "Explicar por que o recurso entra na sequência pedagógica.",
+  "rights": "link-apenas",
+  "updatedAt": "2026-11-09",
+  "topics": ["investigacao-social"]
 }
-~~~
+```
 
-**Notas:** URLs acima são placeholders não publicáveis. O modelo será formalizado com schemas e testes de relacionamento na implementação. Proibir links placeholder e questões sem justificativa quando status=publicado.
+O endereço acima é demonstrativo e **não pode ser publicado**. A publicação exige substituir todos os placeholders, confirmar autoria e URL, indicar `checkedAt` e passar pela revisão humana.
 
-## Integridade e ética da avaliação
+## Regras de publicação
 
-A resposta correta nunca deve depender de concordar com uma ideologia. Questões objetivas avaliam conceito e método; perguntas abertas usam rubricas sobre evidência, lógica, contexto, interpretação alternativa e limites. Projetos não exigem exposição de dados pessoais.
+1. O schema Astro rejeita tipos incorretos, valores obrigatórios ausentes, URLs não HTTPS, metadados e datas fora do formato.
+2. O validador cruzado em `src/lib/content-integrity.mjs` rejeita IDs inválidos ou duplicados, referências ausentes, ordem de aula duplicada, pré-requisito autorreferente e URLs de exemplo marcadas como publicadas.
+3. **Trilha publicada** exige pelo menos uma aula publicada.
+4. **Aula publicada** exige trilha publicada, ao menos uma fonte publicada, revisão registrada e objetivo pedagógico.
+5. **Avaliação publicada** exige aula publicada, referência rastreável, feedback, rubrica e revisão.
+6. Rascunhos e materiais em revisão/arquivados são validados, mas **não ganham páginas públicas**. O build deve falhar se suas referências apontarem para IDs inexistentes.
+7. O uso de fonte externa no portal não declara endosso integral ou autoriza a reprodução de textos.
+
+## Testes
+
+`npm run test:content` executa fixtures puramente **de teste** sob `tests/`, sem adicioná-las ao catálogo público. Para verificar o build do portal: `npm run build && npm run check:dist`.
+
+## Limites atuais e próximos incrementos
+
+Não existem dados de cursos publicados, mecanismo de provas interativas, submissões, emissão de certificado nem sistema de cadastro. A rota de avaliações é planejada para P1.3. Submissões de projetos e progresso local, se aprovados, exigirão novos contratos e testes.
+
+**Referências editoriais:** [Carta de Princípios](carta-de-principios.md), [Política Editorial](politica-editorial.md) e [Manual de Publicação](publicacao-conteudo.md).
