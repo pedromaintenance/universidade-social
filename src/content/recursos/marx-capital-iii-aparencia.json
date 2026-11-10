@@ -1,0 +1,24 @@
+{
+  "title": "Karl Marx: O capital, livro III, capítulo 48, A fórmula trinitária",
+  "description": "Texto original alemão do capítulo sobre aparência e relações internas da economia capitalista, em edição organizada por Engels.",
+  "status": "revisao",
+  "url": "https://marx.works/me25/me25_822.htm",
+  "kind": "livro",
+  "authors": [
+    "Karl Marx"
+  ],
+  "publisher": "Primeira publicação: Otto Meissner, 1894, editada por Friedrich Engels; transcrição alemã de MEW 25",
+  "language": "de",
+  "sourceClass": "primaria",
+  "perspective": "Crítica marxiana da economia política e de como relações históricas de produção parecem atributos naturais das coisas.",
+  "relevance": "Fundamenta a distinção entre forma de manifestação e conexão interna e impede usar a frase como oposição abstrata entre verdade e aparência.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "topics": [
+    "marx",
+    "aparencia",
+    "essencia",
+    "critica-economia-politica"
+  ]
+}

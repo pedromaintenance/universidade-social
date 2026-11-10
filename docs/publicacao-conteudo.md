@@ -51,3 +51,8 @@ trilhas/como-investigar.md (id: como-investigar)
 ~~~
 
 Os nomes acima são exemplos textuais e **não são materiais reais disponíveis**. Um ID apontando para arquivo inexistente deve interromper o build.
+
+
+## Traduções autorais de obras em domínio público
+
+Sempre identificar obra, capítulo, idioma original, edição-base, data e eventual mediação editorial póstuma. Traduzir diretamente do original, distinguir tradução literal, opção terminológica, paráfrase e interpretação pedagógica. Não copiar tradução contemporânea sem licença. A condição de domínio público do texto original não substitui análise da licença e autoria do **novo texto traduzido**. Só registrar revisão humana concluída quando ela ocorrer efetivamente. Exemplo de procedimento: [Durkheim e Marx](traducoes-autorais/durkheim-marx-investigacao.md).
