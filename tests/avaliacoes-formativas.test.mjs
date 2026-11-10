@@ -62,9 +62,12 @@ test('exercício com Durkheim e Marx exige dois usos teóricos diferentes', () =
 
 test('componente mantém interface acessível e nenhuma transferência de respostas', () => {
   const file = readFileSync('src/components/FormativeAssessment.astro', 'utf8');
-  for (const marker of ['<fieldset', '<legend', 'type="radio"', 'aria-live="polite"', 'type="reset"', '<details', '<textarea']) {
+  for (const marker of ['<fieldset', '<legend', 'type="radio"', 'aria-live="polite"', 'data-formative-retry', '<details', '<textarea']) {
     assert.ok(file.includes(marker), 'marcação ausente: ' + marker);
   }
+  assert.ok(!file.includes('<form'));
+  assert.ok(!file.includes('type="submit"'));
+  assert.ok(file.includes('data-formative-check'));
   assert.ok(!file.includes('localStorage'));
   assert.ok(!file.includes('fetch('));
   assert.ok(!file.includes('navigator.sendBeacon'));

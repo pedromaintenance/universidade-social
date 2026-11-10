@@ -17,7 +17,7 @@ const multi = item.type === 'multipla-escolha';
   <p class="assessment-prompt">{item.prompt}</p>
 
   {multi ? (
-    <form data-formative-form>
+    <div data-formative-form>
       <fieldset class="assessment-options">
         <legend>Escolha a alternativa que melhor responde à pergunta</legend>
         {item.options?.map((option) => (
@@ -34,8 +34,8 @@ const multi = item.type === 'multipla-escolha';
         ))}
       </fieldset>
       <div class="button-row">
-        <button type="submit" class="button primary">Conferir escolha</button>
-        <button type="reset" class="button">Refazer</button>
+        <button type="button" data-formative-check class="button primary">Conferir escolha</button>
+        <button type="button" data-formative-retry class="button">Refazer</button>
       </div>
       <div data-formative-result hidden role="status" aria-live="polite" class="assessment-result">
         <strong data-formative-verdict></strong>
@@ -52,7 +52,7 @@ const multi = item.type === 'multipla-escolha';
         </ul>
         <p>{item.feedback}</p>
       </details>
-    </form>
+    </div>
   ) : (
     <div class="assessment-written">
       <label for={'resposta-aberta-' + assessment.id}>Escreva sua análise (não será salva nem enviada)</label>
@@ -74,15 +74,24 @@ const multi = item.type === 'multipla-escolha';
 </section>
 
 <script>
-  document.querySelectorAll<HTMLFormElement>('[data-formative-form]').forEach((form) => {
-    const result = form.querySelector<HTMLElement>('[data-formative-result]');
-    const verdict = form.querySelector<HTMLElement>('[data-formative-verdict]');
-    if (!result || !verdict) return;
+  // Sem <form>: mesmo com JavaScript desativado, nunca haverá envio de respostas.
+  document.querySelectorAll<HTMLElement>('[data-formative-form]').forEach((region) => {
+    const result = region.querySelector<HTMLElement>('[data-formative-result]');
+    const verdict = region.querySelector<HTMLElement>('[data-formative-verdict]');
+    const check = region.querySelector<HTMLButtonElement>('[data-formative-check]');
+    const retry = region.querySelector<HTMLButtonElement>('[data-formative-retry]');
+    if (!result || !verdict || !check || !retry) return;
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const chosen = form.querySelector<HTMLInputElement>('input[type="radio"]:checked');
-      if (!chosen) return;
+    check.addEventListener('click', () => {
+      const chosen = region.querySelector<HTMLInputElement>('input[type="radio"]:checked');
+      if (!chosen) {
+        verdict.textContent = 'Escolha uma alternativa para conferir sua análise.';
+        result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
+          block.hidden = true;
+        });
+        result.hidden = false;
+        return;
+      }
       const acceptable = chosen.dataset.correct === 'true';
       verdict.textContent = acceptable
         ? 'Alternativa adequada ao conceito. Leia a justificativa.'
@@ -92,7 +101,11 @@ const multi = item.type === 'multipla-escolha';
       });
       result.hidden = false;
     });
-    form.addEventListener('reset', () => {
+
+    retry.addEventListener('click', () => {
+      region.querySelectorAll<HTMLInputElement>('input[type="radio"]').forEach((input) => {
+        input.checked = false;
+      });
       result.hidden = true;
       verdict.textContent = '';
       result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {

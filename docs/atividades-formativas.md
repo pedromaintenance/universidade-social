@@ -24,7 +24,7 @@ São **cinco questões fechadas e cinco questões abertas/projeto**, todas com r
 
 ## Operação e privacidade
 
-- A correção de questões fechadas é feita **somente no navegador**, no momento em que o estudante escolhe “Conferir escolha”. Cada alternativa recebe explicação e é possível “Refazer”.
+- A correção de questões fechadas é feita **somente no navegador**, no momento em que o estudante escolhe “Conferir escolha”. Cada alternativa recebe explicação e é possível “Refazer”. A interação não utiliza formulários com ação de envio; se JavaScript estiver desativado, nenhuma resposta é transmitida.
 - Todas as explicações podem ser consultadas sem JavaScript no elemento nativo `details`.
 - Respostas abertas **não têm resposta política correta**. A pessoa pode escrever numa área temporária e comparar com critérios de uma rubrica. Não existe correção automática honesta para interpretações sociais abertas.
 - **Não há cadastro, upload, requisição de rede, analytics ou armazenamento local** das respostas. A caixa de texto avisa para copiar antes de navegar para outra página.
