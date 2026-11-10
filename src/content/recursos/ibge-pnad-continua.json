@@ -1,0 +1,23 @@
+{
+  "title": "PNAD Contínua: pesquisa e documentação técnica",
+  "description": "Página institucional do IBGE sobre a pesquisa domiciliar contínua, seus indicadores e documentação metodológica.",
+  "status": "revisao",
+  "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html",
+  "kind": "documento",
+  "authors": [
+    "Instituto Brasileiro de Geografia e Estatística (IBGE)"
+  ],
+  "publisher": "IBGE",
+  "language": "pt-BR",
+  "sourceClass": "primaria",
+  "perspective": "Estatística oficial de trabalho e condições de vida; categorias e delimitações da pesquisa devem ser examinadas.",
+  "relevance": "Conferir definições de ocupação, desocupação e população de referência antes de comparar números ou propor explicações.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "topics": [
+    "trabalho",
+    "metodo",
+    "estatisticas"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Karl Marx: Prefácio de Para a Crítica da Economia Política (1859)",
+  "description": "Texto teórico de Marx que apresenta relações de produção, estrutura social, formas de consciência e contradição histórica.",
+  "status": "revisao",
+  "url": "https://www.marxists.org/portugues/marx/1859/01/prefacio.htm",
+  "kind": "livro",
+  "authors": [
+    "Karl Marx"
+  ],
+  "publisher": "Marxists Internet Archive; tradução de José Barata-Moura",
+  "language": "pt-PT",
+  "sourceClass": "primaria",
+  "perspective": "Formulação teórica marxista original; não é relatório empírico sobre uma realidade contemporânea.",
+  "relevance": "Base conceitual para distinguir descrição de uma sociedade, relações materiais e explicações ideológicas.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "publishedAt": "1859-01-01",
+  "topics": [
+    "materialismo-historico",
+    "ideologia",
+    "classes"
+  ]
+}

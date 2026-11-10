@@ -1,0 +1,23 @@
+{
+  "title": "Ipeadata: serviço de consulta a séries e metadados",
+  "description": "Documentação da base de séries macroeconômicas, regionais e sociais do Instituto de Pesquisa Econômica Aplicada.",
+  "status": "revisao",
+  "url": "https://ipeadata.gov.br/api/",
+  "kind": "ferramenta",
+  "authors": [
+    "Instituto de Pesquisa Econômica Aplicada (Ipea)"
+  ],
+  "publisher": "Ipea",
+  "language": "pt-BR",
+  "sourceClass": "primaria",
+  "perspective": "Base pública de indicadores organizada pelo Ipea; a seleção, o método e a origem das séries precisam ser conferidos.",
+  "relevance": "Apoia a formulação de perguntas com séries históricas, unidades territoriais e metadados de indicadores.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "topics": [
+    "dados",
+    "economia",
+    "territorio"
+  ]
+}

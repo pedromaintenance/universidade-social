@@ -1,0 +1,24 @@
+{
+  "title": "Friedrich Engels: Do Socialismo Utópico ao Socialismo Científico",
+  "description": "Obra teórica de 1880 que apresenta a relação entre produção, antagonismos sociais, dialética e concepção materialista da história.",
+  "status": "revisao",
+  "url": "https://www.marxists.org/portugues/marx/1880/socialismo/index.htm",
+  "kind": "livro",
+  "authors": [
+    "Friedrich Engels"
+  ],
+  "publisher": "Marxists Internet Archive",
+  "language": "pt-BR",
+  "sourceClass": "primaria",
+  "perspective": "Exposição de um fundador do marxismo; fonte de teoria e história intelectual, não estatística social atual.",
+  "relevance": "Introduz a necessidade de explicar projetos sociais pelas condições históricas e materiais, não só por ideais abstratos.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "publishedAt": "1880-01-01",
+  "topics": [
+    "socialismo",
+    "materialismo-historico",
+    "classes"
+  ]
+}
