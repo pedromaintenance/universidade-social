@@ -32,6 +32,12 @@ export function validateContentCollections(collections) {
     }
   };
 
+  const checkUnique = (values, origin, kind) => {
+    if (new Set(values).size !== values.length) {
+      errors.push(origin + ': IDs duplicados em ' + kind);
+    }
+  };
+
   const lessonOrders = new Map();
   for (const item of collections.trilhas ?? []) {
     const origin = 'trilha ' + item.id;
@@ -55,11 +61,17 @@ export function validateContentCollections(collections) {
     }
     lessonOrders.set(key, item.id);
 
+    checkUnique(item.data.resourceIds ?? [], origin, 'resourceIds');
+    checkUnique(item.data.assessmentIds ?? [], origin, 'assessmentIds');
     for (const id of item.data.resourceIds ?? []) {
       exists('recursos', id, origin, isPublished(item));
     }
     for (const id of item.data.assessmentIds ?? []) {
       exists('avaliacoes', id, origin, isPublished(item));
+      const assessment = maps.avaliacoes.get(id);
+      if (assessment && assessment.data.lessonId !== item.id) {
+        errors.push(origin + ': avaliação ' + id + ' pertence à aula ' + assessment.data.lessonId);
+      }
     }
 
     if (isPublished(item) && !(item.data.resourceIds ?? []).length) {
@@ -70,11 +82,31 @@ export function validateContentCollections(collections) {
   for (const item of collections.avaliacoes ?? []) {
     const origin = 'avaliação ' + item.id;
     exists('aulas', item.data.lessonId, origin, isPublished(item));
+    const parent = maps.aulas.get(item.data.lessonId);
+    if (parent && !(parent.data.assessmentIds ?? []).includes(item.id)) {
+      errors.push(origin + ': precisa constar em assessmentIds da aula ' + item.data.lessonId);
+    }
+    checkUnique(item.data.referenceIds ?? [], origin, 'referenceIds');
     for (const id of item.data.referenceIds ?? []) {
       exists('recursos', id, origin, isPublished(item));
     }
     if (isPublished(item) && !(item.data.referenceIds ?? []).length) {
       errors.push(origin + ': avaliação publicada exige referências');
+    }
+    if (item.data.type === 'multipla-escolha') {
+      const options = item.data.options ?? [];
+      if (options.length < 3 || options.length > 5) {
+        errors.push(origin + ': múltipla escolha exige entre 3 e 5 alternativas');
+      }
+      checkUnique(options.map(option => option.id), origin, 'options');
+      if (options.filter(option => option.correct === true).length !== 1) {
+        errors.push(origin + ': múltipla escolha exige uma alternativa correta');
+      }
+      if (options.some(option => !option.feedback || !option.feedback.trim())) {
+        errors.push(origin + ': cada alternativa exige feedback explicativo');
+      }
+    } else if ((item.data.options ?? []).length > 0) {
+      errors.push(origin + ': resposta aberta ou projeto não admite gabarito automático');
     }
   }
 
