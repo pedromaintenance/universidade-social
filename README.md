@@ -12,7 +12,7 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 
 ## Estado do projeto
 
-**Fase P0/P1 — Portal institucional no ar; trilha piloto em revisão.** O portal foi publicado pelo GitHub Actions. Estão redigidas cinco aulas originais e selecionados oito recursos externos para a primeira trilha, ainda com estado editorial `revisao`. **Não são cursos ou fontes apresentados como publicados** até aprovação humana; não há certificação ou provas automáticas.
+**Fase P0/P1 — Portal institucional no ar; trilha piloto em revisão.** O portal foi publicado pelo GitHub Actions. Estão redigidas cinco aulas, dez recursos de referência e dez atividades para a primeira trilha, ainda com estado editorial `revisao`. **Não são cursos ou fontes apresentados como publicados** até aprovação humana; não há certificação ou provas automáticas.
 
 **[Abrir o portal público](https://pedromaintenance.github.io/universidade-social/)** · [Acompanhar a publicação no Actions](https://github.com/pedromaintenance/universidade-social/actions/runs/42722594417)
 
@@ -21,6 +21,8 @@ Nossa missão, valores e limites editoriais estão na **[Carta de princípios](d
 - [Arquitetura técnica](docs/arquitetura.md)
 - [Modelo de conteúdo](docs/modelo-de-conteudo.md)
 - [Manual de publicação de conteúdo](docs/publicacao-conteudo.md)
+- [Auditoria de acessibilidade P0.5](docs/auditoria-acessibilidade-p05.md)
+- [Proposta de licenciamento e revisão humana](docs/licencas-e-revisao-proposta.md)
 - [Dossiê de revisão da primeira trilha](docs/revisao-trilha-piloto.md)
 - [Oficina e avaliações formativas](docs/atividades-formativas.md)
 - [Carta de princípios e missão](docs/carta-de-principios.md)
@@ -54,12 +56,13 @@ Para compilar e verificar os artefatos estáticos:
 ~~~bash
 npm run build
 npm run check:dist
+npm run audit:dist
 npm run preview
 ~~~
 
 A aplicação está em Astro 7 e TypeScript. As rotas institucionais atuais são: início, Princípios, Método, Trilhas, Biblioteca e Sobre, além das rotas dinâmicas para aulas e trilhas aprovadas. O catálogo usa **coleções com schemas e validação cruzada**; a trilha piloto está redigida, porém nenhum material didático foi liberado como publicado.
 
-Para validar referências, IDs, ordem das aulas, avaliações e regras de publicação, execute `npm run test:content`. Para adicionar materiais sem expor rascunhos, consulte o [Manual de publicação de conteúdo](docs/publicacao-conteudo.md).
+Para validar referências, IDs, ordem das aulas, avaliações e regras de publicação, execute `npm run test:content`. O HTML compilado também é auditado com `npm run audit:dist` (links internos, âncoras e ausência de rotas de rascunhos). Para adicionar materiais sem expor rascunhos, consulte o [Manual de publicação de conteúdo](docs/publicacao-conteudo.md).
 
 **Dependências:** as versões diretas estão fixadas no package.json. O lockfile precisa ser gerado e versionado quando houver instalação npm disponível para garantir um build integralmente reprodutível. O workflow usa npm install até então.
 

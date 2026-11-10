@@ -1,6 +1,6 @@
 # Roadmap de desenvolvimento — Universidade Social
 
-**Versão:** 0.7 | **Atualização:** 2026-11-10 | **Estado geral:** portal publicado, conteúdo piloto P1.1 e exercícios P1.3 em revisão editorial; P0/P1 ainda não concluídos. Sem prazos artificiais: avanço por critério de pronto.
+**Versão:** 0.8 | **Atualização:** 2026-11-10 | **Estado geral:** P0.5 recebeu auditoria estática ampliada e plano de validação manual; trilha e atividades seguem em revisão; P0/P1 ainda não concluídos. Sem prazos artificiais: avanço por critério de pronto.
 
 ## P0 — PRIMEIRO ARTEFATO: portal público principal
 
@@ -13,7 +13,7 @@
 | P0.2 | Identidade visual e homepage mobile-first | P0.1 | versão pública inicial pronta; auditoria mobile/teclado/leitor de tela pendente |
 | P0.3 | Modelo de conteúdo, catálogo e rotas | P0.1 | implementado e aprovado no CI; issue #4 encerrada |
 | P0.4 | Páginas Princípios, Método, Sobre e Biblioteca inicial | P0.2, P0.3 | linha editorial e fontes transparentes |
-| P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | site inicial no ar; avaliação final de acessibilidade, desempenho e links pendente |
+| P0.5 | Testes, acessibilidade, performance e go-live | P0.2–P0.4 | checks de links e semântica integrados ao CI; auditoria manual WCAG, desempenho e URLs externas pendentes |
 
 **Marco de lançamento:** portal público utilizável **mesmo antes** de existir acervo amplo. Não exibir conteúdo demonstrativo como se fosse aula disponível.
 

@@ -63,3 +63,8 @@ Sempre identificar obra, capítulo, idioma original, edição-base, data e event
 Para cada atividade, crie JSON em `src/content/avaliacoes/<id>.json` com `lessonId`, tipo, pergunta, referências, rubrica e devolutiva. Questões fechadas devem ter três a cinco alternativas com justificativa para **cada escolha**, exatamente uma alternativa conceitualmente correta e nenhum teste de fidelidade política. Questões abertas e projetos usam análise por rubrica, sem supor que uma interpretação social possa ser corrigida automaticamente.
 
 Adicione o ID ao `assessmentIds` da aula correspondente. O build rejeita referências inconsistentes, alternativas duplicadas e múltiplas respostas corretas. O estudante pode verificar feedback no navegador sem enviar dados; mais informações em [Atividades formativas](atividades-formativas.md).
+
+
+## Licença e aprovação editorial antes do status publicado
+
+A proposta de licença e o procedimento de autorização estão em [Licenças e revisão](licencas-e-revisao-proposta.md). A proposta **não é licença vigente**. Não converter textos, traduções ou exercícios para `publicado` sem decisão do titular/representante e revisão humana documentada. Para mudanças de interface, conferir [Auditoria de acessibilidade](auditoria-acessibilidade-p05.md).
