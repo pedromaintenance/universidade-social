@@ -15,17 +15,17 @@ A Universidade afirma sua perspectiva materialista histórica e anticolonial, be
 
 | Aula | Arquivo | Tema | Tempo |
 | --- | --- | --- | --- |
-| 1 | da-experiencia-a-pergunta.md | Perguntas investigáveis | 25 min |
+| 1 | da-experiencia-a-pergunta.md | Perguntas investigáveis; Durkheim e Marx a partir dos originais | 35 min |
 | 2 | fonte-fato-hipotese.md | Fontes, indicadores e contraprova | 30 min |
 | 3 | ideologia-e-neutralidade.md | Ideologia e conhecimento situado | 35 min |
 | 4 | trabalho-propriedade-poder.md | Relações materiais e classes sociais | 40 min |
 | 5 | laboratorio-pesquisa-social.md | Projeto final orientado e rubrica | 60 min |
 
-**Carga estimada:** 190 minutos, além das leituras externas opcionais.
+**Carga estimada:** 200 minutos, além das leituras externas opcionais. A primeira aula ganhou uma introdução comparativa Durkheim–Marx, passando de 25 para 35 minutos.
 
 ## Bibliografia selecionada para checagem final
 
-Todas as fontes foram pesquisadas em 10/11/2026 e estão identificadas em src/content/recursos. O projeto registra **somente links e metadados próprios**, sem republicar textos de terceiros.
+As oito fontes iniciais foram pesquisadas em 10/11/2026 e estão identificadas em src/content/recursos. O projeto registra **somente links e metadados próprios**, sem republicar textos de terceiros.
 
 1. **IBGE — PNAD Contínua:** https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html. Definições estatísticas e documentação metodológica.
 2. **IBGE — SIDRA:** https://www.ibge.gov.br/bancodedados/sidra. Séries e tabelas oficiais.
@@ -37,6 +37,17 @@ Todas as fontes foram pesquisadas em 10/11/2026 e estão identificadas em src/co
 8. **Friedrich Engels — Do Socialismo Utópico ao Socialismo Científico:** https://www.marxists.org/portugues/marx/1880/socialismo/index.htm. Obra histórica de teoria marxista, não evidência numérica de condições sociais presentes.
 
 **Distinção metodológica:** textos originais de Marx e Engels são fontes primárias para suas formulações teóricas; indicadores do IBGE, DIEESE e Ipea informam fenômenos atuais conforme seus próprios métodos. Nenhum dos dois grupos substitui o outro.
+
+## Adendo — originais de Durkheim e Marx (10/11/2026)
+
+A introdução à aula 1 passou a incorporar traduções novas de fragmentos curtos de Durkheim (francês) e Marx (alemão), com notas de método e comparação não anacrônica. A aula 3 ganhou ligação explícita com essa leitura.
+
+- [Dossiê de tradução autoral](traducoes-autorais/durkheim-marx-investigacao.md) — texto-base, original, decisões de tradução, exemplos e revisão pendente.
+- [Durkheim, capítulo II em francês](https://fr.wikisource.org/wiki/Les_R%C3%A8gles_de_la_m%C3%A9thode_sociologique/Chapitre_2), primeira edição de 1895, transcrição da edição de 1919.
+- [Durkheim, prefácio da segunda edição em francês](https://fr.wikisource.org/wiki/Les_R%C3%A8gles_de_la_m%C3%A9thode_sociologique/Pr%C3%A9face_de_la_deuxi%C3%A8me_%C3%A9dition).
+- [Marx, livro III, capítulo 48 em alemão](https://marx.works/me25/me25_822.htm), publicado em 1894 sob edição póstuma de Engels.
+
+**Novas pendências:** verificar tradução diretamente nos originais e fac-símiles; validar opções *choses*, *Erscheinungsform* e *Wesen* com revisão humana; decidir licença do ensaio e das traduções novas. Os originais em domínio público não tornam traduções modernas indiscriminadamente reutilizáveis. As duas fontes foram cadastradas como registros ainda em revisão.
 
 ## Checklist de revisão humana antes de publicar
 

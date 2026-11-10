@@ -9,13 +9,13 @@ topics: [metodo, trabalho, alimentacao]
 modalities: [educacao, investigacao]
 trackId: como-investigar-a-realidade-social
 order: 1
-durationMinutes: 25
+durationMinutes: 35
 level: introdutorio
 learningGoals:
   - "Separar uma experiência vivida de uma explicação causal ainda não testada"
   - "Construir pergunta com território, período, população e fenômeno observável"
   - "Reconhecer quais fontes podem informar e quais não podem responder à pergunta"
-resourceIds: [dieese-cesta-basica, ibge-pnad-continua, ipeadata]
+resourceIds: [dieese-cesta-basica, ibge-pnad-continua, ipeadata, durkheim-regras-observacao, marx-capital-iii-aparencia]
 assessmentIds: []
 ---
 
@@ -24,6 +24,36 @@ assessmentIds: []
 Uma família nota que comprar alimentos ficou mais difícil. Uma trabalhadora percebe que o tempo dedicado ao deslocamento consome parte importante de seu dia. Um grupo se pergunta por que há tantas pessoas trabalhando sem proteção social em seu território.
 
 Essas experiências são pontos de partida legítimos. Mas **viver um problema não significa conhecer automaticamente todas as suas causas**. Transformar vivência em investigação exige organizar as perguntas.
+
+### Duas advertências clássicas: Durkheim e Marx
+
+Por que a experiência, apesar de indispensável, pode não revelar todas as causas de um problema? Vale conhecer duas respostas diferentes e igualmente exigentes. Os trechos a seguir foram **traduzidos diretamente dos originais francês e alemão para esta trilha**, sem tomar uma tradução portuguesa pronta como modelo. São excertos curtos de obras em domínio público; nossa redação e escolhas tradutórias ainda aguardam revisão humana.
+
+**Émile Durkheim: o objeto social parece conhecido.** No capítulo II de *Les Règles de la méthode sociologique* (primeira edição de 1895), ele escreve:
+
+> *La première règle et la plus fondamentale est de considérer les faits sociaux comme des choses.*
+>
+> **Tradução de trabalho da Universidade Social:** “A primeira regra, e a mais fundamental, é considerar os fatos sociais como coisas.”
+
+Isso **não** quer dizer que leis, profissões ou famílias sejam objetos de matéria bruta. Na apresentação da segunda edição, Durkheim esclarece que o pesquisador precisa tomar os fenômenos como algo que **ainda não conhece adequadamente**, observando-os em vez de deduzi-los de suas próprias opiniões. Conhecemos práticas cotidianas — contratos, dinheiro, obrigações, linguagem — porque convivemos com elas; mas essa convivência não revela automaticamente as regularidades, a formação histórica ou a força que exercem sobre nós. Durkheim chama atenção para **pré-noções**: ideias produzidas no cotidiano que podem se passar por explicações completas.
+
+Em termos práticos: cumprir uma jornada não significa, por si só, conhecer as regras e instituições que a tornam socialmente normal. Para Durkheim, é preciso definir com precisão o fenômeno, observar suas manifestações e comparar fatos. A exterioridade e a capacidade de constrangimento do fato social em relação ao indivíduo ajudam a distingui-lo de uma experiência puramente pessoal.
+
+**Karl Marx: a realidade social não se esgota na forma pela qual aparece.** Em *Das Kapital*, livro III, capítulo 48 (publicado em 1894 sob edição de Friedrich Engels), encontramos:
+
+> *alle Wissenschaft wäre überflüssig, wenn die Erscheinungsform und das Wesen der Dinge unmittelbar zusammenfielen*
+>
+> **Tradução de trabalho da Universidade Social:** “Toda ciência seria dispensável se a forma de manifestação e a essência das coisas coincidissem imediatamente.”
+
+A escolha de **“forma de manifestação”** para *Erscheinungsform* é deliberada. Para Marx, não se trata de dizer que tudo o que vemos é falso e existe uma realidade secreta separada do mundo. Salários, preços, lucros e rendas são formas reais da vida econômica; contudo, seu aparecimento cotidiano pode **encobrir as relações históricas de produção e apropriação** que os produzem. O objetivo da crítica da economia política é explicar essas mediações, não desprezar a experiência de quem trabalha.
+
+Assim, alguém recebe um salário e conhece exatamente o valor depositado em sua conta. Isso é um fato real. Mas esse valor, sozinho, não esclarece como se organiza a produção, quem controla os meios de produção, quais contratos estão em vigor, como se distribui o produto social ou por que uma forma específica de remuneração se tornou dominante.
+
+**Não são a mesma teoria.** Durkheim procura constituir a sociologia como investigação de fatos sociais relativamente exteriores às consciências individuais e capazes de exercer coerção. Marx reconstrói criticamente as relações históricas de produção, suas contradições e a maneira pela qual relações entre pessoas podem aparecer como propriedades naturais de coisas. Aproximá-los aqui serve para **abrir a pergunta metodológica**, não para apagar seus conflitos teóricos.
+
+**Pergunta-guia:** quando alguém diz “sempre foi assim no trabalho”, está descrevendo um costume observável, explicando sua causa ou naturalizando uma relação social que tem história?
+
+Para uma leitura mais cuidadosa, com decisões de tradução, referências por capítulo e exercícios adicionais, veja o [dossiê de tradução autoral no repositório](https://github.com/pedromaintenance/universidade-social/blob/main/docs/traducoes-autorais/durkheim-marx-investigacao.md). Os textos em língua original estão identificados na bibliografia ao final desta aula.
 
 Vamos usar uma situação hipotética: “A alimentação está pesando demais no orçamento de quem trabalha em minha cidade”. Não precisamos supor que a situação é igual em todos os lugares para perguntar como investigá-la.
 

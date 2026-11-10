@@ -59,7 +59,7 @@ test('cada aula cita fontes existentes na curadoria', () => {
 });
 
 test('oito fontes são HTTPS, têm metadados e ainda não são exibidas publicamente', () => {
-  assert.equal(resources.size, 8);
+  assert.equal(resources.size, 10);
   for (const [id, data] of resources) {
     assert.equal(data.status, 'revisao', id);
     assert.ok(data.url.startsWith('https://'), id);
@@ -68,6 +68,15 @@ test('oito fontes são HTTPS, têm metadados e ainda não são exibidas publicam
     assert.ok(data.perspective.length >= 5, id);
     assert.ok(data.relevance.length >= 20, id);
   }
+});
+
+test('Durkheim e Marx entram como textos originais e tradução autoral em revisão', () => {
+  const first = readFileSync(join(lessonDir, 'da-experiencia-a-pergunta.md'), 'utf8');
+  assert.ok(first.includes('La première règle et la plus fondamentale'));
+  assert.ok(first.includes('alle Wissenschaft wäre überflüssig'));
+  assert.ok(ids(first, 'resourceIds').includes('durkheim-regras-observacao'));
+  assert.ok(ids(first, 'resourceIds').includes('marx-capital-iii-aparencia'));
+  assert.ok(existsSync('docs/traducoes-autorais/durkheim-marx-investigacao.md'));
 });
 
 test('aulas não anunciam avaliações interativas inexistentes', () => {

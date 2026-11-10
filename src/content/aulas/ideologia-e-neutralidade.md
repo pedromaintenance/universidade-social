@@ -15,7 +15,7 @@ learningGoals:
   - "Identificar diferenças entre conhecimento situado, viés e falsidade demonstrada"
   - "Relacionar ideias, instituições e condições materiais sem reduzir tudo à intenção individual"
   - "Examinar o estatuto de textos teóricos e dados empíricos na mesma pesquisa"
-resourceIds: [marx-prefacio-1859, engels-socialismo-cientifico, ipeadata]
+resourceIds: [marx-prefacio-1859, engels-socialismo-cientifico, ipeadata, durkheim-regras-observacao, marx-capital-iii-aparencia]
 assessmentIds: []
 ---
 
@@ -32,6 +32,12 @@ Engels, em *Do Socialismo Utópico ao Socialismo Científico*, discute o esforç
 Na análise proposta, **ideologia** diz respeito a representações, categorias e justificativas socialmente produzidas que podem tornar certas relações de poder naturais, legítimas ou inevitáveis. Não é sinônimo automático de mentira consciente.
 
 Um discurso pode apresentar fatos verdadeiros e ainda assim ocultar relações importantes por meio do que escolhe medir, comparar ou ignorar.
+
+### Volte aos originais: aparência não é uma mentira inventada
+
+A primeira aula apresentou **Durkheim** (pré-noções) e **Marx** (forma de manifestação e conexões internas). Para investigar ideologia, essa diferença importa. Uma regra social pode ser conhecida na prática sem que se conheçam suas condições de produção; e uma relação capitalista pode ser vivida em suas formas reais — salário, preço, lucro — sem que suas conexões históricas fiquem imediatamente evidentes.
+
+O texto de Durkheim pede observação e definição do objeto social antes de explicá-lo. O capítulo 48 do livro III de *O capital* critica, em seu próprio contexto, formas de economia política que transformam categorias historicamente determinadas em propriedades aparentemente naturais da produção. Consulte [o dossiê de tradução autoral](https://github.com/pedromaintenance/universidade-social/blob/main/docs/traducoes-autorais/durkheim-marx-investigacao.md) antes de tratar os dois autores como se falassem exatamente a mesma coisa.
 
 ## 2. Não confunda origem com prova
 
