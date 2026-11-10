@@ -1,0 +1,24 @@
+{
+  "title": "Retrato das Desigualdades de Gênero e Raça: indicadores",
+  "description": "Portal público do Ipea com tabelas e gráficos de trabalho, renda e cuidados por gênero e raça no Brasil.",
+  "status": "revisao",
+  "url": "https://ipea.gov.br/portal/retrato/indicadores?view=default",
+  "kind": "dados",
+  "authors": [
+    "Instituto de Pesquisa Econômica Aplicada (Ipea)"
+  ],
+  "publisher": "Ipea",
+  "language": "pt-BR",
+  "sourceClass": "primaria",
+  "perspective": "Indicadores estatísticos de desigualdades sociais, com desagregações por grupos populacionais.",
+  "relevance": "Evita tratar a classe trabalhadora como homogênea e sustenta perguntas sobre gênero, raça e trabalho de cuidados.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "topics": [
+    "desigualdade",
+    "genero",
+    "raca",
+    "trabalho"
+  ]
+}

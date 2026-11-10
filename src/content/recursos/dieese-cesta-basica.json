@@ -1,0 +1,23 @@
+{
+  "title": "Pesquisa Nacional da Cesta Básica de Alimentos",
+  "description": "Apresentação do DIEESE sobre a investigação de preços de alimentos essenciais e sua relação com o trabalho e os salários.",
+  "status": "revisao",
+  "url": "https://www.dieese.org.br/analisecestabasica/analiseCestaBasica_conabDieese.html",
+  "kind": "dados",
+  "authors": [
+    "Departamento Intersindical de Estatística e Estudos Socioeconômicos (DIEESE)"
+  ],
+  "publisher": "DIEESE",
+  "language": "pt-BR",
+  "sourceClass": "primaria",
+  "perspective": "Pesquisa produzida por entidade intersindical comprometida com o estudo das condições materiais dos trabalhadores.",
+  "relevance": "Permite transformar a pergunta cotidiana sobre preço dos alimentos em investigação com unidade, território e método.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "topics": [
+    "alimentacao",
+    "salarios",
+    "trabalho"
+  ]
+}

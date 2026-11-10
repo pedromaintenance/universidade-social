@@ -1,0 +1,23 @@
+{
+  "title": "SIDRA: Banco de tabelas estatísticas do IBGE",
+  "description": "Ponto de entrada para localizar tabelas de séries e resultados estatísticos oficiais do IBGE.",
+  "status": "revisao",
+  "url": "https://www.ibge.gov.br/bancodedados/sidra",
+  "kind": "dados",
+  "authors": [
+    "Instituto Brasileiro de Geografia e Estatística (IBGE)"
+  ],
+  "publisher": "IBGE",
+  "language": "pt-BR",
+  "sourceClass": "primaria",
+  "perspective": "Produção estatística oficial; o recorte territorial, período, variável e população condicionam a interpretação.",
+  "relevance": "Exercitar a escolha de séries, período, população e unidade de medida em vez de aceitar números soltos em notícias.",
+  "rights": "link-apenas",
+  "checkedAt": "2026-11-10",
+  "updatedAt": "2026-11-10",
+  "topics": [
+    "dados",
+    "estatisticas",
+    "metodo"
+  ]
+}
