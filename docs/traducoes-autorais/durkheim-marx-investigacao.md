@@ -1,4 +1,4 @@
-# Durkheim e Marx: do que parece conhecido ao que precisa ser investigado
+# Durkheim e Marx: duas ferramentas para investigar a realidade social
 
 **Coleção:** Cadernos de leitura e tradução autoral da Universidade Social  
 **Destino:** introdução à Aula 1 e retomada na Aula 3 da trilha *Como investigar a realidade social*  
@@ -17,6 +17,17 @@ Referências utilizadas:
 - **Karl Marx**, *Das Kapital*, livro III, capítulo 48, “Die trinitarische Formel”, publicado postumamente em 1894 sob edição de Friedrich Engels. Texto alemão conforme transcrição de MEW, v. 25, pp. 822–839: https://marx.works/me25/me25_822.htm
 
 **Critério:** manter claramente separados os fragmentos traduzidos, nossa interpretação e exemplos pedagógicos atuais. Quando o texto alemão é uma versão do livro III publicada por Engels após a morte de Marx, a mediação editorial precisa ser informada: não é correto apresentá-lo como edição final pessoalmente publicada por Marx.
+
+## O que a Universidade quer oferecer ao trabalhador
+
+Não apresentamos Durkheim e Marx para submetê-los a uma arbitragem abstrata nem para distribuir-lhes o mesmo peso político. Apresentamos **dois instrumentos de investigação** que ajudam o trabalhador a produzir conhecimento sobre as relações sociais que vive.
+
+- **Primeira ferramenta — superar a falsa familiaridade:** aprender com Durkheim a desconfiar do objeto que parece conhecido só porque está presente no cotidiano. Nomear, definir, observar e comparar são passos necessários.
+- **Segunda ferramenta — reconstruir a essência histórica:** aprender com Marx que a aparência percebida é uma forma real de manifestação, mas que suas condições de produção e suas conexões internas precisam ser explicadas historicamente.
+
+**Sequência didática:** experiência vivida → suspensão das pré-noções → definição e observação do fenômeno → investigação das relações históricas e materiais → explicação fundamentada, passível de revisão.
+
+A experiência não é inferior ao saber acadêmico. É nela que encontramos problemas, sinais e conhecimentos práticos. As ferramentas teóricas permitem ir além de uma familiaridade que poderia fazer as relações sociais parecerem naturais e inevitáveis.
 
 ## 1. Durkheim: a vida coletiva nos é familiar antes de ser conhecida
 
@@ -88,17 +99,15 @@ Mas para explicar por que aquela forma de remuneração existe, de onde vem o re
 
 O salário é **ponto de entrada empírico**, não explicação completa de si mesmo.
 
-## 3. O diálogo possível — e a divergência que não devemos apagar
+## 3. Duas ferramentas, uma capacidade ampliada de investigar
 
-A Universidade Social não precisa declarar Durkheim e Marx metodologicamente equivalentes para extrair um bom problema de estudo de ambos.
+**Durkheim fornece uma advertência metodológica:** a proximidade cotidiana com uma instituição pode criar uma sensação enganosa de conhecimento. Antes de explicar, é preciso definir, observar, comparar e enfrentar as pré-noções.
 
-**Convergência limitada:** os dois recusam a ideia de que a proximidade cotidiana com um fenômeno social baste para compreendê-lo. Ambos exigem investigação.
+**Marx fornece uma ferramenta crítico-histórica:** a forma como uma relação social se manifesta — por exemplo, salário, renda ou lucro — não é idêntica à reconstrução de suas conexões constitutivas. Precisamos investigar relações de produção, propriedade, história e suas contradições.
 
-**Diferença central:** Durkheim fundamenta uma ciência dos fatos sociais, procurando definir a especificidade de fenômenos coletivos relativamente exteriores às consciências individuais e observar suas regularidades. Marx desenvolve uma crítica histórica das relações de produção, suas contradições, mediações e formas de manifestação sob o capitalismo.
+A diferença importa. Durkheim fundamenta a investigação dos fatos sociais como fenômenos coletivos relativamente exteriores às consciências individuais; Marx reconstrói historicamente as relações capitalistas e suas formas de manifestação. **Não precisamos igualar seus fundamentos para reconhecer a potência de ambas as ferramentas no desenvolvimento do pensamento social.**
 
-Isso significa que **não** devemos apresentar Durkheim como marxista, reduzir Marx a uma variação de positivismo ou insinuar que ambos chegam às mesmas explicações causais. O primeiro pode nos ajudar a reconhecer a insuficiência da pré-noção; o segundo, a perguntar por relações sociais históricas frequentemente naturalizadas pela aparência econômica.
-
-A síntese pedagógica é um ponto de partida, não uma fusão de escolas: **a experiência revela um problema; conhecer suas causas exige método; para uma análise materialista, exige também reconstruir as relações históricas que o produzem**.
+Para o trabalhador, essa formação oferece mais que um vocabulário crítico: oferece procedimentos utilizáveis. **Primeiro, não tomar um objeto social como conhecido apenas por conviver com ele. Segundo, não tomar sua aparência percebida como explicação completa: reconstruir historicamente as relações que a fazem existir.**
 
 ## 4. Aplicação: “se a pessoa trabalha, recebe pelo que produz”
 

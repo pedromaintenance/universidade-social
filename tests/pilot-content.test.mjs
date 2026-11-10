@@ -72,6 +72,9 @@ test('oito fontes são HTTPS, têm metadados e ainda não são exibidas publicam
 
 test('Durkheim e Marx entram como textos originais e tradução autoral em revisão', () => {
   const first = readFileSync(join(lessonDir, 'da-experiencia-a-pergunta.md'), 'utf8');
+  assert.ok(first.includes('Duas ferramentas para investigar o mundo'));
+  assert.ok(first.includes('falsa familiaridade com o objeto social'));
+  assert.ok(first.includes('essência a ser reconstruída historicamente'));
   assert.ok(first.includes('La première règle et la plus fondamentale'));
   assert.ok(first.includes('alle Wissenschaft wäre überflüssig'));
   assert.ok(ids(first, 'resourceIds').includes('durkheim-regras-observacao'));

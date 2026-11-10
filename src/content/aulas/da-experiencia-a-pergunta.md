@@ -25,9 +25,14 @@ Uma família nota que comprar alimentos ficou mais difícil. Uma trabalhadora pe
 
 Essas experiências são pontos de partida legítimos. Mas **viver um problema não significa conhecer automaticamente todas as suas causas**. Transformar vivência em investigação exige organizar as perguntas.
 
-### Duas advertências clássicas: Durkheim e Marx
+### Duas ferramentas para investigar o mundo: Durkheim e Marx
 
-Por que a experiência, apesar de indispensável, pode não revelar todas as causas de um problema? Vale conhecer duas respostas diferentes e igualmente exigentes. Os trechos a seguir foram **traduzidos diretamente dos originais francês e alemão para esta trilha**, sem tomar uma tradução portuguesa pronta como modelo. São excertos curtos de obras em domínio público; nossa redação e escolhas tradutórias ainda aguardam revisão humana.
+**Quem trabalha não precisa abandonar sua experiência para conhecer a sociedade; precisa de instrumentos para investigá-la.** A vivência é nosso ponto de partida. Durkheim e Marx oferecem duas ferramentas teóricas inestimáveis para avançar além do que já parece óbvio:
+
+1. **Durkheim — superar a falsa familiaridade com o objeto social.** Uma instituição, costume ou regra pode ser tão presente no cotidiano que confundimos saber conviver com ela com saber explicá-la.
+2. **Marx — distinguir a aparência percebida da essência a ser reconstruída historicamente.** Aquilo que percebemos é real, mas não revela de imediato todas as relações de produção, propriedade e poder que o constituem.
+
+As ferramentas respondem a perguntas distintas e ampliam a autonomia intelectual do trabalhador. Não estamos fundindo os autores numa mesma escola: estamos **ensinando a utilizar criticamente dois recursos de pensamento** para uma investigação mais profunda da vida social. Os trechos a seguir foram **traduzidos diretamente dos originais francês e alemão para esta trilha**, sem tomar uma tradução portuguesa pronta como modelo. São excertos curtos de obras em domínio público; nossa redação e escolhas tradutórias ainda aguardam revisão humana.
 
 **Émile Durkheim: o objeto social parece conhecido.** No capítulo II de *Les Règles de la méthode sociologique* (primeira edição de 1895), ele escreve:
 
@@ -49,9 +54,11 @@ A escolha de **“forma de manifestação”** para *Erscheinungsform* é delibe
 
 Assim, alguém recebe um salário e conhece exatamente o valor depositado em sua conta. Isso é um fato real. Mas esse valor, sozinho, não esclarece como se organiza a produção, quem controla os meios de produção, quais contratos estão em vigor, como se distribui o produto social ou por que uma forma específica de remuneração se tornou dominante.
 
-**Não são a mesma teoria.** Durkheim procura constituir a sociologia como investigação de fatos sociais relativamente exteriores às consciências individuais e capazes de exercer coerção. Marx reconstrói criticamente as relações históricas de produção, suas contradições e a maneira pela qual relações entre pessoas podem aparecer como propriedades naturais de coisas. Aproximá-los aqui serve para **abrir a pergunta metodológica**, não para apagar seus conflitos teóricos.
+**O que o trabalhador leva desta leitura?** Uma dupla capacidade: interromper o automatismo de achar que já conhece um fato social por conviver com ele; e, depois, perguntar pelas relações históricas que produzem sua forma visível.
 
-**Pergunta-guia:** quando alguém diz “sempre foi assim no trabalho”, está descrevendo um costume observável, explicando sua causa ou naturalizando uma relação social que tem história?
+Durkheim procura constituir a sociologia pela investigação dos fatos sociais, relativamente exteriores à consciência individual e capazes de exercer coerção. Marx reconstrói criticamente relações históricas de produção, suas contradições e formas de manifestação. **São ferramentas de tradições distintas, mas ambas ampliam o repertório de quem investiga a sociedade.** A orientação materialista da Universidade permanece explícita.
+
+**Exercício em duas etapas:** considere a frase “sempre foi assim no trabalho”. **Com Durkheim**, investigue: que regra, costume ou instituição estamos tomando como familiar, mas ainda não definimos nem observamos sistematicamente? **Com Marx**, investigue: que relações de produção, propriedade, conflito e transformação histórica fizeram essa forma de trabalho surgir e continuar existindo? Em ambas as etapas, indique evidências que seria possível encontrar.
 
 Para uma leitura mais cuidadosa, com decisões de tradução, referências por capítulo e exercícios adicionais, veja o [dossiê de tradução autoral no repositório](https://github.com/pedromaintenance/universidade-social/blob/main/docs/traducoes-autorais/durkheim-marx-investigacao.md). Os textos em língua original estão identificados na bibliografia ao final desta aula.
 
