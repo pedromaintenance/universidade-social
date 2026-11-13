@@ -18,6 +18,22 @@ Não é um fórum de equivalência obrigatória entre visões políticas. Sua cu
 4. **Soberania do povo trabalhador.** Defesa da capacidade de quem trabalha de governar os rumos da sociedade e participar das decisões sobre sua vida, território e produção.
 5. **Busca pelo conhecimento.** Direito de investigar, aprender, confrontar documentos e corrigir erros; compromisso contínuo com a verdade material.
 
+## Amorosidade, justiça social e emancipação
+
+A amorosidade que orienta a Universidade não é uma substituição sentimental da crítica social. É uma relação ética com pessoas concretas: escutar sem humilhar, ensinar sem tutelar e reconhecer no outro um sujeito capaz de produzir conhecimento.
+
+Paulo Freire se descreveu como **“um intelectual que não tem medo de ser amoroso”**, vinculando seu amor às pessoas e ao mundo à luta para que a justiça social preceda a caridade. A fala está transcrita na reportagem *O intelectual amoroso*, publicada pela Rádio Câmara em **4 de junho de 2007**, e também no Glossário do Memorial Paulo Freire. A data de 2007 é **da reportagem**, não uma data comprovada da gravação original.
+
+**A distinção política importa:** a solidariedade imediata pode ser necessária para aliviar sofrimentos, mas não substitui a transformação das relações sociais que os produzem. Caridade e justiça social não são sinônimos, nem toda ajuda individual é condenável. O problema é transformar a ajuda em alternativa permanente aos direitos, à autonomia e ao poder coletivo.
+
+**Consequência pedagógica:** estudantes não são destinatários passivos de benevolência intelectual. Têm experiências e saberes que merecem escuta, mas, como toda experiência, também podem ser aprofundados, confrontados e reconstruídos por investigação. O educador não deposita uma conclusão pronta; organiza condições para que as pessoas examinem fontes, testem explicações e elaborem sua própria síntese.
+
+**Fontes da atribuição:**
+- Câmara dos Deputados, Rádio Câmara, *Especial Paulo Freire 1 — O intelectual amoroso* (04/06/2007): https://www.camara.leg.br/radio/programas/285321-especial-paulo-freire-1-o-intelectual-amoroso-0730
+- Memorial Paulo Freire, Glossário, verbete com remissão a *O Andarilho da Utopia*: https://www.glossario.paulofreire.org/pesquisar/45
+
+A redação acima é **interpretação institucional própria**, não transcrição literal de Paulo Freire além do trecho curto destacado.
+
 ## Agitação, educação e propaganda
 
 **Agitação** torna questões coletivas visíveis, relacionando experiências concretas às estruturas de poder, estimulando diálogo público e participação voluntária.
