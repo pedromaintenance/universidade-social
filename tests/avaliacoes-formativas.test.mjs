@@ -69,6 +69,9 @@ test('componente mantém interface acessível e nenhuma transferência de respos
   assert.ok(!file.includes('type="submit"'));
   assert.ok(file.includes('data-formative-check'));
   assert.ok(!file.includes('localStorage'));
+  assert.ok(file.includes('data-formative-announcement'));
+  assert.ok(file.includes('hidden>Conferir escolha'));
+  assert.ok(file.includes('hidden>Refazer'));
   assert.ok(!file.includes('fetch('));
   assert.ok(!file.includes('navigator.sendBeacon'));
 });

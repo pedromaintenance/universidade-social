@@ -34,10 +34,11 @@ const multi = item.type === 'multipla-escolha';
         ))}
       </fieldset>
       <div class="button-row">
-        <button type="button" data-formative-check class="button primary">Conferir escolha</button>
-        <button type="button" data-formative-retry class="button">Refazer</button>
+        <button type="button" data-formative-check class="button primary" hidden>Conferir escolha</button>
+        <button type="button" data-formative-retry class="button" hidden>Refazer</button>
       </div>
-      <div data-formative-result hidden role="status" aria-live="polite" class="assessment-result">
+      <p data-formative-announcement class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div data-formative-result hidden class="assessment-result">
         <strong data-formative-verdict></strong>
         {item.options?.map((option) => (
           <p data-explanation={option.id} hidden>{option.feedback}</p>
@@ -80,12 +81,18 @@ const multi = item.type === 'multipla-escolha';
     const verdict = region.querySelector<HTMLElement>('[data-formative-verdict]');
     const check = region.querySelector<HTMLButtonElement>('[data-formative-check]');
     const retry = region.querySelector<HTMLButtonElement>('[data-formative-retry]');
-    if (!result || !verdict || !check || !retry) return;
+    const announcement = region.querySelector<HTMLElement>('[data-formative-announcement]');
+    if (!result || !verdict || !check || !retry || !announcement) return;
+
+    // Os botões só ficam disponíveis quando a interação está pronta.
+    check.hidden = false;
+    retry.hidden = false;
 
     check.addEventListener('click', () => {
       const chosen = region.querySelector<HTMLInputElement>('input[type="radio"]:checked');
       if (!chosen) {
         verdict.textContent = 'Escolha uma alternativa para conferir sua análise.';
+        announcement.textContent = verdict.textContent;
         result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
           block.hidden = true;
         });
@@ -99,6 +106,9 @@ const multi = item.type === 'multipla-escolha';
       result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
         block.hidden = block.dataset.explanation !== chosen.value;
       });
+      const explanation = Array.from(result.querySelectorAll<HTMLElement>('[data-explanation]'))
+        .find((block) => block.dataset.explanation === chosen.value);
+      announcement.textContent = verdict.textContent + ' ' + (explanation?.textContent ?? '');
       result.hidden = false;
     });
 
@@ -108,6 +118,7 @@ const multi = item.type === 'multipla-escolha';
       });
       result.hidden = true;
       verdict.textContent = '';
+      announcement.textContent = 'Escolha apagada. Você pode tentar novamente.';
       result.querySelectorAll<HTMLElement>('[data-explanation]').forEach((block) => {
         block.hidden = true;
       });

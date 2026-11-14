@@ -43,6 +43,9 @@ jobs:
       - name: Verificar resultado e caminhos do Pages
         run: npm run check:dist
 
+      - name: Auditar páginas, links e estados editoriais
+        run: npm run audit:dist
+
       - name: Preparar artefato de publicação
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v4
@@ -77,6 +80,9 @@ jobs:
 
       - name: Conferir rotas, oficina e fontes
         run: node scripts/simulate-publication.mjs verify
+
+      - name: Auditar HTML da simulação
+        run: npm run audit:dist
 
   deploy:
     name: Publicar no GitHub Pages

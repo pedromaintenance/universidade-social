@@ -10,6 +10,8 @@ const required = [
   'src/pages/trilhas/[slug].astro',
   'src/pages/aulas/[slug].astro',
   'tests/content-integrity.test.mjs',
+  'src/components/FormativeAssessment.astro',
+  'scripts/audit-dist.mjs',
   'src/pages/index.astro',
   'src/pages/principios.astro',
   'src/pages/metodo.astro',

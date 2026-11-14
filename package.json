@@ -12,7 +12,8 @@
     "preview": "astro preview",
     "check:source": "node scripts/check-source.mjs",
     "test:content": "node --test tests/*.test.mjs",
-    "check:dist": "node scripts/check-dist.mjs"
+    "check:dist": "node scripts/check-dist.mjs",
+    "audit:dist": "node scripts/audit-dist.mjs"
   },
   "dependencies": {
     "astro": "7.4.7"
