@@ -25,6 +25,8 @@ function distTarget(pathname) {
   if (!pathname.startsWith(base)) return null;
   const raw = decodeURIComponent(pathname.slice(base.length));
   if (raw.includes('..') || raw.includes('\\')) return null;
+  // O Astro emite 404.html na raiz, embora o canonical seja /404/.
+  if (raw === '404/' || raw === '404') return toAbsolute(path.join(root, '404.html'));
   const rel = raw || 'index.html';
   const file = rel.endsWith('/') ? path.join(root, rel, 'index.html') : path.join(root, rel);
   // o caminho sem extensão normalmente aponta para a pasta do Astro
