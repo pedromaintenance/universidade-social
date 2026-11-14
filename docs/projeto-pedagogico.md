@@ -30,6 +30,14 @@ São funções declaradas, com formatos e autoria identificados. Não se confund
 
 O estudante deverá ser capaz de explicar como determinada ideia dominante se reproduz materialmente, quem a produz e difunde, com quais interesses e instituições ela se relaciona, quais evidências a sustentam ou contradizem e quais possibilidades de transformação podem ser analisadas. A avaliação mede a **capacidade de investigar e argumentar com autonomia**, não a obediência a um discurso.
 
+## Amorosidade crítica: da escuta à autonomia
+
+A Universidade não trata o estudante como objeto de caridade intelectual. A escuta da experiência concreta é o início da investigação, não sua conclusão automática. A tarefa do educador é ajudar a distinguir familiaridade e conhecimento, evidência e hipótese, aparência e reconstrução histórica — sem humilhação, paternalismo ou imposição de concordância.
+
+A referência a Paulo Freire não autoriza transformar a pedagogia em mera celebração afetiva: **amar as pessoas exige levar a sério suas condições materiais de vida, seus direitos e sua capacidade de agir sobre a realidade**. Solidariedade emergencial e justiça estrutural podem coexistir; a primeira não deve servir de álibi para abandonar a segunda.
+
+Referência verificável: Rádio Câmara, *Especial Paulo Freire 1 — O intelectual amoroso*, 04/06/2007 (data da reportagem, não da gravação): https://www.camara.leg.br/radio/programas/285321-especial-paulo-freire-1-o-intelectual-amoroso-0730
+
 ## Modelo de aprendizagem
 
 1. **Problema concreto:** pergunta, situação vivida, notícia ou conflito histórico.

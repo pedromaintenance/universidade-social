@@ -17,6 +17,10 @@
 
 **Marco de lançamento:** portal público utilizável **mesmo antes** de existir acervo amplo. Não exibir conteúdo demonstrativo como se fosse aula disponível.
 
+## Ciclo editorial: amorosidade e justiça social
+
+A Carta de princípios, o projeto pedagógico e a página pública de Princípios passam a apresentar a distinção freireana entre amorosidade, caridade e justiça social, com [nota de fonte e limites de atribuição](nota-freire-amorosidade.md). A integração não altera o estado de revisão das aulas, traduções ou avaliações.
+
 ## P1 — Primeira trilha pedagógica real
 
 - **P1.1** «Como investigar a realidade social»: cinco aulas originais e projeto final redigidos com status `revisao`; publicação depende de aprovação editorial humana, checagem de fontes e testes da PR.
